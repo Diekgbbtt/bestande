@@ -19,7 +19,7 @@ export const initializeOneSignal = () => {
 		},
 		serviceWorkerPath: 'static/OneSignalSDKWorker.js',
 		serviceWorkerUpdaterPath: 'static/OneSignalSDKWorker.js',
-		allowLocalhostAsSecureOrigin: process.env.NODE_ENV === 'development',
+		allowLocalhostAsSecureOrigin: true,
 		autoRegister: false,
 		promptOptions: {
 			slidedown: {
