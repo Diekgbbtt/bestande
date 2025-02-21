@@ -1,0 +1,22 @@
+diff --git a/node_modules/react-native-gifted-chat/lib/GiftedChat.js b/node_modules/react-native-gifted-chat/lib/GiftedChat.js
+index 73ba4ee..dc175ff 100644
+--- a/node_modules/react-native-gifted-chat/lib/GiftedChat.js
++++ b/node_modules/react-native-gifted-chat/lib/GiftedChat.js
+@@ -336,7 +336,7 @@ class GiftedChat extends React.Component {
+         const { messagesContainerStyle, ...messagesContainerProps } = this.props;
+         const fragment = (<View style={[
+             {
+-                height: this.state.messagesContainerHeight,
++							flex: 1,
+             },
+             messagesContainerStyle,
+         ]}>
+@@ -553,7 +553,7 @@ GiftedChat.propTypes = {
+ };
+ const styles = StyleSheet.create({
+     container: {
+-        flex: 1,
++				flex: 1,
+     },
+     safeArea: {
+         flex: 1,

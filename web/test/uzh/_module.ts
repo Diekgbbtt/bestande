@@ -1,0 +1,1043 @@
+export default {
+	__metadata: {
+		id:
+			"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmDetailsSet(SmObjId='50642438',PiqYear='2016',PiqSession='004')",
+		uri:
+			"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmDetailsSet(SmObjId='50642438',PiqYear='2016',PiqSession='004')",
+		type: '/UZH/VVZ_DATA_SRV.SmDetails',
+	},
+	SmObjId: '50642438',
+	ObligCore4Cg: '',
+	ValidText: 'from We 01.02.2017 10:00 to So 05.03.2017 24:00',
+	FurtherInfoHeadline: 'Notes',
+	PiqYear: '2016',
+	FurtherInfoDescription: '',
+	CancelText: 'from We 01.02.2017 10:00 to Fr 03.03.2017 24:00',
+	PiqSession: '004',
+	SmText: '002 Basismodul II (OEG): Proseminar III (Geschichte)',
+	SmShort: '610002',
+	ModBookingId: '',
+	AcademicYear: '0000',
+	AcademicSess: '000',
+	AcademicYeart: '',
+	AcademicSesst: '',
+	Points: '6.00000',
+	Unit: '',
+	OrgId: '00000000',
+	OrgText: 'PHF',
+	ScId: '00000000',
+	ScText: '',
+	CgId: '00000000',
+	CgStext: '',
+	Category: '',
+	CategoryText: 'Seminar',
+	Offerpattern: '0001',
+	OfferpatternText: '1 Semester (Every Semester)',
+	CommonDescription: '',
+	CommonHeadline: 'General description',
+	LanguageHeadline: 'Languages of Instruction',
+	LanguageDescription: '',
+	AudienceHeadline: 'Target Groups',
+	AudienceDescription: '',
+	ObjectiveHeadline: 'Learning Outcome',
+	ObjectiveDescription: '',
+	MaterialHeadline: 'Course Materials',
+	MaterialDescription: '',
+	PrecognitionHeadline: 'Prior Knowledge',
+	PrecognitionDescription: '',
+	PrerequisitesHeadline: 'Prerequisites',
+	PrerequisitesDescription: '',
+	TestsHeadline: 'Assessment',
+	TestsDescription: 'Schriftliche Prüfung am 22.02.2018 12:15-14:30',
+	ScaleDescription: 'Pass/Fail',
+	ScaleHeadline: 'Grading Scale',
+	RepeatType: '1X',
+	RepeatTypeText: 'Can be repeated once',
+	AppointmentsHeadline: 'Dates/Times/Deadlines',
+	AppointmentsDescription: '',
+	ValidBegda: '/Date(1485939600000)/',
+	ValidEndda: '/Date(1488754799000)/',
+	CancelBegda: null,
+	CancelEndda: null,
+	OfferPeriods: {
+		results: [
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/ObjAddDataSet(PiqYear='2016',PiqSession='004',RefOtjid='SM50642438',Payload='Spring%20Semester%202017')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/ObjAddDataSet(PiqYear='2016',PiqSession='004',RefOtjid='SM50642438',Payload='Spring%20Semester%202017')",
+					type: '/UZH/VVZ_DATA_SRV.ObjAddData',
+				},
+				PiqYear: '2016',
+				PiqSession: '004',
+				RefOtjid: 'SM50642438',
+				Query: '1739',
+				Payload: 'Spring Semester 2017',
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/ObjAddDataSet(PiqYear='2016',PiqSession='004',RefOtjid='SM50642438',Payload='Fall%20Semester%202016')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/ObjAddDataSet(PiqYear='2016',PiqSession='004',RefOtjid='SM50642438',Payload='Fall%20Semester%202016')",
+					type: '/UZH/VVZ_DATA_SRV.ObjAddData',
+				},
+				PiqYear: '2016',
+				PiqSession: '004',
+				RefOtjid: 'SM50642438',
+				Query: '1739',
+				Payload: 'Fall Semester 2016',
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/ObjAddDataSet(PiqYear='2016',PiqSession='004',RefOtjid='SM50642438',Payload='Spring%20Semester%202016')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/ObjAddDataSet(PiqYear='2016',PiqSession='004',RefOtjid='SM50642438',Payload='Spring%20Semester%202016')",
+					type: '/UZH/VVZ_DATA_SRV.ObjAddData',
+				},
+				PiqYear: '2016',
+				PiqSession: '004',
+				RefOtjid: 'SM50642438',
+				Query: '1739',
+				Payload: 'Spring Semester 2016',
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/ObjAddDataSet(PiqYear='2016',PiqSession='004',RefOtjid='SM50642438',Payload='Fall%20Semester%202015')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/ObjAddDataSet(PiqYear='2016',PiqSession='004',RefOtjid='SM50642438',Payload='Fall%20Semester%202015')",
+					type: '/UZH/VVZ_DATA_SRV.ObjAddData',
+				},
+				PiqYear: '2016',
+				PiqSession: '004',
+				RefOtjid: 'SM50642438',
+				Query: '1739',
+				Payload: 'Fall Semester 2015',
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/ObjAddDataSet(PiqYear='2016',PiqSession='004',RefOtjid='SM50642438',Payload='Spring%20Semester%202015')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/ObjAddDataSet(PiqYear='2016',PiqSession='004',RefOtjid='SM50642438',Payload='Spring%20Semester%202015')",
+					type: '/UZH/VVZ_DATA_SRV.ObjAddData',
+				},
+				PiqYear: '2016',
+				PiqSession: '004',
+				RefOtjid: 'SM50642438',
+				Query: '1739',
+				Payload: 'Spring Semester 2015',
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/ObjAddDataSet(PiqYear='2016',PiqSession='004',RefOtjid='SM50642438',Payload='Fall%20Semester%202014')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/ObjAddDataSet(PiqYear='2016',PiqSession='004',RefOtjid='SM50642438',Payload='Fall%20Semester%202014')",
+					type: '/UZH/VVZ_DATA_SRV.ObjAddData',
+				},
+				PiqYear: '2016',
+				PiqSession: '004',
+				RefOtjid: 'SM50642438',
+				Query: '1739',
+				Payload: 'Fall Semester 2014',
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/ObjAddDataSet(PiqYear='2016',PiqSession='004',RefOtjid='SM50642438',Payload='Spring%20Semester%202014')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/ObjAddDataSet(PiqYear='2016',PiqSession='004',RefOtjid='SM50642438',Payload='Spring%20Semester%202014')",
+					type: '/UZH/VVZ_DATA_SRV.ObjAddData',
+				},
+				PiqYear: '2016',
+				PiqSession: '004',
+				RefOtjid: 'SM50642438',
+				Query: '1739',
+				Payload: 'Spring Semester 2014',
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/ObjAddDataSet(PiqYear='2016',PiqSession='004',RefOtjid='SM50642438',Payload='Fall%20Semester%202013')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/ObjAddDataSet(PiqYear='2016',PiqSession='004',RefOtjid='SM50642438',Payload='Fall%20Semester%202013')",
+					type: '/UZH/VVZ_DATA_SRV.ObjAddData',
+				},
+				PiqYear: '2016',
+				PiqSession: '004',
+				RefOtjid: 'SM50642438',
+				Query: '1739',
+				Payload: 'Fall Semester 2013',
+			},
+		],
+	},
+	Partof: {
+		results: [
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306169',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308698',CgLowObjid='50326732')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306169',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308698',CgLowObjid='50326732')",
+					type: '/UZH/VVZ_DATA_SRV.SmPartOf',
+				},
+				CgCategorySort: '15',
+				Corestep: false,
+				Oblig: true,
+				OObjid: '50000007',
+				ScObjid: '50306169',
+				OText: '00\\nFaculty of Arts and Social Sciences',
+				ScText: 'Bachelor of Arts',
+				SmObjId: '50642438',
+				PiqYear: '0000',
+				PiqSession: '000',
+				CgHighObjid: '50308698',
+				CgHighText: 'Eastern European History',
+				CgHighCategory: 'Major 90',
+				CgLowObjid: '50326732',
+				CgLowText: 'Basisstudium',
+				CgLowCategory: 'Partial Subject',
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306169',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308699',CgLowObjid='50326727')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306169',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308699',CgLowObjid='50326727')",
+					type: '/UZH/VVZ_DATA_SRV.SmPartOf',
+				},
+				CgCategorySort: '62',
+				Corestep: false,
+				Oblig: true,
+				OObjid: '50000007',
+				ScObjid: '50306169',
+				OText: '00\\nFaculty of Arts and Social Sciences',
+				ScText: 'Bachelor of Arts',
+				SmObjId: '50642438',
+				PiqYear: '0000',
+				PiqSession: '000',
+				CgHighObjid: '50308699',
+				CgHighText: 'Eastern European History',
+				CgHighCategory: 'Minor 60',
+				CgLowObjid: '50326727',
+				CgLowText: 'Basisstudium',
+				CgLowCategory: 'Partial Subject',
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306474',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308699',CgLowObjid='50326727')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306474',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308699',CgLowObjid='50326727')",
+					type: '/UZH/VVZ_DATA_SRV.SmPartOf',
+				},
+				CgCategorySort: '62',
+				Corestep: false,
+				Oblig: true,
+				OObjid: '50000007',
+				ScObjid: '50306474',
+				OText: '00\\nFaculty of Arts and Social Sciences',
+				ScText: 'Bachelor of Arts UZH in Study of Religions',
+				SmObjId: '50642438',
+				PiqYear: '0000',
+				PiqSession: '000',
+				CgHighObjid: '50308699',
+				CgHighText: 'Eastern European History',
+				CgHighCategory: 'Minor 60',
+				CgLowObjid: '50326727',
+				CgLowText: 'Basisstudium',
+				CgLowCategory: 'Partial Subject',
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306208',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308699',CgLowObjid='50326727')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306208',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308699',CgLowObjid='50326727')",
+					type: '/UZH/VVZ_DATA_SRV.SmPartOf',
+				},
+				CgCategorySort: '62',
+				Corestep: false,
+				Oblig: true,
+				OObjid: '50000007',
+				ScObjid: '50306208',
+				OText: '00\\nFaculty of Arts and Social Sciences',
+				ScText: 'Bachelor of Arts in Social Sciences',
+				SmObjId: '50642438',
+				PiqYear: '0000',
+				PiqSession: '000',
+				CgHighObjid: '50308699',
+				CgHighText: 'Eastern European History',
+				CgHighCategory: 'Minor 60',
+				CgLowObjid: '50326727',
+				CgLowText: 'Basisstudium',
+				CgLowCategory: 'Partial Subject',
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50503822',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308699',CgLowObjid='50326727')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50503822',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308699',CgLowObjid='50326727')",
+					type: '/UZH/VVZ_DATA_SRV.SmPartOf',
+				},
+				CgCategorySort: '62',
+				Corestep: false,
+				Oblig: true,
+				OObjid: '50000007',
+				ScObjid: '50503822',
+				OText: '00\\nFaculty of Arts and Social Sciences',
+				ScText: 'Bachelor of Science Faculty of Science',
+				SmObjId: '50642438',
+				PiqYear: '0000',
+				PiqSession: '000',
+				CgHighObjid: '50308699',
+				CgHighText: 'Eastern European History',
+				CgHighCategory: 'Minor 60',
+				CgLowObjid: '50326727',
+				CgLowText: 'Basisstudium',
+				CgLowCategory: 'Partial Subject',
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306211',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308699',CgLowObjid='50326727')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306211',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308699',CgLowObjid='50326727')",
+					type: '/UZH/VVZ_DATA_SRV.SmPartOf',
+				},
+				CgCategorySort: '62',
+				Corestep: false,
+				Oblig: true,
+				OObjid: '50000007',
+				ScObjid: '50306211',
+				OText: '00\\nFaculty of Arts and Social Sciences',
+				ScText: 'Bachelor of Science in Psychology',
+				SmObjId: '50642438',
+				PiqYear: '0000',
+				PiqSession: '000',
+				CgHighObjid: '50308699',
+				CgHighText: 'Eastern European History',
+				CgHighCategory: 'Minor 60',
+				CgLowObjid: '50326727',
+				CgLowText: 'Basisstudium',
+				CgLowCategory: 'Partial Subject',
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306207',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308699',CgLowObjid='50326727')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306207',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308699',CgLowObjid='50326727')",
+					type: '/UZH/VVZ_DATA_SRV.SmPartOf',
+				},
+				CgCategorySort: '62',
+				Corestep: false,
+				Oblig: true,
+				OObjid: '50000007',
+				ScObjid: '50306207',
+				OText: '00\\nFaculty of Arts and Social Sciences',
+				ScText: 'Bachelor of Theology UZH',
+				SmObjId: '50642438',
+				PiqYear: '0000',
+				PiqSession: '000',
+				CgHighObjid: '50308699',
+				CgHighText: 'Eastern European History',
+				CgHighCategory: 'Minor 60',
+				CgLowObjid: '50326727',
+				CgLowText: 'Basisstudium',
+				CgLowCategory: 'Partial Subject',
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306169',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308701',CgLowObjid='50326730')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306169',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308701',CgLowObjid='50326730')",
+					type: '/UZH/VVZ_DATA_SRV.SmPartOf',
+				},
+				CgCategorySort: '64',
+				Corestep: true,
+				Oblig: false,
+				OObjid: '50000007',
+				ScObjid: '50306169',
+				OText: '00\\nFaculty of Arts and Social Sciences',
+				ScText: 'Bachelor of Arts',
+				SmObjId: '50642438',
+				PiqYear: '0000',
+				PiqSession: '000',
+				CgHighObjid: '50308701',
+				CgHighText: 'Eastern European History',
+				CgHighCategory: 'Minor 30',
+				CgLowObjid: '50326730',
+				CgLowText: 'Aufbaustudium',
+				CgLowCategory: 'Partial Subject',
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306474',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308701',CgLowObjid='50326730')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306474',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308701',CgLowObjid='50326730')",
+					type: '/UZH/VVZ_DATA_SRV.SmPartOf',
+				},
+				CgCategorySort: '64',
+				Corestep: true,
+				Oblig: false,
+				OObjid: '50000007',
+				ScObjid: '50306474',
+				OText: '00\\nFaculty of Arts and Social Sciences',
+				ScText: 'Bachelor of Arts UZH in Study of Religions',
+				SmObjId: '50642438',
+				PiqYear: '0000',
+				PiqSession: '000',
+				CgHighObjid: '50308701',
+				CgHighText: 'Eastern European History',
+				CgHighCategory: 'Minor 30',
+				CgLowObjid: '50326730',
+				CgLowText: 'Aufbaustudium',
+				CgLowCategory: 'Partial Subject',
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306208',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308701',CgLowObjid='50326730')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306208',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308701',CgLowObjid='50326730')",
+					type: '/UZH/VVZ_DATA_SRV.SmPartOf',
+				},
+				CgCategorySort: '64',
+				Corestep: true,
+				Oblig: false,
+				OObjid: '50000007',
+				ScObjid: '50306208',
+				OText: '00\\nFaculty of Arts and Social Sciences',
+				ScText: 'Bachelor of Arts in Social Sciences',
+				SmObjId: '50642438',
+				PiqYear: '0000',
+				PiqSession: '000',
+				CgHighObjid: '50308701',
+				CgHighText: 'Eastern European History',
+				CgHighCategory: 'Minor 30',
+				CgLowObjid: '50326730',
+				CgLowText: 'Aufbaustudium',
+				CgLowCategory: 'Partial Subject',
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50503822',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308701',CgLowObjid='50326730')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50503822',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308701',CgLowObjid='50326730')",
+					type: '/UZH/VVZ_DATA_SRV.SmPartOf',
+				},
+				CgCategorySort: '64',
+				Corestep: true,
+				Oblig: false,
+				OObjid: '50000007',
+				ScObjid: '50503822',
+				OText: '00\\nFaculty of Arts and Social Sciences',
+				ScText: 'Bachelor of Science Faculty of Science',
+				SmObjId: '50642438',
+				PiqYear: '0000',
+				PiqSession: '000',
+				CgHighObjid: '50308701',
+				CgHighText: 'Eastern European History',
+				CgHighCategory: 'Minor 30',
+				CgLowObjid: '50326730',
+				CgLowText: 'Aufbaustudium',
+				CgLowCategory: 'Partial Subject',
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306211',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308701',CgLowObjid='50326730')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306211',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308701',CgLowObjid='50326730')",
+					type: '/UZH/VVZ_DATA_SRV.SmPartOf',
+				},
+				CgCategorySort: '64',
+				Corestep: true,
+				Oblig: false,
+				OObjid: '50000007',
+				ScObjid: '50306211',
+				OText: '00\\nFaculty of Arts and Social Sciences',
+				ScText: 'Bachelor of Science in Psychology',
+				SmObjId: '50642438',
+				PiqYear: '0000',
+				PiqSession: '000',
+				CgHighObjid: '50308701',
+				CgHighText: 'Eastern European History',
+				CgHighCategory: 'Minor 30',
+				CgLowObjid: '50326730',
+				CgLowText: 'Aufbaustudium',
+				CgLowCategory: 'Partial Subject',
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306207',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308701',CgLowObjid='50326730')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/SmPartOfSet(OObjid='50000007',ScObjid='50306207',SmObjId='50642438',PiqYear='0000',PiqSession='000',CgHighObjid='50308701',CgLowObjid='50326730')",
+					type: '/UZH/VVZ_DATA_SRV.SmPartOf',
+				},
+				CgCategorySort: '64',
+				Corestep: true,
+				Oblig: false,
+				OObjid: '50000007',
+				ScObjid: '50306207',
+				OText: '00\\nFaculty of Arts and Social Sciences',
+				ScText: 'Bachelor of Theology UZH',
+				SmObjId: '50642438',
+				PiqYear: '0000',
+				PiqSession: '000',
+				CgHighObjid: '50308701',
+				CgHighText: 'Eastern European History',
+				CgHighCategory: 'Minor 30',
+				CgLowObjid: '50326730',
+				CgLowText: 'Aufbaustudium',
+				CgLowCategory: 'Partial Subject',
+			},
+		],
+	},
+	Responsible: {
+		results: [
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01021989',PiqYear='2016',PiqSession='004',Ref='')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01021989',PiqYear='2016',PiqSession='004',Ref='')",
+					type: '/UZH/VVZ_DATA_SRV.PList',
+				},
+				Rank: '',
+				Objid: '01021989',
+				Query: '',
+				PiqYear: '2016',
+				PiqSession: '004',
+				FirstName: 'Nada',
+				LastName: 'Boskovska Leimgruber',
+				Title: 'Dr. phil.',
+				Ref: '',
+			},
+		],
+	},
+	Organizations: {
+		results: [
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/OListSet(OObjId='50000797',PiqYear='2016',PiqSession='004')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/OListSet(OObjId='50000797',PiqYear='2016',PiqSession='004')",
+					type: '/UZH/VVZ_DATA_SRV.OList',
+				},
+				OObjId: '50000797',
+				OText: 'Historisches Seminar',
+				OHref: 'http://www.hist.uzh.ch/',
+				PiqYear: '2016',
+				PiqSession: '004',
+				Ref: '50642438',
+				Query: '',
+			},
+		],
+	},
+	Events: {
+		results: [
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50833941',PiqYear='2016',PiqSession='004')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50833941',PiqYear='2016',PiqSession='004')",
+					type: '/UZH/VVZ_DATA_SRV.EList',
+				},
+				CatSort: '22\\nSeminar',
+				RoomHinweise: false,
+				ENumber: '0008',
+				DObjid: '50642486',
+				RoomId: '00000000',
+				HasSchedule: true,
+				RoomText: '',
+				Objid: '50833941',
+				PiqYear: '2016',
+				PiqSession: '004',
+				EShort: '600002.1',
+				EStext: '002m1 Proseminar 3, Gruppe 2',
+				FirstDate: '/Date(1487548800000)/',
+				LastDate: '/Date(1496016000000)/',
+				ScheduleText: 'Mon 10:15-12:00',
+				Category: '0195',
+				CategoryText: 'Seminar',
+				Ref: '50642438',
+				Persons: {
+					results: [
+						{
+							__metadata: {
+								id:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01027363',PiqYear='2016',PiqSession='004',Ref='50833941')",
+								uri:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01027363',PiqYear='2016',PiqSession='004',Ref='50833941')",
+								type: '/UZH/VVZ_DATA_SRV.PList',
+							},
+							Rank: '080',
+							Objid: '01027363',
+							Query: '',
+							PiqYear: '2016',
+							PiqSession: '004',
+							FirstName: 'Marietta',
+							LastName: 'Meier',
+							Title: 'Dr. phil.',
+							Ref: '50833941',
+						},
+					],
+				},
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50833939',PiqYear='2016',PiqSession='004')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50833939',PiqYear='2016',PiqSession='004')",
+					type: '/UZH/VVZ_DATA_SRV.EList',
+				},
+				CatSort: '22\\nSeminar',
+				RoomHinweise: false,
+				ENumber: '0006',
+				DObjid: '50642486',
+				RoomId: '00000000',
+				HasSchedule: true,
+				RoomText: '',
+				Objid: '50833939',
+				PiqYear: '2016',
+				PiqSession: '004',
+				EShort: '600002.1',
+				EStext: '002m1 Proseminar 3, Gruppe 1',
+				FirstDate: '/Date(1487548800000)/',
+				LastDate: '/Date(1496016000000)/',
+				ScheduleText: 'Mon 10:15-12:00',
+				Category: '0195',
+				CategoryText: 'Seminar',
+				Ref: '50642438',
+				Persons: {
+					results: [
+						{
+							__metadata: {
+								id:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01068120',PiqYear='2016',PiqSession='004',Ref='50833939')",
+								uri:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01068120',PiqYear='2016',PiqSession='004',Ref='50833939')",
+								type: '/UZH/VVZ_DATA_SRV.PList',
+							},
+							Rank: '090',
+							Objid: '01068120',
+							Query: '',
+							PiqYear: '2016',
+							PiqSession: '004',
+							FirstName: 'Ruben Marc',
+							LastName: 'Hackler',
+							Title: 'MA',
+							Ref: '50833939',
+						},
+					],
+				},
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50834143',PiqYear='2016',PiqSession='004')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50834143',PiqYear='2016',PiqSession='004')",
+					type: '/UZH/VVZ_DATA_SRV.EList',
+				},
+				CatSort: '22\\nSeminar',
+				RoomHinweise: false,
+				ENumber: '0009',
+				DObjid: '50642486',
+				RoomId: '00000000',
+				HasSchedule: true,
+				RoomText: '',
+				Objid: '50834143',
+				PiqYear: '2016',
+				PiqSession: '004',
+				EShort: '600002.1',
+				EStext: '002m1 Proseminar 3, Gruppe 3',
+				FirstDate: '/Date(1487548800000)/',
+				LastDate: '/Date(1496016000000)/',
+				ScheduleText: 'Mon 12:15-13:45',
+				Category: '0195',
+				CategoryText: 'Seminar',
+				Ref: '50642438',
+				Persons: {
+					results: [
+						{
+							__metadata: {
+								id:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01024627',PiqYear='2016',PiqSession='004',Ref='50834143')",
+								uri:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01024627',PiqYear='2016',PiqSession='004',Ref='50834143')",
+								type: '/UZH/VVZ_DATA_SRV.PList',
+							},
+							Rank: '090',
+							Objid: '01024627',
+							Query: '',
+							PiqYear: '2016',
+							PiqSession: '004',
+							FirstName: 'Silvia',
+							LastName: 'Berger Ziauddin',
+							Title: 'Dr. phil.',
+							Ref: '50834143',
+						},
+					],
+				},
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50834146',PiqYear='2016',PiqSession='004')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50834146',PiqYear='2016',PiqSession='004')",
+					type: '/UZH/VVZ_DATA_SRV.EList',
+				},
+				CatSort: '22\\nSeminar',
+				RoomHinweise: false,
+				ENumber: '0010',
+				DObjid: '50642486',
+				RoomId: '00000000',
+				HasSchedule: true,
+				RoomText: '',
+				Objid: '50834146',
+				PiqYear: '2016',
+				PiqSession: '004',
+				EShort: '600002.1',
+				EStext: '002m1 Proseminar 3, Gruppe 4',
+				FirstDate: '/Date(1487548800000)/',
+				LastDate: '/Date(1496016000000)/',
+				ScheduleText: 'Mon 14:00-15:45',
+				Category: '0195',
+				CategoryText: 'Seminar',
+				Ref: '50642438',
+				Persons: {
+					results: [
+						{
+							__metadata: {
+								id:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01087146',PiqYear='2016',PiqSession='004',Ref='50834146')",
+								uri:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01087146',PiqYear='2016',PiqSession='004',Ref='50834146')",
+								type: '/UZH/VVZ_DATA_SRV.PList',
+							},
+							Rank: '020',
+							Objid: '01087146',
+							Query: '',
+							PiqYear: '2016',
+							PiqSession: '004',
+							FirstName: 'Martin',
+							LastName: 'Dusinberre',
+							Title: 'Dr.',
+							Ref: '50834146',
+						},
+					],
+				},
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50834147',PiqYear='2016',PiqSession='004')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50834147',PiqYear='2016',PiqSession='004')",
+					type: '/UZH/VVZ_DATA_SRV.EList',
+				},
+				CatSort: '22\\nSeminar',
+				RoomHinweise: false,
+				ENumber: '0011',
+				DObjid: '50642486',
+				RoomId: '00000000',
+				HasSchedule: true,
+				RoomText: '',
+				Objid: '50834147',
+				PiqYear: '2016',
+				PiqSession: '004',
+				EShort: '600002.1',
+				EStext: '002m1 Proseminar 3, Gruppe 5',
+				FirstDate: '/Date(1487548800000)/',
+				LastDate: '/Date(1496016000000)/',
+				ScheduleText: 'Mon 16:15-18:00',
+				Category: '0195',
+				CategoryText: 'Seminar',
+				Ref: '50642438',
+				Persons: {
+					results: [
+						{
+							__metadata: {
+								id:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01041947',PiqYear='2016',PiqSession='004',Ref='50834147')",
+								uri:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01041947',PiqYear='2016',PiqSession='004',Ref='50834147')",
+								type: '/UZH/VVZ_DATA_SRV.PList',
+							},
+							Rank: '090',
+							Objid: '01041947',
+							Query: '',
+							PiqYear: '2016',
+							PiqSession: '004',
+							FirstName: 'Judith',
+							LastName: 'Fröhlich Suter',
+							Title: 'Dr.',
+							Ref: '50834147',
+						},
+					],
+				},
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50834152',PiqYear='2016',PiqSession='004')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50834152',PiqYear='2016',PiqSession='004')",
+					type: '/UZH/VVZ_DATA_SRV.EList',
+				},
+				CatSort: '22\\nSeminar',
+				RoomHinweise: false,
+				ENumber: '0012',
+				DObjid: '50642486',
+				RoomId: '00000000',
+				HasSchedule: true,
+				RoomText: '',
+				Objid: '50834152',
+				PiqYear: '2016',
+				PiqSession: '004',
+				EShort: '600002.1',
+				EStext: '002m1 Proseminar 3, Gruppe 6',
+				FirstDate: '/Date(1487635200000)/',
+				LastDate: '/Date(1496102400000)/',
+				ScheduleText: 'Tue 10:15-12:00',
+				Category: '0195',
+				CategoryText: 'Seminar',
+				Ref: '50642438',
+				Persons: {
+					results: [
+						{
+							__metadata: {
+								id:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01080986',PiqYear='2016',PiqSession='004',Ref='50834152')",
+								uri:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01080986',PiqYear='2016',PiqSession='004',Ref='50834152')",
+								type: '/UZH/VVZ_DATA_SRV.PList',
+							},
+							Rank: '090',
+							Objid: '01080986',
+							Query: '',
+							PiqYear: '2016',
+							PiqSession: '004',
+							FirstName: 'Manuel',
+							LastName: 'Dür',
+							Title: 'MA',
+							Ref: '50834152',
+						},
+					],
+				},
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50834155',PiqYear='2016',PiqSession='004')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50834155',PiqYear='2016',PiqSession='004')",
+					type: '/UZH/VVZ_DATA_SRV.EList',
+				},
+				CatSort: '22\\nSeminar',
+				RoomHinweise: false,
+				ENumber: '0013',
+				DObjid: '50642486',
+				RoomId: '00000000',
+				HasSchedule: true,
+				RoomText: '',
+				Objid: '50834155',
+				PiqYear: '2016',
+				PiqSession: '004',
+				EShort: '600002.1',
+				EStext: '002m1 Proseminar 3, Gruppe 7',
+				FirstDate: '/Date(1487635200000)/',
+				LastDate: '/Date(1496102400000)/',
+				ScheduleText: 'Tue 14:00-15:45',
+				Category: '0195',
+				CategoryText: 'Seminar',
+				Ref: '50642438',
+				Persons: {
+					results: [
+						{
+							__metadata: {
+								id:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01068295',PiqYear='2016',PiqSession='004',Ref='50834155')",
+								uri:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01068295',PiqYear='2016',PiqSession='004',Ref='50834155')",
+								type: '/UZH/VVZ_DATA_SRV.PList',
+							},
+							Rank: '090',
+							Objid: '01068295',
+							Query: '',
+							PiqYear: '2016',
+							PiqSession: '004',
+							FirstName: 'Nikolas',
+							LastName: 'Hächler',
+							Title: 'MA',
+							Ref: '50834155',
+						},
+					],
+				},
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50834158',PiqYear='2016',PiqSession='004')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50834158',PiqYear='2016',PiqSession='004')",
+					type: '/UZH/VVZ_DATA_SRV.EList',
+				},
+				CatSort: '22\\nSeminar',
+				RoomHinweise: false,
+				ENumber: '0014',
+				DObjid: '50642486',
+				RoomId: '00000000',
+				HasSchedule: true,
+				RoomText: '',
+				Objid: '50834158',
+				PiqYear: '2016',
+				PiqSession: '004',
+				EShort: '600002.1',
+				EStext: '002m1 Proseminar 3, Gruppe 8',
+				FirstDate: '/Date(1487635200000)/',
+				LastDate: '/Date(1496102400000)/',
+				ScheduleText: 'Tue 18:15-20:00',
+				Category: '0195',
+				CategoryText: 'Seminar',
+				Ref: '50642438',
+				Persons: {
+					results: [
+						{
+							__metadata: {
+								id:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01003933',PiqYear='2016',PiqSession='004',Ref='50834158')",
+								uri:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01003933',PiqYear='2016',PiqSession='004',Ref='50834158')",
+								type: '/UZH/VVZ_DATA_SRV.PList',
+							},
+							Rank: '010',
+							Objid: '01003933',
+							Query: '',
+							PiqYear: '2016',
+							PiqSession: '004',
+							FirstName: 'Bernd',
+							LastName: 'Roeck',
+							Title: 'Dr. phil.',
+							Ref: '50834158',
+						},
+					],
+				},
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50834311',PiqYear='2016',PiqSession='004')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50834311',PiqYear='2016',PiqSession='004')",
+					type: '/UZH/VVZ_DATA_SRV.EList',
+				},
+				CatSort: '22\\nSeminar',
+				RoomHinweise: false,
+				ENumber: '0015',
+				DObjid: '50642486',
+				RoomId: '00000000',
+				HasSchedule: true,
+				RoomText: '',
+				Objid: '50834311',
+				PiqYear: '2016',
+				PiqSession: '004',
+				EShort: '600002.1',
+				EStext: '002m1 Proseminar 3, Gruppe 9',
+				FirstDate: '/Date(1487721600000)/',
+				LastDate: '/Date(1496188800000)/',
+				ScheduleText: 'Wed 10:15-12:00',
+				Category: '0195',
+				CategoryText: 'Seminar',
+				Ref: '50642438',
+				Persons: {
+					results: [
+						{
+							__metadata: {
+								id:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01027310',PiqYear='2016',PiqSession='004',Ref='50834311')",
+								uri:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01027310',PiqYear='2016',PiqSession='004',Ref='50834311')",
+								type: '/UZH/VVZ_DATA_SRV.PList',
+							},
+							Rank: '090',
+							Objid: '01027310',
+							Query: '',
+							PiqYear: '2016',
+							PiqSession: '004',
+							FirstName: 'Frank',
+							LastName: 'Schubert',
+							Title: '',
+							Ref: '50834311',
+						},
+					],
+				},
+			},
+			{
+				__metadata: {
+					id:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50834314',PiqYear='2016',PiqSession='004')",
+					uri:
+						"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/EListSet(Objid='50834314',PiqYear='2016',PiqSession='004')",
+					type: '/UZH/VVZ_DATA_SRV.EList',
+				},
+				CatSort: '22\\nSeminar',
+				RoomHinweise: false,
+				ENumber: '0007',
+				DObjid: '50642486',
+				RoomId: '00000000',
+				HasSchedule: true,
+				RoomText: '',
+				Objid: '50834314',
+				PiqYear: '2016',
+				PiqSession: '004',
+				EShort: '600002.1',
+				EStext: '002m1 Proseminar 3, Gruppe 10',
+				FirstDate: '/Date(1487808000000)/',
+				LastDate: '/Date(1496275200000)/',
+				ScheduleText: 'Thu 14:00-15:45',
+				Category: '0195',
+				CategoryText: 'Seminar',
+				Ref: '50642438',
+				Persons: {
+					results: [
+						{
+							__metadata: {
+								id:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01088650',PiqYear='2016',PiqSession='004',Ref='50834314')",
+								uri:
+									"https://studentservices.uzh.ch/sap/opu/odata/uzh/vvz_data_srv/PListSet(Objid='01088650',PiqYear='2016',PiqSession='004',Ref='50834314')",
+								type: '/UZH/VVZ_DATA_SRV.PList',
+							},
+							Rank: '090',
+							Objid: '01088650',
+							Query: '',
+							PiqYear: '2016',
+							PiqSession: '004',
+							FirstName: 'Rebecca',
+							LastName: 'Schmalholz',
+							Title: 'MA',
+							Ref: '50834314',
+						},
+					],
+				},
+			},
+		],
+	},
+};

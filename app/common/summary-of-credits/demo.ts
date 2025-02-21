@@ -1,0 +1,534 @@
+import {UzhLoginResponse} from '../../../core/types/uzh-login';
+
+const demo: UzhLoginResponse = {
+	demo: true,
+	version: 6,
+	identity: {
+		name: {
+			last: 'Mustermann',
+			first: 'Max',
+		},
+		matriculateNumber: '12-345-678',
+	},
+	warning:
+		'Achtung Fehler! Bitte beachten Sie den Hinweis.           Semestergebühren offen. Die Bearbeitung der Einzahlung braucht ~ 5 Tage.',
+	credits: [
+		{
+			module: 'AOEC0016',
+			name: 'Financial Accounting (L + E)',
+
+			short_name: 'Financial Accounting',
+
+			link:
+				'http://www.vorlesungen.uzh.ch/HS18/suche/sm-50038001.modveranst.html',
+			credits_worth: 6,
+			status: 'BOOKED',
+
+			credits_received: null,
+			grade: '',
+		},
+		{
+			module: '200101',
+			name: 'Assessmentmodul 1',
+
+			short_name: 'Assessmentmodul 1 HF Psychologie',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS18/suche/sm-50327064.modveranst.html',
+			credits_worth: 18,
+			status: 'BOOKED',
+
+			credits_received: 0,
+			grade: '',
+		},
+		{
+			module: 'MAT182',
+			name: 'Analysis for Natural Sciences',
+
+			short_name: 'Analysis for Natural Sciences',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS18/suche/sm-50026110.modveranst.html',
+			credits_worth: 6,
+			status: 'BOOKED',
+
+			credits_received: 0,
+			grade: '',
+		},
+		{
+			module: 'SPZEscba',
+			name:
+				'Español: Curso basico A2.1 (Sprachenzentrum der Universität und der ETH Zürich)',
+
+			short_name: 'Español',
+			link:
+				'https://studentservices.uzh.ch/anonym/vvz?sap-client001&sap-language=DE#/details/2017/003/CW/50441681',
+			credits_worth: 2,
+
+			credits_received: 2,
+			grade: 4.75,
+			status: 'PASSED',
+		},
+		{
+			module: '251011a',
+			name: '011a Methodengrundlagen HF (2 Semester)',
+
+			short_name: 'Methodengrundlagen HF',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS17/suche/sm-50323370.modveranst.html#10',
+			credits_worth: 16,
+			status: 'CONTINUE',
+
+			credits_received: 0,
+			grade: 'W',
+		},
+		{
+			module: 'MOEC0054',
+			name: 'ME4: Organizational Economics (L+E)',
+
+			short_name: 'Organizational Economics',
+			link:
+				'http://www.vorlesungen.uzh.ch/FS16/suche/sm-50396283.modveranst.html',
+			credits_worth: 6,
+			status: 'BOOKED',
+
+			credits_received: 0,
+			grade: '',
+		},
+		{
+			module: 'SPZRuss1',
+			name:
+				'Russisch I A1.1 (Sprachenzentrum der Universität und der ETH Zürich)',
+
+			short_name: 'Russisch I A1.1',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS16/suche/cw-50317111.modveranst.html#6',
+			credits_worth: 2,
+			status: 'PASSED',
+
+			credits_received: 2,
+			grade: '4.00',
+		},
+		{
+			module: 'BINF4222',
+			name: 'Unternehmens-Standardsoftware (Business- Standardsoftware)',
+
+			short_name: 'Unternehmens-Standardsoftware',
+			link:
+				'http://www.vorlesungen.uzh.ch/FS18/suche/sm-50537185.modveranst.html',
+			credits_worth: 3,
+			status: 'PASSED',
+
+			credits_received: 3,
+			grade: '5.00',
+		},
+		{
+			module: '_Spaba1',
+			name: 'Curso básico A1.1 (Spanisch)',
+
+			short_name: 'Curso básico A1.1',
+			link:
+				'http://www.vorlesungen.uzh.ch/FS18/suche/e-50779437.details.html#1',
+			credits_worth: 2,
+			status: 'PASSED',
+
+			credits_received: 2,
+			grade: '5.50',
+		},
+		{
+			module: 'BINF3102',
+			name:
+				'Wiederholungsprüfung: Wirtschaftsinformatik (Re-examination: Business Informatics)',
+
+			short_name: 'Wirtschaftsinformatik',
+			link:
+				'http://www.vorlesungen.uzh.ch/FS16/suche/sm-50510833.modveranst.html',
+			credits_worth: 6,
+			status: 'PASSED',
+
+			credits_received: 6,
+			grade: '4.00',
+		},
+		{
+			module: 'BINF4214',
+			name:
+				'Informatik, Ethik u. Gesellschaft (V) (Informatics, Ethics and Society)',
+
+			short_name: 'Informatik, Ethik u. Gesellschaft',
+			link:
+				'http://www.vorlesungen.uzh.ch/FS18/suche/sm-50369984.modveranst.html',
+			credits_worth: 3,
+			status: 'PASSED',
+
+			credits_received: 3,
+			grade: '5.0',
+		},
+		{
+			module: 'BOEC0201',
+			name: 'Asset Pricing (L+E)',
+
+			short_name: 'Asset Pricing',
+			link:
+				'http://www.vorlesungen.uzh.ch/FS16/suche/sm-50314925.modveranst.html',
+			credits_worth: 6,
+			status: 'BOOKED',
+
+			credits_received: 0,
+			grade: '',
+		},
+		{
+			module: 'BINFPR01',
+			name: 'Praktikum Datenbanksysteme BSc (Database Systems Lab BSc)',
+
+			short_name: 'Praktikum Datenbanksysteme BSc',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS15/suche/sm-50499924.modveranst.html',
+			credits_worth: 2,
+			status: 'PASSED',
+
+			credits_received: 2,
+			grade: 'BEST',
+		},
+		{
+			module: 'BOEC0109',
+			name: 'Introduction to Game Theory (L + E)',
+
+			short_name: 'Introduction to Game Theory',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS15/suche/sm-50430354.modveranst.html',
+			credits_worth: 6,
+			status: 'FAILED',
+
+			credits_received: 0,
+			grade: '3.25',
+		},
+		{
+			module: 'BOEC0275',
+			name: 'A primer in Entrepreneurship (L)',
+
+			short_name: 'A primer in Entrepreneurship',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS15/suche/sm-50427958.modveranst.html',
+			credits_worth: 3,
+			status: 'PASSED',
+
+			credits_received: 3,
+			grade: '5.00',
+		},
+		{
+			module: 'BINF4206',
+			name:
+				'IT-Projektmanagement - Grundlagen und systemische Führung (V+Ü) (IT Project Management)',
+
+			short_name: 'IT-Projektmanagement',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS15/suche/sm-50334138.modveranst.html',
+			credits_worth: 3,
+			status: 'PASSED',
+
+			credits_received: 3,
+			grade: '5.25',
+		},
+		{
+			module: 'BMINF009',
+			name: 'Human Computer Interaction (L) (RO08)',
+
+			short_name: 'Human Computer Interaction',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS15/suche/sm-50330443.modveranst.html',
+			credits_worth: 3,
+			status: 'PASSED',
+
+			credits_received: 3,
+			grade: '5.00',
+		},
+		{
+			module: 'BINF3100',
+			name: 'Wirtschaftsinformatik (V+Ü) (Business Informatics)',
+
+			short_name: 'Wirtschaftsinformatik',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS15/suche/sm-50330434.modveranst.html',
+			credits_worth: 6,
+			status: 'FAILED',
+
+			credits_received: 0,
+			grade: '3.25',
+		},
+		{
+			module: 'BOEC0047',
+			name:
+				'Mathematik III für Wirtschaftswissenschaftler (Mathematics III for economists)',
+
+			short_name: 'Mathematik III für Wirtschaftswissenschaftler',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS15/suche/sm-50030847.modveranst.html',
+			credits_worth: 6,
+			status: 'FAILED',
+
+			credits_received: 0,
+			grade: '3.25',
+		},
+		{
+			module: 'BOEC0131',
+			name: 'Organisation und Führung (V) (Organisation & Management)',
+
+			short_name: 'Organisation und Führung',
+			link:
+				'http://www.vorlesungen.uzh.ch/FS15/suche/sm-50475317.modveranst.html',
+			credits_worth: 3,
+			status: 'FAILED',
+
+			credits_received: 0,
+			grade: '1.00',
+		},
+		{
+			module: 'BOEC0201',
+			name: 'Asset Pricing (L+E)',
+
+			short_name: 'Asset Pricing',
+			link:
+				'http://www.vorlesungen.uzh.ch/FS15/suche/sm-50314925.modveranst.html',
+			credits_worth: 6,
+			status: 'FAILED',
+
+			credits_received: 0,
+			grade: '3.25',
+		},
+		{
+			module: 'BINF2190',
+			name: 'Scientific Presentation (Block)',
+
+			short_name: 'Scientific Presentation',
+			link:
+				'http://www.vorlesungen.uzh.ch/FS15/suche/sm-50308714.modveranst.html',
+			credits_worth: 1,
+			status: 'PASSED',
+
+			credits_received: 1,
+			grade: 'BEST',
+		},
+		{
+			module: 'BINF2110',
+			name: 'Software Engineering (V+Ü)',
+
+			short_name: 'Software Engineering',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS14/suche/sm-50046683.modveranst.html',
+			credits_worth: 6,
+			status: 'PASSED',
+
+			credits_received: 6,
+			grade: '4.75',
+		},
+		{
+			module: 'BOEC0003',
+			name: 'BWL III (V+Ü) (Business Administration III)',
+
+			short_name: 'BWL III',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS14/suche/sm-50046381.modveranst.html',
+			credits_worth: 6,
+			status: 'PASSED',
+
+			credits_received: 6,
+			grade: '4.75',
+		},
+		{
+			module: 'AOEC0020',
+			name: 'Mathematik I (V+Ü) (Mathematics I)',
+
+			short_name: 'Mathematik I',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS14/suche/sm-50038004.modveranst.html',
+			credits_worth: 6,
+			status: 'PASSED',
+
+			credits_received: 6,
+			grade: '5.25',
+		},
+		{
+			module: 'AOEC0018',
+			name: 'Mikroökonomik I (V+Ü) (Microeconomics I)',
+
+			short_name: 'Mikroökonomik I',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS14/suche/sm-50038002.modveranst.html',
+			credits_worth: 9,
+			status: 'PASSED',
+
+			credits_received: 9,
+			grade: '4.00',
+		},
+		{
+			module: 'AOEC0014',
+			name: 'Betriebswirtschaftslehre I (V + Ü) (Business Administration I)',
+
+			short_name: 'Betriebswirtschaftslehre I',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS14/suche/sm-50038000.modveranst.html',
+			credits_worth: 3,
+			status: 'PASSED',
+
+			credits_received: 3,
+			grade: '5.25',
+		},
+		{
+			module: 'AOEC0004',
+			name: 'Betriebswirtschaftslehre II (V + Ü) (Business Administration II)',
+
+			short_name: 'Betriebswirtschaftslehre II',
+			link:
+				'http://www.vorlesungen.uzh.ch/FS15/suche/sm-50030855.modveranst.html',
+			credits_worth: 6,
+			status: 'DESELECTED',
+
+			credits_received: 0,
+			grade: '',
+		},
+		{
+			module: 'AOEC0004',
+			name: 'Betriebswirtschaftslehre II (V + Ü) (Business Administration II)',
+
+			short_name: 'Betriebswirtschaftslehre II',
+			link:
+				'http://www.vorlesungen.uzh.ch/FS14/suche/sm-50030855.modveranst.html',
+			credits_worth: 6,
+			status: 'PASSED',
+
+			credits_received: 6,
+			grade: '4.50',
+		},
+		{
+			module: 'AINF1164',
+			name: 'Kommunikationssysteme (V+Ü) (Communication Systems)',
+
+			short_name: 'Kommunikationssysteme',
+			link:
+				'http://www.vorlesungen.uzh.ch/FS14/suche/sm-50489590.modveranst.html',
+			credits_worth: 3,
+			status: 'PASSED',
+
+			credits_received: 3,
+			grade: '4.75',
+		},
+		{
+			module: 'AINF1150',
+			name:
+				'Informatik II: Modellierung, Algorithmen + Datenstrukturen (V+Ü) (Informatics II: Modeling, Algorithms + Data Structures)',
+
+			short_name: 'Informatik II',
+			link:
+				'http://www.vorlesungen.uzh.ch/FS14/suche/sm-50031083.modveranst.html',
+			credits_worth: 9,
+			status: 'PASSED',
+
+			credits_received: 9,
+			grade: '4.50',
+		},
+		{
+			module: 'AOEC0010',
+			name: 'Statistik (V+Ü) (Statistics)',
+
+			short_name: 'Statistik',
+			link:
+				'http://www.vorlesungen.uzh.ch/FS14/suche/sm-50030887.modveranst.html',
+			credits_worth: 6,
+			status: 'PASSED',
+
+			credits_received: 6,
+			grade: '4.75',
+		},
+		{
+			module: 'AOEC0008',
+			name: 'Mathematik II (V+Ü) (Mathematics II)',
+
+			short_name: 'Mathematik II',
+			link:
+				'http://www.vorlesungen.uzh.ch/FS14/suche/sm-50030886.modveranst.html',
+			credits_worth: 6,
+			status: 'PASSED',
+
+			credits_received: 6,
+			grade: '5.00',
+		},
+		{
+			module: 'AINF1161',
+			name: 'Informatik im Unternehmen (V) (Informatics for Organizations)',
+
+			short_name: 'Informatik im Unternehmen',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS13/suche/sm-50028473.modveranst.html',
+			credits_worth: 3,
+			status: 'PASSED',
+
+			credits_received: 3,
+			grade: '5.00',
+		},
+		{
+			module: 'AINF1110',
+			name:
+				'Formale Grundlagen der Informatik I (V) (Formal Methods for Computer Science I)',
+
+			short_name: 'Formale Grundlagen der Informatik I',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS13/suche/sm-50038026.modveranst.html',
+			credits_worth: 3,
+			status: 'PASSED',
+
+			credits_received: 3,
+			grade: '5.25',
+		},
+		{
+			module: 'AINF1100',
+			name: 'Informatik I (V+Ü) (Informatics I)',
+
+			short_name: 'Informatik I',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS13/suche/sm-50038025.modveranst.html',
+			credits_worth: 9,
+			status: 'PASSED',
+
+			credits_received: 9,
+			grade: '4.25',
+		},
+		{
+			module: 'AOEC0020',
+			name: 'Mathematik I (V+Ü) (Mathematics I)',
+
+			short_name: 'Mathematik I',
+			link:
+				'http://www.vorlesungen.uzh.ch/HS13/suche/sm-50038004.modveranst.html',
+			credits_worth: 6,
+			status: 'FAILED',
+
+			credits_received: 0,
+			grade: '3.75',
+		},
+		{
+			module: 'AOEC0016',
+			name: 'Financial Accounting (L + E)',
+
+			short_name: 'Financial Accounting',
+			link: null,
+			credits_worth: 6,
+			status: 'PASSED',
+
+			credits_received: 6,
+			grade: '4.50',
+		},
+		{
+			module: 'AOEC0014',
+			name: 'Betriebswirtschaftslehre I (V + Ü) (Business Administration I)',
+
+			short_name: 'Betriebswirtschaftslehre I',
+			link: null,
+			credits_worth: 3,
+			status: 'FAILED',
+
+			credits_received: 0,
+			grade: '3.00',
+		},
+	],
+	success: true,
+};
+// ts-unused-exports:disable-next-line
+export default demo;

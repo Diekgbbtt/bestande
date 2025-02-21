@@ -1,0 +1,12 @@
+diff --git a/node_modules/@types/react/global.d.ts b/node_modules/@types/react/global.d.ts
+index 0a86ed8..5df3597 100755
+--- a/node_modules/@types/react/global.d.ts
++++ b/node_modules/@types/react/global.d.ts
+@@ -145,7 +145,6 @@ interface SVGTSpanElement extends SVGElement { }
+ interface SVGUseElement extends SVGElement { }
+ interface SVGViewElement extends SVGElement { }
+ 
+-interface Text { }
+ interface TouchList { }
+ interface WebGLRenderingContext { }
+ interface WebGL2RenderingContext { }

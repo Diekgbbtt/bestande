@@ -1,0 +1,3803 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Bestande API",
+		"description": "This is the API documentation for the Bestande application.",
+		"version": "1.0.0"
+	},
+	"host": "localhost:3000",
+	"basePath": "/",
+	"schemes": ["http"],
+	"paths": {
+		"/robots.txt": {
+			"get": {
+				"description": "",
+				"responses": {
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/notenstatistiken": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/auth/google": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/auth/logout": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/auth/google/callback": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/promotions/": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"put": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"promotion": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/promotions[/": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/promotions/availabilities": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/promotions/live": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"post": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/promotions/{id}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"promotion": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"delete": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/promotions/analytics/{id}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "password",
+						"in": "query",
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/promotions/eduwo/": {
+			"post": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/module/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "q",
+						"in": "query",
+						"type": "string"
+					},
+					{
+						"name": "offset",
+						"in": "query",
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/module/{id}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/module/{id}/related": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/module/{id}/slug/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"put": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"slug": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/module/{id}/semester/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/module/{id}/semester/{sem}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "sem",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/module/{id}/semester/{sem}/timetable": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "sem",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/module/{id}/ratings/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/module/{id}/documents/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "sort",
+						"in": "query",
+						"type": "string"
+					},
+					{
+						"name": "offset",
+						"in": "query",
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/module/{id}/examreturns/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/person/{id}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/room/{id}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/telemetry/": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "identifier",
+						"in": "query",
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"data": {
+									"example": "any"
+								},
+								"loggedOut": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/telemetry/impression": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"identifier": {
+									"example": "any"
+								},
+								"content": {
+									"example": "any"
+								},
+								"content_id": {
+									"example": "any"
+								},
+								"level": {
+									"example": "any"
+								},
+								"platform": {
+									"example": "any"
+								},
+								"language": {
+									"example": "any"
+								},
+								"direction": {
+									"example": "any"
+								},
+								"version": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/food/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/food/pictures": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"mensa": {
+									"example": "any"
+								},
+								"meal": {
+									"example": "any"
+								},
+								"token": {
+									"example": "any"
+								},
+								"user": {
+									"example": "any"
+								},
+								"source": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/food/pictures/{id}/delete": {
+			"post": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/food/{area}/{day}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "area",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "day",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/event/{eventserieid}/{id}/{semester}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "eventserieid",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "semester",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/recommendations/": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"modules": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/institution/{institution}/series/{code}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "code",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "page",
+						"in": "query",
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/me/": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/stats/count/{institution}/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/stats/dau": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/stats/chatmessages": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/stats/mau": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/stats/ratings": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/stats/reviews": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/status/app/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "version",
+						"in": "query",
+						"type": "string"
+					},
+					{
+						"name": "platform",
+						"in": "query",
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/status/app/corona": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/status/app/versions": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/status/app/changelog": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "platform",
+						"in": "query",
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/tasks/{taskname}": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "taskname",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/ratings/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "offset",
+						"in": "query",
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"put": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"score": {
+									"example": "any"
+								},
+								"review": {
+									"example": "any"
+								},
+								"uni_identifier": {
+									"example": "any"
+								},
+								"university": {
+									"example": "any"
+								},
+								"name": {
+									"example": "any"
+								},
+								"grade": {
+									"example": "any"
+								},
+								"direction": {
+									"example": "any"
+								},
+								"token": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/ratings/{id}/censor": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/ratings/{id}/report": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								},
+								"reason": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/ratings/mine": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/ratings/{id}/vote": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"vote": {
+									"example": "any"
+								},
+								"token": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/ratings/{id}/": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"score": {
+									"example": "any"
+								},
+								"review": {
+									"example": "any"
+								},
+								"name": {
+									"example": "any"
+								},
+								"grade": {
+									"example": "any"
+								},
+								"direction": {
+									"example": "any"
+								},
+								"token": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"delete": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/redirect/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "query",
+						"in": "query",
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/documents/": {
+			"put": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"uni_identifier": {
+									"example": "any"
+								},
+								"university": {
+									"example": "any"
+								},
+								"token": {
+									"example": "any"
+								},
+								"fileSize": {
+									"example": "any"
+								},
+								"mimeType": {
+									"example": "any"
+								},
+								"s3Key": {
+									"example": "any"
+								},
+								"fileName": {
+									"example": "any"
+								},
+								"sendToChat": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/documents/{id}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"delete": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/chat/messages/{id}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/chat/last-messages": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/chat/messages": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/chat/profile": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								},
+								"appVersion": {
+									"example": "any"
+								},
+								"language": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/chat/notification-settings": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/api/chat/username-availability": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "username",
+						"in": "query",
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/chat/report": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								},
+								"messageId": {
+									"example": "any"
+								},
+								"reason": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/chat/profile-picture": {
+			"delete": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"image": {
+									"example": "any"
+								},
+								"token": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/chat/username": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"appVersion": {
+									"example": "any"
+								},
+								"language": {
+									"example": "any"
+								},
+								"token": {
+									"example": "any"
+								},
+								"username": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/notifications/register": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								},
+								"notificationToken": {
+									"example": "any"
+								},
+								"platform": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/notifications/subscribe": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								},
+								"channels": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/notifications/unsubscribe": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								},
+								"channels": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/examreturns/": {
+			"put": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"exam_date": {
+									"example": "any"
+								},
+								"return_date": {
+									"example": "any"
+								},
+								"university": {
+									"example": "any"
+								},
+								"period": {
+									"example": "any"
+								},
+								"usernameOverride": {
+									"example": "any"
+								},
+								"skipNotification": {
+									"example": "any"
+								},
+								"token": {
+									"example": "any"
+								},
+								"uni_identifier": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/account/preferences": {
+			"post": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/account/nonce": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/account/courses": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"post": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/grades/": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"grades": {
+									"example": "any"
+								},
+								"user": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"delete": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"user": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/grades/{institution(ETH|UZH)}/{module}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution(ETH|UZH)",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "module",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/grades/{module}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "module",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/grades/opted-in": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"user": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/promotions/": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"put": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"promotion": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/promotions[/": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/promotions/availabilities": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/promotions/live": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"post": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/promotions/{id}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"promotion": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"delete": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/promotions/analytics/{id}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "password",
+						"in": "query",
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/promotions/eduwo/": {
+			"post": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/module/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "q",
+						"in": "query",
+						"type": "string"
+					},
+					{
+						"name": "offset",
+						"in": "query",
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/module/{id}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/module/{id}/related": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/module/{id}/slug/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"put": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"slug": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/module/{id}/semester/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/module/{id}/semester/{sem}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "sem",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/module/{id}/semester/{sem}/timetable": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "sem",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/module/{id}/ratings/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/module/{id}/documents/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "sort",
+						"in": "query",
+						"type": "string"
+					},
+					{
+						"name": "offset",
+						"in": "query",
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/module/{id}/examreturns/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/person/{id}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/room/{id}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/telemetry/": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "identifier",
+						"in": "query",
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"data": {
+									"example": "any"
+								},
+								"loggedOut": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/telemetry/impression": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"identifier": {
+									"example": "any"
+								},
+								"content": {
+									"example": "any"
+								},
+								"content_id": {
+									"example": "any"
+								},
+								"level": {
+									"example": "any"
+								},
+								"platform": {
+									"example": "any"
+								},
+								"language": {
+									"example": "any"
+								},
+								"direction": {
+									"example": "any"
+								},
+								"version": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/food/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/food/pictures": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"mensa": {
+									"example": "any"
+								},
+								"meal": {
+									"example": "any"
+								},
+								"token": {
+									"example": "any"
+								},
+								"user": {
+									"example": "any"
+								},
+								"source": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/food/pictures/{id}/delete": {
+			"post": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/food/{area}/{day}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "area",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "day",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/event/{eventserieid}/{id}/{semester}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "eventserieid",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "semester",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/recommendations/": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"modules": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/institution/{institution}/series/{code}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "code",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "page",
+						"in": "query",
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/me/": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/stats/count/{institution}/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/stats/dau": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/stats/chatmessages": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/stats/mau": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/stats/ratings": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/stats/reviews": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/status/app/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "version",
+						"in": "query",
+						"type": "string"
+					},
+					{
+						"name": "platform",
+						"in": "query",
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/status/app/corona": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/status/app/versions": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/status/app/changelog": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "platform",
+						"in": "query",
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/tasks/{taskname}": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "taskname",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/ratings/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "offset",
+						"in": "query",
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"put": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"score": {
+									"example": "any"
+								},
+								"review": {
+									"example": "any"
+								},
+								"uni_identifier": {
+									"example": "any"
+								},
+								"university": {
+									"example": "any"
+								},
+								"name": {
+									"example": "any"
+								},
+								"grade": {
+									"example": "any"
+								},
+								"direction": {
+									"example": "any"
+								},
+								"token": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/ratings/{id}/censor": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/ratings/{id}/report": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								},
+								"reason": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/ratings/mine": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/ratings/{id}/vote": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"vote": {
+									"example": "any"
+								},
+								"token": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/ratings/{id}/": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"score": {
+									"example": "any"
+								},
+								"review": {
+									"example": "any"
+								},
+								"name": {
+									"example": "any"
+								},
+								"grade": {
+									"example": "any"
+								},
+								"direction": {
+									"example": "any"
+								},
+								"token": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"delete": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/redirect/": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "query",
+						"in": "query",
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/documents/": {
+			"put": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"uni_identifier": {
+									"example": "any"
+								},
+								"university": {
+									"example": "any"
+								},
+								"token": {
+									"example": "any"
+								},
+								"fileSize": {
+									"example": "any"
+								},
+								"mimeType": {
+									"example": "any"
+								},
+								"s3Key": {
+									"example": "any"
+								},
+								"fileName": {
+									"example": "any"
+								},
+								"sendToChat": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/documents/{id}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"delete": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/chat/messages/{id}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/chat/last-messages": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/chat/messages": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/chat/profile": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								},
+								"appVersion": {
+									"example": "any"
+								},
+								"language": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/chat/notification-settings": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"subdomain(api/chat/username-availability": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "username",
+						"in": "query",
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/chat/report": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								},
+								"messageId": {
+									"example": "any"
+								},
+								"reason": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/chat/profile-picture": {
+			"delete": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"image": {
+									"example": "any"
+								},
+								"token": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/chat/username": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"appVersion": {
+									"example": "any"
+								},
+								"language": {
+									"example": "any"
+								},
+								"token": {
+									"example": "any"
+								},
+								"username": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/notifications/register": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								},
+								"notificationToken": {
+									"example": "any"
+								},
+								"platform": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/notifications/subscribe": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								},
+								"channels": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/notifications/unsubscribe": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"token": {
+									"example": "any"
+								},
+								"channels": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/examreturns/": {
+			"put": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"exam_date": {
+									"example": "any"
+								},
+								"return_date": {
+									"example": "any"
+								},
+								"university": {
+									"example": "any"
+								},
+								"period": {
+									"example": "any"
+								},
+								"usernameOverride": {
+									"example": "any"
+								},
+								"skipNotification": {
+									"example": "any"
+								},
+								"token": {
+									"example": "any"
+								},
+								"uni_identifier": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/account/preferences": {
+			"post": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/account/nonce": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/account/courses": {
+			"get": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"post": {
+				"description": "",
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/grades/": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"grades": {
+									"example": "any"
+								},
+								"user": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			},
+			"delete": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"user": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/grades/{institution(ETH|UZH)}/{module}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "institution(ETH|UZH)",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "module",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/grades/{module}": {
+			"get": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "module",
+						"in": "path",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"subdomain(api/grades/opted-in": {
+			"post": {
+				"description": "",
+				"parameters": [
+					{
+						"name": "body",
+						"in": "body",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"user": {
+									"example": "any"
+								}
+							}
+						}
+					}
+				],
+				"responses": {
+					"default": {
+						"description": ""
+					}
+				}
+			}
+		}
+	}
+}

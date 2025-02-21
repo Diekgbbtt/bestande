@@ -1,0 +1,105 @@
+{
+	"id": 12,
+	"mensa": "Mensa Polyterrasse",
+	"daytime": "lunch",
+	"hours": {
+		"opening": [
+			{"from": "11:15", "to": "13:30", "type": "opening_lunch"},
+			{"from": "17:30", "to": "19:30", "type": "opening_dinner"}
+		],
+		"mealtime": [
+			{"from": "11:15", "to": "13:30", "type": "lunch"},
+			{"from": "17:30", "to": "19:30", "type": "dinner"}
+		]
+	},
+	"menu": {
+		"date": "2018-07-13",
+		"day": "Freitag",
+		"meals": [
+			{
+				"id": 43228,
+				"type": null,
+				"label": "LOCAL",
+				"description": [
+					"Dieses Menu servieren wir Ihnen gerne bald wieder!",
+					""
+				],
+				"position": 0,
+				"prices": {"student": "10.50", "staff": "11.50", "extern": "15.50"},
+				"allergens": [],
+				"origins": []
+			},
+			{
+				"id": 43229,
+				"type": "Fleisch",
+				"label": "STREET",
+				"description": [
+					"Fitnessteller Tandoori",
+					"Pouletbrust Tandoori",
+					"mit  Minze-Raita, Mais, Kokosranden,",
+					"Tomaten, Linsen und Rotibrot"
+				],
+				"position": 1,
+				"prices": {"student": "11.50", "staff": "13.50", "extern": "16.00"},
+				"allergens": [
+					{"allergen_id": 3, "label": "Ei"},
+					{"allergen_id": 4, "label": "Fisch"},
+					{"allergen_id": 1, "label": "Gluten"},
+					{"allergen_id": 7, "label": "Milch/Laktose"},
+					{"allergen_id": 8, "label": "Schalenfrüchte"},
+					{"allergen_id": 12, "label": "Schwefeldioxid / Sulfite"},
+					{"allergen_id": 9, "label": "Sellerie"},
+					{"allergen_id": 10, "label": "Senf"},
+					{"allergen_id": 11, "label": "Sesam"},
+					{"allergen_id": 6, "label": "Soja (gen-tec frei)"}
+				],
+				"origins": [{"origin_id": 39, "label": "Schweiz"}]
+			},
+			{
+				"id": 43230,
+				"type": "Vegetarisch",
+				"label": "GARDEN",
+				"description": ["Fried Egg", "Salzkartoffeln", "Rahmspinat"],
+				"position": 2,
+				"prices": {"student": "6.20", "staff": "9.30", "extern": "12.70"},
+				"allergens": [
+					{"allergen_id": 3, "label": "Ei"},
+					{"allergen_id": 7, "label": "Milch/Laktose"}
+				],
+				"origins": []
+			},
+			{
+				"id": 43231,
+				"type": "Pasta",
+				"label": "HOME",
+				"description": [
+					"Spaghetti Carbonara",
+					"mit Speckwürfeln",
+					"Reibkäse",
+					"Tagessalat"
+				],
+				"position": 3,
+				"prices": {"student": "6.20", "staff": "9.30", "extern": "12.70"},
+				"allergens": [
+					{"allergen_id": 3, "label": "Ei"},
+					{"allergen_id": 1, "label": "Gluten"},
+					{"allergen_id": 7, "label": "Milch/Laktose"}
+				],
+				"origins": [{"origin_id": 39, "label": "Schweiz"}]
+			},
+			{
+				"id": 43232,
+				"type": "Suppe",
+				"label": "SOUP",
+				"description": ["Gemüse-Crèmesuppe", "mit Brotwürfeln"],
+				"position": 4,
+				"prices": {"student": "3.50", "staff": "3.50", "extern": "4.50"},
+				"allergens": [
+					{"allergen_id": 1, "label": "Gluten"},
+					{"allergen_id": 7, "label": "Milch/Laktose"}
+				],
+				"origins": []
+			}
+		]
+	}
+}

@@ -1,0 +1,3 @@
+- Eine Nutzerstatistik findet sich im Statistiktab.
+- Die Suche unterstützt nun sowohl die englischen als auch die deutschen Namen der Fächer
+- Banner auf der Startseite zum kaufen und verkaufen von Büchern

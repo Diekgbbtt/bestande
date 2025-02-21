@@ -1,0 +1,20 @@
+The essential app for all students of UZH and ETHZ! Join over 10‘000 users and benefit from these features:
+
+TIMETABLE
+All your lectures in one handy overview which gets automatically generated for you. 
+
+COURSE OVERVIEW
+See immediately if you have passed your exam (UZH only). Also access information about your booked courses fast.
+
+CANTEEN MENU PLANS
+All canteens from UZH and ETH, plus nutrition and allergen info,  as well as additional street food vendors nearby. You only want to see vegetarian meals, under 7 CHF, from canteens that are open now? We have powerful filters!
+
+RATINGS AND GRADE STATISTICS
+If you are not sure which courses to take, Bestande can help you. Our users have left over 18'000 ratings already and we have crowdsourced grade statistics that indicate how difficult a course is.
+
+SEARCH
+Find courses and rooms with our blazing fast search. Filter by semester, faculty/department, credits, and rating. UZH and ETHZ are quickly switchable in case you have a course at the other university or you need to find a friend.
+
+RECOMMENDATIONS
+We use artificial intelligence to give you precise recommendations about which courses you should take next. Together with our reviews and grade statistics database, Bestande helps you make great decisions!
+Learn more on our website www.bestande.ch

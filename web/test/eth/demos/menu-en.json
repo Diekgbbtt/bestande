@@ -1,0 +1,105 @@
+{
+	"id": 12,
+	"mensa": "Mensa Polyterrasse",
+	"daytime": "lunch",
+	"hours": {
+		"opening": [
+			{"from": "11:15", "to": "13:30", "type": "opening_lunch"},
+			{"from": "17:30", "to": "19:30", "type": "opening_dinner"}
+		],
+		"mealtime": [
+			{"from": "11:15", "to": "13:30", "type": "lunch"},
+			{"from": "17:30", "to": "19:30", "type": "dinner"}
+		]
+	},
+	"menu": {
+		"date": "2018-07-13",
+		"day": "Friday",
+		"meals": [
+			{
+				"id": 43228,
+				"type": null,
+				"label": "LOCAL ",
+				"description": ["We look forward to serving you this menu again soon!"],
+				"position": 0,
+				"prices": {"student": "10.50", "staff": "11.50", "extern": "15.50"},
+				"allergens": [],
+				"origins": []
+			},
+			{
+				"id": 43229,
+				"type": "Meat",
+				"label": "STREET",
+				"description": [
+					"Vitality plate Tandoori",
+					"Chicken breast Tandoori",
+					"with mint raita, sweet corn, beetroot with coconut, ",
+					"tomatoes, lentils and roti bread"
+				],
+				"position": 1,
+				"prices": {"student": "11.50", "staff": "13.50", "extern": "16.00"},
+				"allergens": [
+					{"allergen_id": 3, "label": "Eggs"},
+					{"allergen_id": 4, "label": "Fish"},
+					{"allergen_id": 1, "label": "Gluten wheat"},
+					{"allergen_id": 7, "label": "Milk/lactose"},
+					{"allergen_id": 8, "label": "Nuts"},
+					{"allergen_id": 12, "label": "Sulphur dioxide"},
+					{"allergen_id": 9, "label": "Celery"},
+					{"allergen_id": 10, "label": "Mustard"},
+					{"allergen_id": 11, "label": "Sesame"},
+					{"allergen_id": 6, "label": "Soya"}
+				],
+				"origins": [{"origin_id": 39, "label": "Switzerland"}]
+			},
+			{
+				"id": 43230,
+				"type": "Vegetarian",
+				"label": "GARDEN",
+				"description": [
+					"Fried egg",
+					"with boiled potatoes",
+					"and cream spinach"
+				],
+				"position": 2,
+				"prices": {"student": "6.20", "staff": "9.30", "extern": "12.70"},
+				"allergens": [
+					{"allergen_id": 3, "label": "Eggs"},
+					{"allergen_id": 7, "label": "Milk/lactose"}
+				],
+				"origins": []
+			},
+			{
+				"id": 43231,
+				"type": "Pasta",
+				"label": "HOME",
+				"description": [
+					"Spaghetti alla carbonara",
+					"with diced bacon and grated cheese",
+					"served with the salad of the day"
+				],
+				"position": 3,
+				"prices": {"student": "6.20", "staff": "9.30", "extern": "12.70"},
+				"allergens": [
+					{"allergen_id": 3, "label": "Eggs"},
+					{"allergen_id": 1, "label": "Gluten wheat"},
+					{"allergen_id": 7, "label": "Milk/lactose"}
+				],
+				"origins": [{"origin_id": 39, "label": "Switzerland"}]
+			},
+			{
+				"id": 43232,
+				"type": "Soup",
+				"label": "SOUP",
+				"description": ["Cream of vegetable soup", "with bread croutons"],
+				"position": 4,
+				"prices": {"student": "3.50", "staff": "3.50", "extern": "4.50"},
+				"allergens": [
+					{"allergen_id": 1, "label": "Gluten wheat"},
+					{"allergen_id": 7, "label": "Milk/lactose"}
+				],
+				"origins": []
+			}
+		]
+	}
+}

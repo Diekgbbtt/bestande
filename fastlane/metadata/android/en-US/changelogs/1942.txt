@@ -1,0 +1,3 @@
+- There is a user count statistic in the statistic tab.
+- The search now supports looking for both English and German names.
+- Banner on the home page for buying and selling books.

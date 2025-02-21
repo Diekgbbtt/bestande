@@ -1,0 +1,576 @@
+import uzhSemesters from '@jonny/uzh-semesters';
+import createHttpError from 'http-errors';
+import isMd5 from 'is-md5';
+import sortBy from 'lodash/sortBy';
+import pg from 'pg';
+import {immutableReverse} from '../core/functions/immutable-reverse';
+import {Institution} from '../core/models/credit';
+import {isModuleInBlacklist} from './grade-statistics-blacklist';
+import {GradeStatisticInsert, Predefined} from './types';
+
+let connection: pg.Client | null = null;
+export const getConnection = () => connection as pg.Client;
+
+export const connectGradeStatics = (): Promise<void> => {
+	if (connection) {
+		return Promise.resolve();
+	}
+
+	connection = new pg.Client();
+	return new Promise((resolve, reject) => {
+		(connection as pg.Client).connect((err) => {
+			if (err) {
+				reject(err);
+			} else {
+				resolve();
+			}
+		});
+	});
+};
+
+export const reset = function () {
+	if (process.env.PGHOST?.includes('.ch')) {
+		throw new Error('Do not reset prod db!');
+	}
+
+	if (process.env.PGDATABASE === 'bestande') {
+		throw new Error('Do not reset prod db!');
+	}
+
+	return new Promise((resolve, reject) => {
+		getConnection().query(
+			`
+			drop table if exists grades;
+			drop table if exists statistics;
+			drop table if exists optouts;
+		`,
+			(err, result) => {
+				if (err) {
+					reject(err);
+				} else {
+					resolve(result);
+				}
+			}
+		);
+	});
+};
+
+export const createIndices = function () {
+	return new Promise((resolve, reject) => {
+		getConnection().query(
+			`
+		DO $$
+			BEGIN
+			     BEGIN
+		            create index studentIndex on public.grades (student);
+		        EXCEPTION
+		            WHEN duplicate_table then RAISE NOTICE 'studentIndex already exists';
+		        END;
+		    END;
+		$$;
+		DO $$
+			BEGIN
+			     BEGIN
+		            create index moduleIndex on public.grades (module, institution);
+		        EXCEPTION
+		            WHEN duplicate_table then RAISE NOTICE 'moduleIndex exists';
+		        END;
+		    END;
+		$$;
+		DO $$
+			BEGIN
+			     BEGIN
+		            create index moduleSemesterIndex on public.grades (module, institution, semester);
+		        EXCEPTION
+		            WHEN duplicate_table then RAISE NOTICE 'moduleSemesterIndex exists';
+		        END;
+		    END;
+		$$;
+		`,
+			(err, result) => {
+				if (err) {
+					reject(err);
+				} else {
+					resolve(result);
+				}
+			}
+		);
+	});
+};
+
+export const createTables = function () {
+	return new Promise((resolve, reject) => {
+		getConnection().query(
+			`
+			create table if not exists grades (
+				student char(32) not null,
+				module integer not null,
+				grade real not null check (grade >= 1) check(grade <= 6),
+				semester varchar(10) not null,
+				is_repeated boolean not null,
+				unique(student, module, semester, is_repeated)
+			);
+			alter table grades alter column module type varchar(15);
+			DO $$
+			    BEGIN
+			        BEGIN
+			            ALTER TABLE grades ADD COLUMN institution varchar(8) not null default 'UZH';
+			        EXCEPTION
+			            WHEN duplicate_column THEN RAISE NOTICE 'column institution already exists in grades.';
+			        END;
+			    END;
+			$$;
+			alter table grades
+				drop constraint grades_student_module_semester_is_repeated_key;
+			alter table grades
+				add constraint grades_student_module_semester_is_repeated_key UNIQUE(student, module, semester, is_repeated, institution);
+			create table if not exists statistics (
+				source varchar(255) not null,
+				module varchar(15) not null,
+				average real not null,
+				semester varchar(10) not null,
+				passed integer not null,
+				failed integer not null,
+				unique(module, semester)
+			);
+			alter table statistics alter column module type varchar(15);
+			DO $$
+			    BEGIN
+			        BEGIN
+			            ALTER TABLE statistics ADD COLUMN institution varchar(8) not null default 'UZH';
+			        EXCEPTION
+			            WHEN duplicate_column THEN RAISE NOTICE 'column institution already exists in statistics.';
+			        END;
+			    END;
+			$$;
+			DO $$
+			    BEGIN
+			        BEGIN
+			            ALTER TABLE statistics ADD COLUMN stddev real default null;
+			        EXCEPTION
+			            WHEN duplicate_column THEN RAISE NOTICE 'column stddev already exists in statistics.';
+			        END;
+			    END;
+			$$;
+			DO $$
+			    BEGIN
+			        BEGIN
+			            ALTER TABLE statistics ADD COLUMN source_link varchar(255) default null;
+			        EXCEPTION
+			            WHEN duplicate_column THEN RAISE NOTICE 'column source_link already exists in statistics.';
+			        END;
+			    END;
+			$$;
+			DO $$
+			    BEGIN
+			        BEGIN
+			            ALTER TABLE statistics ADD COLUMN comment varchar(255) default null;
+			        EXCEPTION
+			            WHEN duplicate_column THEN RAISE NOTICE 'column comment already exists in statistics.';
+			        END;
+			    END;
+			$$;
+			alter table statistics
+				drop constraint statistics_module_semester_key;
+			alter table statistics
+				add constraint statistics_module_semester_key UNIQUE(module, semester, institution);
+
+		`,
+			(err, result) => {
+				if (err) {
+					reject(err);
+				} else {
+					resolve(result);
+				}
+			}
+		);
+	});
+};
+
+export const reducePredefined = function (predefined: Predefined[]) {
+	let passed = 0;
+	let failed = 0;
+	let count = 0;
+	let grades = 0;
+	predefined.forEach((p) => {
+		passed += p.passed;
+		failed += p.failed;
+		count += p.failed + p.passed;
+		grades += p.average * (p.failed + p.passed);
+	});
+	return {
+		passed,
+		failed,
+		count,
+		average:
+			count === 0 ? Number.NaN : Math.round((grades / count) * 100) / 100,
+	};
+};
+
+export const insertStat = function ({
+	student,
+	module,
+	grade,
+	semester,
+	repeated,
+	institution,
+}: {
+	student: string;
+	module: number;
+	grade: number;
+	semester: string;
+	repeated: boolean;
+	institution: Institution;
+}): Promise<any> {
+	if (!uzhSemesters.isValid(semester)) {
+		throw new Error('Invalid semester');
+	}
+
+	if (!isMd5(student)) {
+		throw new Error('Student should be a MD5 hash');
+	}
+
+	if (student === 'f791a235e89700b87a69d26ac8f10d71') {
+		throw new Error('Der Demo-Account kann diese Aktion nicht ausführen');
+	}
+
+	if (student === 'd41d8cd98f00b204e9800998ecf8427e') {
+		throw new Error('Ungültiger Benutzername');
+	}
+
+	return new Promise((resolve, reject) => {
+		getConnection().query(
+			`
+			insert into grades values ($1::text, $2::text, $3::real, $4::text, $5::boolean, $6::text);
+		`,
+			[student, module, grade, semester, repeated, institution],
+			(err, result) => {
+				if (err) {
+					reject(err);
+				} else {
+					resolve(result);
+				}
+			}
+		);
+	});
+};
+
+export const insertStats = async function (
+	grades: GradeStatisticInsert[]
+): Promise<any> {
+	let i = 0;
+	const values: any[] = [];
+	const mappedGrades = grades.map((g) => {
+		const [student, module, grade, semester, repeated, institution] = g;
+
+		if (!uzhSemesters.isValid(semester)) {
+			throw new Error('Invalid semester');
+		}
+
+		if (!isMd5(student)) {
+			throw new Error('Student should be a MD5 hash');
+		}
+
+		if (student === 'f791a235e89700b87a69d26ac8f10d71') {
+			throw new Error('Der Demo-Account kann diese Aktion nicht ausführen');
+		}
+
+		if (student === 'd41d8cd98f00b204e9800998ecf8427e') {
+			throw new Error('Ungültiger Benutzername');
+		}
+
+		values.push(student);
+
+		values.push(module);
+
+		values.push(grade);
+
+		values.push(semester);
+
+		values.push(repeated);
+
+		values.push(institution);
+		return `($${++i}::text, $${++i}::text, $${++i}::real, $${++i}::text, $${++i}::boolean, $${++i}::text)`;
+	});
+
+	const query = `
+		with data(student, module, grade, semester, is_repeated, institution) as (
+		values ${mappedGrades.join(',\n')}
+		)
+
+		insert into grades (student, module, grade, semester, is_repeated, institution)
+		select g.student, g.module, g.grade, g.semester, g.is_repeated, g.institution
+		from data g
+		where not exists (
+			select 1 from grades g2
+			where g2.student = g.student
+			and g2.module = g.module
+			and g2.semester = g.semester
+			and g2.is_repeated = g.is_repeated
+		)
+	`;
+
+	return new Promise((resolve, reject) => {
+		getConnection().query(query, values, (err, result) => {
+			if (err) {
+				reject(err);
+			} else {
+				resolve(result);
+			}
+		});
+	});
+};
+
+export const studentIsOptedIn = function (student: string) {
+	return new Promise((resolve, reject) => {
+		getConnection().query(
+			`
+			select student from grades
+			where student = $1::text
+			limit 1
+		`,
+			[student],
+			(err, result) => {
+				if (err) {
+					reject(err);
+				} else {
+					resolve(Boolean(result.rows.length));
+				}
+			}
+		);
+	});
+};
+
+export const getTotalStats = function (
+	module: string,
+	institution: Institution
+): Promise<any> {
+	return new Promise((resolve, reject) => {
+		getConnection().query(
+			`
+			select
+				cast(round(cast(avg(grade) as numeric), 2) as real) as average,
+				cast(round(cast(median(grade) as numeric), 2) as real) as median,
+				cast(round(cast(stddev_samp(grade) as numeric), 2) as real) as stddev,
+				cast(sum(case when grade >= 4 then 1 else 0 end) as integer) as passed,
+				cast(sum(case when grade < 4 then 1 else 0 end) as integer) as failed,
+				cast(count(grade) as integer) as count
+			from grades
+			where module = $1::text
+			and institution = $2::text
+			and semester not in (
+				select semester from statistics where module = $1::text
+			)
+		`,
+			[String(module), institution],
+			(err, result) => {
+				if (err) {
+					reject(err);
+				} else {
+					resolve(result);
+				}
+			}
+		);
+	});
+};
+
+export const getStatsBySemester = function (
+	module: string,
+	institution: Institution
+): Promise<{
+	rows: any[];
+}> {
+	return new Promise((resolve, reject) => {
+		getConnection().query(
+			`
+			select
+				cast(round(cast(avg(grade) as numeric), 2) as real) as average,
+				semester,
+				cast(sum(case when grade >= 4 then 1 else 0 end) as integer) as passed,
+				cast(sum(case when grade < 4  then 1 else 0 end) as integer) as failed,
+				cast(count(grade) as integer ) as count
+			from grades
+			where module = $1::text
+			and institution = $2::text
+			and semester not in (
+				select semester from statistics where module = $1::text
+			)
+			group by semester
+		`,
+			[String(module), institution],
+			(err, result) => {
+				if (err) {
+					reject(err);
+				} else {
+					result.rows = immutableReverse(
+						sortBy(result.rows, (row) => uzhSemesters.all.indexOf(row.semester))
+					);
+					resolve(result);
+				}
+			}
+		);
+	});
+};
+
+export const insertPredefined = function (dataset: Predefined) {
+	return new Promise((resolve, reject) => {
+		const query = `
+				insert into statistics
+				values ('${dataset.source}', ${dataset.module}, ${dataset.average}, '${
+			dataset.semester
+		}', ${dataset.passed}, ${dataset.failed}, '${dataset.institution}' , ${
+			dataset.stddev || 'null'
+		}, ${dataset.source_link ? `'${dataset.source_link}'` : 'null'}, ${
+			dataset.comment ? `'${dataset.comment}'` : 'null'
+		} );
+			`;
+		getConnection().query(query, (err, result) => {
+			if (err) {
+				reject(err);
+			} else {
+				resolve(result);
+			}
+		});
+	});
+};
+
+export const getPredefined = function (
+	module: string,
+	institution: Institution
+): Promise<any> {
+	return new Promise((resolve, reject) => {
+		getConnection().query(
+			`
+				select source, module, average, passed, failed, semester, stddev, source_link, comment from statistics
+				where module = $1::text
+				and institution = $2::text
+			`,
+			[String(module), institution],
+			(err, result) => {
+				if (err) {
+					reject(err);
+				} else {
+					resolve(result);
+				}
+			}
+		);
+	});
+};
+
+export const getDistribution = function (
+	module: string,
+	institution: Institution
+): Promise<any> {
+	return new Promise((resolve, reject) => {
+		const buckets = 20;
+		getConnection().query(
+			`
+			select width_bucket(grade, 1, 6, ${buckets}) as bucket, count(*) as count
+				from grades
+				where module = $1::text
+				and institution = $2::text
+				group by bucket
+				order by bucket
+		`,
+			[String(module), institution],
+			(err, result) => {
+				if (err) {
+					reject(err);
+				} else {
+					const {rows} = result;
+					const filled = new Array(buckets).fill(1).map((j, i) => {
+						const bucket = rows.find((r) => r.bucket === i + 1);
+						if (!bucket) {
+							return 0;
+						}
+
+						return Number.parseInt(bucket.count, 10);
+					});
+					if (rows.length === 0) {
+						return resolve(filled);
+					}
+
+					const last = rows[rows.length - 1];
+					const isMaximum = last.bucket === buckets + 1;
+					if (isMaximum) {
+						filled[buckets - 1] += Number.parseInt(last.count, 10);
+					}
+
+					resolve(filled);
+				}
+			}
+		);
+	});
+};
+
+const aboutToMap = {};
+const cache = {};
+
+export const getAllStats = async function (
+	module: string,
+	institution: Institution
+) {
+	if (isModuleInBlacklist(institution, module)) {
+		throw createHttpError(410, 'Removed');
+	}
+
+	if (!process.env.TEST && aboutToMap[module + institution]) {
+		while (!cache[module + institution]) {
+			await new Promise<void>((resolve) => {
+				setTimeout(() => {
+					resolve();
+				}, 1000);
+			});
+		}
+
+		console.log('returning cache');
+		return cache[module + institution];
+	}
+
+	aboutToMap[module + institution] = true;
+	const [
+		predefined,
+		statsBySemester,
+		totalStats,
+		distribution,
+	] = await Promise.all([
+		getPredefined(module, institution),
+		getStatsBySemester(module, institution),
+		getTotalStats(module, institution),
+		getDistribution(module, institution),
+	]);
+	const detailsCombined = statsBySemester.rows.concat(predefined.rows);
+	const detailed = immutableReverse(
+		sortBy(detailsCombined, (d) => uzhSemesters.all.indexOf(d.semester))
+	);
+	const total = reducePredefined(predefined.rows.concat(totalStats.rows));
+	const response = {
+		total: Object.assign(total, {
+			median: totalStats.rows[0].median || 0,
+			stddev: totalStats.rows[0].stddev,
+		}),
+		detailed,
+		distribution,
+	};
+	cache[module + institution] = response;
+	return response;
+};
+
+export const deleteUser = function (student: string) {
+	return new Promise((resolve, reject) => {
+		getConnection().query(
+			`
+			delete from grades
+			where student = $1::text;
+		`,
+			[student],
+			(err, result) => {
+				if (err) {
+					reject(err);
+				} else {
+					resolve(result);
+				}
+			}
+		);
+	});
+};

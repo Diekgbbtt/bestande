@@ -1,0 +1,78 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"lib": [
+			"es2019",
+			"dom"
+		],
+		"jsx": "react",
+		"downlevelIteration": true,
+		"strict": false,
+		"noImplicitAny": false,
+		"strictNullChecks": true,
+		"noImplicitThis": true,
+		"outDir": "./dist",
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"composite": true,
+		"plugins": [
+			{
+				"name": "typescript-styled-plugin",
+				"lint": {
+					"validProperties": [
+						"shadow-color",
+						"shadow-opacity",
+						"shadow-offset",
+						"shadow-radius",
+						"padding-horizontal",
+						"padding-vertical",
+						"margin-vertical",
+						"margin-horizontal",
+						"tint-color",
+						"aspect-ratio",
+						"elevation"
+					]
+				}
+			}
+		]
+	},
+	"include": [
+		"app",
+		"core",
+		"scripts",
+		"web",
+		"grade-statistics"
+	],
+	"exclude": [
+		"node_modules",
+		"build"
+	],
+	"plugins": [
+		{
+			"name": "typescript-styled-plugin",
+			"lint": {
+				"duplicateProperties": "warning",
+				"universalSelector": "warning",
+				"hexColorLength": "error",
+				"argumentsInColorFunction": "error",
+				"propertyIgnoredDueToDisplay": "error",
+				"validProperties": [
+					"shadow-color",
+					"shadow-opacity",
+					"shadow-offset",
+					"shadow-radius",
+					"padding-horizontal",
+					"padding-vertical",
+					"margin-vertical",
+					"margin-horizontal",
+					"tint-color",
+					"aspect-ratio",
+					"elevation"
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,16 @@
+.DS_STORE
+.vscode
+node_modules
+*.log*
+chrome-user-data
+*.sublime-project
+*.sublime-workspace
+.idea
+*.iml
+*.swp
+*.swo
+.env
+dist
+.yarn
+algolia-modules.json
+*.pem

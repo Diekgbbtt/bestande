@@ -1,0 +1,22 @@
+Die unverzichtbare App für alle Studierenden der Uni Zürich und ETH Zürich.
+Schliess dich über 10'000 Nutzern an und profitiere von diesen Features:
+
+STUNDENPLAN
+Alle deine Übungen, Vorlesungen usw. in einer handlichen Wochenübersicht, die automatisch für dich generiert wird.
+
+LEISTUNGSÜBERSICHT
+Kein ewiges Einloggen online mehr nötig - sehe sofort, ob du Bestanden hast (nur UZH). Greife zudem schnell auf wichtige Informationen von deinen gebuchten Fächern zu.
+
+MENSAPLÄNE
+Alle Mensamenüs der UZH und ETH, sowie Nährwert- und Allergieangaben und Menüs von umliegenden Streetfood-Wagen. Du kannst auch die Angebote filtern, um zum Beispiel nur vegetarisches Essen unter 7 CHF von Mensen die jetzt offen sind anzuzeigen.
+
+BEWERTUNGEN UND NOTENSTATISTIKEN
+Wenn du dir nicht sicher bist, welches Fach du nehmen sollst, kann dir Bestande helfen. Unsere Nutzer haben Fächer bereits über 20'000 Mal bewertet. Ausserdem kannst du gecrowdsourcte Notenstatistiken sehen und damit abschätzen, wie schwierig ein Fach wird (nur UZH).
+
+SUCHE
+Finde Module und Räume mittels unserer blitzschnellen Suche. Filtere nach Semester, Fakultät/Departement, Anzahl Credits und Bewertung. UZH und ETH sind schnell abrufbar, falls du mal woanders hin gehen musst.
+
+EMPFEHLUNGEN
+Wir benützen künstliche Intelligenz, um dir präzise Vorschläge zu machen, welches Fach du belegen sollst. Zusammen mit Nutzerbewertungen und Notenstatistiken gibt dir Bestande den totalen Durchblick!
+
+Erfahre mehr auf unserer Webseite www.bestande.ch.

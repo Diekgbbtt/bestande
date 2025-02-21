@@ -1,0 +1,15 @@
+.geosuggest__suggests-wrapper ul {
+	list-style-type: none;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 4px;
+	border-radius: 2px;
+}
+
+.geosuggest__suggests-wrapper ul:empty {
+	display: none;
+}
+
+.geosuggest__suggests-wrapper li:hover {
+	background: rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}

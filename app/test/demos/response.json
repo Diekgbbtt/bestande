@@ -1,0 +1,614 @@
+{
+	"success": true,
+	"data": {
+		"data": {
+			"stats": {
+				"total_credits": 162,
+				"weighted_average": 4.43
+			},
+			"directions": [
+				{
+					"code": "50014157",
+					"name": "BA UZH in Wirtschaftswissensch. (RO04)"
+				}
+			],
+			"credits": [
+				{
+					"module": "BOEC0225",
+					"name": "Soziale Krankenversicherung (V) (Social Health Insurance)",
+					"short_name": "Soziale Krankenversicherung",
+					"link": "http://www.vorlesungen.uzh.ch/FS16/suche/sm-50354250.modveranst.html#0",
+					"credits_worth": 3,
+					"status": "PASSED",
+					"credits_received": 3,
+					"grade": "4.25"
+				},
+				{
+					"module": "BOEC0313",
+					"name": "Marketing Management II (V) (Marketing Management II (L))",
+					"short_name": "Marketing Management II",
+					"link": "http://www.vorlesungen.uzh.ch/FS16/suche/sm-50575863.modveranst.html#1",
+					"credits_worth": 3,
+					"status": "PASSED",
+					"credits_received": 3,
+					"grade": "4.75"
+				},
+				{
+					"module": "BOEC0319",
+					"name": "Banking (VU)",
+					"short_name": "Banking",
+					"link": "http://www.vorlesungen.uzh.ch/FS16/suche/sm-50618040.modveranst.html#2",
+					"credits_worth": 6,
+					"status": "PASSED",
+					"credits_received": 6,
+					"grade": "4.25"
+				},
+				{
+					"module": "615002",
+					"name": "Kernkompetenz Internationale Beziehungen: Das internationale System und die darin agierenden Akteure",
+					"short_name": "Internationale Beziehungen",
+					"link": "http://www.vorlesungen.uzh.ch/HS15/suche/sm-50335165.modveranst.html#3",
+					"credits_worth": 6,
+					"status": "PASSED",
+					"credits_received": 6,
+					"grade": "4.50"
+				},
+				{
+					"module": "BOEC0240",
+					"name": "Lineare Optimierung (V) (Linear Programming)",
+					"short_name": "Lineare Optimierung",
+					"link": "http://www.vorlesungen.uzh.ch/HS15/suche/sm-50332398.modveranst.html#4",
+					"credits_worth": 6,
+					"status": "PASSED",
+					"credits_received": 6,
+					"grade": "4.00"
+				},
+				{
+					"module": "BOEC0329",
+					"name": "Advanced Managerial Accounting",
+					"short_name": "Advanced Managerial Accounting",
+					"link": "http://www.vorlesungen.uzh.ch/HS15/suche/sm-50634528.modveranst.html#5",
+					"credits_worth": 6,
+					"status": "PASSED",
+					"credits_received": 6,
+					"grade": "4.00"
+				},
+				{
+					"module": "BOEC0294",
+					"name": "Führung und Organisation im Team - praktisches Projektmanagement (S) (Team Leadership and Team Organisation - Applied Project Management)",
+					"short_name": "Führung und Organisation im Team",
+					"link": "http://www.vorlesungen.uzh.ch/HS15/suche/sm-50505083.modveranst.html#6",
+					"credits_worth": 3,
+					"status": "PASSED",
+					"credits_received": 3,
+					"grade": "5.50"
+				},
+				{
+					"module": "BOEC0054",
+					"name": "Management in China (S)",
+					"short_name": "Management in China",
+					"link": "http://www.vorlesungen.uzh.ch/HS15/suche/sm-50352054.modveranst.html#7",
+					"credits_worth": 3,
+					"status": "PASSED",
+					"credits_received": 3,
+					"grade": "4.25"
+				},
+				{
+					"module": "615402",
+					"name": "Kernkompetenzen Schweizer Politik. Einführung in das politische System der Schweiz",
+					"short_name": "Schweizer Politik. Einführung in das politische System der Schweiz",
+					"link": "http://www.vorlesungen.uzh.ch/FS15/suche/sm-50423985.modveranst.html#8",
+					"credits_worth": 6,
+					"status": "PASSED",
+					"credits_received": 6,
+					"grade": "4.00"
+				},
+				{
+					"module": "BOEC0131",
+					"name": "Organisation und Führung (V) (Organisation & Management)",
+					"short_name": "Organisation und Führung",
+					"link": "http://www.vorlesungen.uzh.ch/FS15/suche/sm-50475317.modveranst.html#9",
+					"credits_worth": 3,
+					"status": "PASSED",
+					"credits_received": 3,
+					"grade": "4.25"
+				},
+				{
+					"module": "BOEC0224",
+					"name": "Quantitative Wirtschaftsgeschichte, Teil 1 (Bachelor)(Quantitative Economic History, Part 1)",
+					"short_name": "Quantitative Wirtschaftsgeschichte, Teil 1",
+					"link": "http://www.vorlesungen.uzh.ch/FS15/suche/sm-50314924.modveranst.html#10",
+					"credits_worth": 6,
+					"status": "PASSED",
+					"credits_received": 6,
+					"grade": "5.00"
+				},
+				{
+					"module": "BOEC0046",
+					"name": "Makroökonomik II (V+Ü) (Macroeconomics II)",
+					"short_name": "Makroökonomik II",
+					"link": "http://www.vorlesungen.uzh.ch/FS15/suche/sm-50030849.modveranst.html#11",
+					"credits_worth": 4.5,
+					"status": "PASSED",
+					"credits_received": 4.5,
+					"grade": "5.00"
+				},
+				{
+					"module": "BOEC0015",
+					"name": "Managerial Accounting",
+					"short_name": "Managerial Accounting",
+					"link": "http://www.vorlesungen.uzh.ch/FS15/suche/sm-50314878.modveranst.html#12",
+					"credits_worth": 3,
+					"status": "PASSED",
+					"credits_received": 3,
+					"grade": "4.75"
+				},
+				{
+					"module": "BOEC0060",
+					"name": "Informatik für Ökonomen III (V) (Informatics for Business III)",
+					"short_name": "Informatik für Ökonomen III",
+					"link": "http://www.vorlesungen.uzh.ch/FS15/suche/sm-50354066.modveranst.html#13",
+					"credits_worth": 3,
+					"status": "PASSED",
+					"credits_received": 3,
+					"grade": "4.50"
+				},
+				{
+					"module": "BOEC0268",
+					"name": "Grundlagen der Personal- und Organisationsökonomik (Ü) (Introduction to Personnel and Organizational Economics)",
+					"short_name": "Grundlagen der Personal- und Organisationsökonomik",
+					"link": "http://www.vorlesungen.uzh.ch/HS14/suche/sm-50044269.modveranst.html#14",
+					"credits_worth": 3,
+					"status": "PASSED",
+					"credits_received": 3,
+					"grade": "4.25"
+				},
+				{
+					"module": "BOEC0231",
+					"name": "Marketing Management I (L)",
+					"short_name": "Marketing Management I",
+					"link": "http://www.vorlesungen.uzh.ch/HS14/suche/sm-50046462.modveranst.html#15",
+					"credits_worth": 6,
+					"status": "PASSED",
+					"credits_received": 6,
+					"grade": "4.25"
+				},
+				{
+					"module": "BOEC0267",
+					"name": "Grundlagen der Personal- und Organisationsökonomik (V) (Introduction to Personnel and Organizational Economics)",
+					"short_name": "Grundlagen der Personal- und Organisationsökonomik",
+					"link": "http://www.vorlesungen.uzh.ch/HS14/suche/sm-50044268.modveranst.html#16",
+					"credits_worth": 3,
+					"status": "PASSED",
+					"credits_received": 3,
+					"grade": "4.25"
+				},
+				{
+					"module": "BOEC0273",
+					"name": "Governance (L)",
+					"short_name": "Governance",
+					"link": "http://www.vorlesungen.uzh.ch/HS14/suche/sm-50045662.modveranst.html#17",
+					"credits_worth": 3,
+					"status": "PASSED",
+					"credits_received": 3,
+					"grade": "4.25"
+				},
+				{
+					"module": "BOEC0003",
+					"name": "BWL III (V+Ü) (Business Administration III)",
+					"short_name": "BWL III",
+					"link": "http://www.vorlesungen.uzh.ch/HS14/suche/sm-50046381.modveranst.html#18",
+					"credits_worth": 6,
+					"status": "PASSED",
+					"credits_received": 6,
+					"grade": "4.50"
+				},
+				{
+					"module": "BOEC0228",
+					"name": "Corporate Finance I (L+E)",
+					"short_name": "Corporate Finance I",
+					"link": "http://www.vorlesungen.uzh.ch/HS14/suche/sm-50044544.modveranst.html#19",
+					"credits_worth": 6,
+					"status": "PASSED",
+					"credits_received": 6,
+					"grade": "4.25"
+				},
+				{
+					"module": "BOEC9001",
+					"name": "Wiederholungsprüfung Mikroökonomik II (Re-examination Microeconomics II)",
+					"short_name": "Wiederholungsprüfung Mikroökonomik II",
+					"link": "http://www.vorlesungen.uzh.ch/FS14/suche/sm-50316942.modveranst.html#20",
+					"credits_worth": 4.5,
+					"status": "PASSED",
+					"credits_received": 4.5,
+					"grade": "5.25"
+				},
+				{
+					"module": "AOEC0008",
+					"name": "Mathematik II (V+Ü) (Mathematics II)",
+					"short_name": "Mathematik II",
+					"link": "http://www.vorlesungen.uzh.ch/FS14/suche/sm-50030886.modveranst.html#21",
+					"credits_worth": 6,
+					"status": "PASSED",
+					"credits_received": 6,
+					"grade": "5.00"
+				},
+				{
+					"module": "AOEC0014",
+					"name": "Betriebswirtschaftslehre I (V + Ü) (Business Administration I)",
+					"short_name": "Betriebswirtschaftslehre I",
+					"link": null,
+					"credits_worth": 3,
+					"status": "PASSED",
+					"credits_received": 3,
+					"grade": "5.50"
+				},
+				{
+					"module": "BOEC0010",
+					"name": "Informatik für Ökonomen II (V+Ü) (Informatics for Business II)",
+					"short_name": "Informatik für Ökonomen II",
+					"link": null,
+					"credits_worth": 3,
+					"status": "PASSED",
+					"credits_received": 3,
+					"grade": "4.00"
+				},
+				{
+					"module": "BOEC0004",
+					"name": "Einführung in die empirische Wirtschaftsforschung (V+Ü) (Introductory Econometrics)",
+					"short_name": "Einführung in die empirische Wirtschaftsforschung",
+					"link": null,
+					"credits_worth": 6,
+					"status": "PASSED",
+					"credits_received": 6,
+					"grade": "4.25"
+				},
+				{
+					"module": "AOEC0010",
+					"name": "Statistik (V+Ü) (Statistics)",
+					"short_name": "Statistik",
+					"link": null,
+					"credits_worth": 6,
+					"status": "PASSED",
+					"credits_received": 6,
+					"grade": "4.50"
+				},
+				{
+					"module": "AOEC0006",
+					"name": "Makroökonomik I (V+Ü) (Macroeconomics I)",
+					"short_name": "Makroökonomik I",
+					"link": null,
+					"credits_worth": 9,
+					"status": "PASSED",
+					"credits_received": 9,
+					"grade": "4.50"
+				},
+				{
+					"module": "AOEC0004",
+					"name": "Betriebswirtschaftslehre II (V + Ü) (Business Administration II)",
+					"short_name": "Betriebswirtschaftslehre II",
+					"link": null,
+					"credits_worth": 6,
+					"status": "PASSED",
+					"credits_received": 6,
+					"grade": "4.25"
+				},
+				{
+					"module": "AOEC0002",
+					"name": "Financial Reporting (L+E)",
+					"short_name": "Financial Reporting",
+					"link": null,
+					"credits_worth": 3,
+					"status": "PASSED",
+					"credits_received": 3,
+					"grade": "4.00"
+				},
+				{
+					"module": "AOEC0028",
+					"name": "Finance (L+E)",
+					"short_name": "Finance",
+					"link": null,
+					"credits_worth": 3,
+					"status": "PASSED",
+					"credits_received": 3,
+					"grade": "4.00"
+				},
+				{
+					"module": "AOEC0020",
+					"name": "Mathematik I (V+Ü) (Mathematics I)",
+					"short_name": "Mathematik I",
+					"link": null,
+					"credits_worth": 6,
+					"status": "PASSED",
+					"credits_received": 6,
+					"grade": "4.25"
+				},
+				{
+					"module": "AOEC0022",
+					"name": "Informatik für Ökonomen I (V+Ü) (Informatics for Business I)",
+					"short_name": "Informatik für Ökonomen I",
+					"link": null,
+					"credits_worth": 3,
+					"status": "PASSED",
+					"credits_received": 3,
+					"grade": "4.50"
+				},
+				{
+					"module": "AOEC0018",
+					"name": "Mikroökonomik I (V+Ü) (Microeconomics I)",
+					"short_name": "Mikroökonomik I",
+					"link": null,
+					"credits_worth": 9,
+					"status": "PASSED",
+					"credits_received": 9,
+					"grade": "4.25"
+				},
+				{
+					"module": "AOEC0016",
+					"name": "Financial Accounting (L + E)",
+					"short_name": "Financial Accounting",
+					"link": null,
+					"credits_worth": 6,
+					"status": "PASSED",
+					"credits_received": 6,
+					"grade": "4.25"
+				},
+				{
+					"module": "615002",
+					"name": "Kernkompetenz Internationale Beziehungen: Das internationale System und die darin agierenden Akteure",
+					"short_name": "Internationale Beziehungen",
+					"link": "http://www.vorlesungen.uzh.ch/HS15/suche/sm-50335165.modveranst.html#34",
+					"credits_worth": 6,
+					"status": "FAILED",
+					"credits_received": 0,
+					"grade": "3.00"
+				},
+				{
+					"module": "BOEC0288",
+					"name": "Auditing – Grundlagen der internen und externen Revision (Internal and External Auditing)",
+					"short_name": "Auditing",
+					"link": "http://www.vorlesungen.uzh.ch/HS15/suche/sm-50491823.modveranst.html#35",
+					"credits_worth": 6,
+					"status": "FAILED",
+					"credits_received": 0,
+					"grade": "3.50"
+				},
+				{
+					"module": "BOEC0215",
+					"name": "Industrieökonomik (V+Ü) (Industrial Economics)",
+					"short_name": "Industrieökonomik",
+					"link": "http://www.vorlesungen.uzh.ch/FS14/suche/sm-50314970.modveranst.html#36",
+					"credits_worth": 6,
+					"status": "FAILED",
+					"credits_received": 0,
+					"grade": "2.75"
+				},
+				{
+					"module": "BOEC0060",
+					"name": "Informatik für Ökonomen III (V) (Informatics for Business III)",
+					"short_name": "Informatik für Ökonomen III",
+					"link": "http://www.vorlesungen.uzh.ch/FS14/suche/sm-50354066.modveranst.html#37",
+					"credits_worth": 3,
+					"status": "FAILED",
+					"credits_received": 0,
+					"grade": "2.75"
+				},
+				{
+					"module": "BOEC0015",
+					"name": "Managerial Accounting",
+					"short_name": "Managerial Accounting",
+					"link": "http://www.vorlesungen.uzh.ch/FS14/suche/sm-50314878.modveranst.html#38",
+					"credits_worth": 3,
+					"status": "FAILED",
+					"credits_received": 0,
+					"grade": "3.50"
+				},
+				{
+					"module": "BOEC0046",
+					"name": "Makroökonomik II (V+Ü) (Macroeconomics II)",
+					"short_name": "Makroökonomik II",
+					"link": "http://www.vorlesungen.uzh.ch/FS14/suche/sm-50030849.modveranst.html#39",
+					"credits_worth": 4.5,
+					"status": "FAILED",
+					"credits_received": 0,
+					"grade": "1.00"
+				},
+				{
+					"module": "BOEC0228",
+					"name": "Corporate Finance I (L+E)",
+					"short_name": "Corporate Finance I",
+					"link": null,
+					"credits_worth": 6,
+					"status": "FAILED",
+					"credits_received": 0,
+					"grade": "2.75"
+				},
+				{
+					"module": "BOEC0011",
+					"name": "Mikroökonomik II (V+Ü) (Microeconomics II)",
+					"short_name": "Mikroökonomik II",
+					"link": null,
+					"credits_worth": 4.5,
+					"status": "FAILED",
+					"credits_received": 0,
+					"grade": "3.75"
+				},
+				{
+					"module": "AOEC0008",
+					"name": "Mathematik II (V+Ü) (Mathematics II)",
+					"short_name": "Mathematik II",
+					"link": null,
+					"credits_worth": 6,
+					"status": "FAILED",
+					"credits_received": 0,
+					"grade": "3.25"
+				},
+				{
+					"module": "AOEC0014",
+					"name": "Betriebswirtschaftslehre I (V + Ü) (Business Administration I)",
+					"short_name": "Betriebswirtschaftslehre I",
+					"link": null,
+					"credits_worth": 3,
+					"status": "FAILED",
+					"credits_received": 0,
+					"grade": "3.50"
+				},
+				{
+					"module": "615101",
+					"name": "Kernkompetenzen Politische Ökonomie: Wichtigste Konzepte der Politischen Ökonomie und ökonomische Grundkonzepte",
+					"short_name": "Politische Ökonomie",
+					"link": "http://www.vorlesungen.uzh.ch/FS16/suche/sm-50322590.modveranst.html#44",
+					"credits_worth": 6,
+					"status": "DESELECTED",
+					"credits_received": 0,
+					"grade": ""
+				},
+				{
+					"module": "BOEC0203",
+					"name": "Service Management: Operations, Strategie und e-Services (VmÜ) (Service Management: Operations, Strategy and e- services)",
+					"short_name": "Service Management",
+					"link": "http://www.vorlesungen.uzh.ch/HS15/suche/sm-50431595.modveranst.html#45",
+					"credits_worth": 6,
+					"status": "DESELECTED",
+					"credits_received": 0,
+					"grade": ""
+				},
+				{
+					"module": "BOEC0289",
+					"name": "Change Management (L)",
+					"short_name": "Change Management",
+					"link": "http://www.vorlesungen.uzh.ch/HS15/suche/sm-50491828.modveranst.html#46",
+					"credits_worth": 3,
+					"status": "DESELECTED",
+					"credits_received": 0,
+					"grade": ""
+				},
+				{
+					"module": "BOEC0047",
+					"name": "Mathematik III für Wirtschaftswissenschaftler (Mathematics III for economists)",
+					"short_name": "Mathematik III für Wirtschaftswissenschaftler",
+					"link": "http://www.vorlesungen.uzh.ch/HS15/suche/sm-50030847.modveranst.html#47",
+					"credits_worth": 6,
+					"status": "DESELECTED",
+					"credits_received": 0,
+					"grade": ""
+				},
+				{
+					"module": "BOEC0226",
+					"name": "Financial Statement Analysis (L+E)",
+					"short_name": "Financial Statement Analysis",
+					"link": "http://www.vorlesungen.uzh.ch/HS14/suche/sm-50046400.modveranst.html#48",
+					"credits_worth": 6,
+					"status": "DESELECTED",
+					"credits_received": 0,
+					"grade": ""
+				},
+				{
+					"module": "BOEC0131",
+					"name": "Organisation und Führung (V) (Organisation & Management)",
+					"short_name": "Organisation und Führung",
+					"link": "http://www.vorlesungen.uzh.ch/FS14/suche/sm-50475317.modveranst.html#49",
+					"credits_worth": 3,
+					"status": "DESELECTED",
+					"credits_received": 0,
+					"grade": ""
+				},
+				{
+					"module": "BOEC0003",
+					"name": "BWL III (V+Ü) (Business Administration III)",
+					"short_name": "BWL III",
+					"link": null,
+					"credits_worth": 6,
+					"status": "DESELECTED",
+					"credits_received": 0,
+					"grade": ""
+				},
+				{
+					"module": "BOEC0226",
+					"name": "Financial Statement Analysis (L+E)",
+					"short_name": "Financial Statement Analysis",
+					"link": null,
+					"credits_worth": 6,
+					"status": "DESELECTED",
+					"credits_received": 0,
+					"grade": ""
+				},
+				{
+					"module": "BOEC0231",
+					"name": "Marketing Management I (L)",
+					"short_name": "Marketing Management I",
+					"link": null,
+					"credits_worth": 6,
+					"status": "DESELECTED",
+					"credits_received": 0,
+					"grade": ""
+				},
+				{
+					"module": "AINF1100",
+					"name": "Informatik I (V+Ü) (Informatics I)",
+					"short_name": "Informatik I",
+					"link": null,
+					"credits_worth": 9,
+					"status": "DESELECTED",
+					"credits_received": 0,
+					"grade": ""
+				},
+				{
+					"module": "BOEC0228",
+					"name": "Corporate Finance I (L+E)",
+					"short_name": "Corporate Finance I",
+					"link": null,
+					"credits_worth": 6,
+					"status": "DESELECTED",
+					"credits_received": 0,
+					"grade": ""
+				},
+				{
+					"module": "BOEC0054",
+					"name": "Management in China (S)",
+					"short_name": "Management in China",
+					"link": null,
+					"credits_worth": 3,
+					"status": "DESELECTED",
+					"credits_received": 0,
+					"grade": ""
+				},
+				{
+					"module": "BOEC0119",
+					"name": "Investments (L+E)",
+					"short_name": "Investments",
+					"link": null,
+					"credits_worth": 3,
+					"status": "DESELECTED",
+					"credits_received": 0,
+					"grade": ""
+				},
+				{
+					"module": "BOEC0294",
+					"name": "Führung und Organisation im Team - praktisches Projektmanagement (S) (Team Leadership and Team Organisation - Applied Project Management)",
+					"short_name": "Führung und Organisation im Team",
+					"link": null,
+					"credits_worth": 3,
+					"status": "DESELECTED",
+					"credits_received": 0,
+					"grade": ""
+				}
+			],
+			"identity": {
+				"name": {
+					"last": "Graf",
+					"first": "Julian"
+				},
+				"matriculateNumber": "12-724-001"
+			},
+			"success": true,
+			"version": 6
+		},
+		"progress": [
+			"Rufe uzh.ch auf...",
+			"Einloggen...",
+			"Eingeloggt...",
+			"Lade Module..."
+		]
+	}
+}

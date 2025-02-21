@@ -1,0 +1,306 @@
+Input.website_url,Input.course_name,Answer.average,Answer.comment,Answer.passed,Answer.failed,Answer.stddev,Answer.total,Answer.url,Source,Release period
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Thermodynamik I (MAVT - Block 1),4.36,{},95.50%,4.50%,0.74,22,https://bestande.ch/eth/151-0051-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Thermodynamik II (MAVT - Block 2),4.29,{},81.80%,18.20%,0.73,352,https://bestande.ch/eth/151-0052-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Fluiddynamik I (MAVT - Block 2),4.43,{},288,64,0.57,352,https://bestande.ch/eth/151-0102-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Fluiddynamik II (MAVT - Block 3),4.32,{},17,0,0.63,17,https://bestande.ch/eth/151-0103-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Technische Mechanik (ITET - Basisprüfung Block A),3.9,{},67.80%,32.20%,1.07,220,https://bestande.ch/eth/151-0223-10L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Thermodynamics III (MAVT - Prüfungsblock 3 - typo! says Thermodynamics II but is Thermodynamics III),4.63,{},17,0,0.51,17,https://bestande.ch/eth/151-0261-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Maschinenelemente (MAVT - Basisprüfung),4.18,{},57.90%,42.10%,0.63,506,https://bestande.ch/eth/151-0301-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Dimensionieren I (MAVT - Prüfungsblock 1),3.89,{},95.50%,4.50%,0.8,22,https://bestande.ch/eth/151-0303-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Dynamics (MAVT - Prüfungsblock 1),4.36,{},21,1,0.74,22,https://bestande.ch/eth/151-0503-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,"Werkstoffe und Fertigung I, Werkstoffe und Fertigung II",4.25,{},57.90%,42.10%,0.76,506,"https://bestande.ch/eth/151-0711-00L, https://bestande.ch/eth/151-0712-00L",Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,"Netzwerke und Schaltungen I, Netzwerke und Schaltungen II",4.11,{},67.80%,32.20%,1.19,220,"https://bestande.ch/eth/227-0001-00L,https://bestande.ch/eth/227-0002-00L",Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Digitaltechnik (ITET – Basisprüfung Block ),4.13,{},67.80%,32.20%,1.02,220,https://bestande.ch/eth/227-0003-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Technische Informatik I (ITET - Prüfungsblock 1),3.84,{},62.50%,37.50%,0.43,16,https://bestande.ch/eth/227-0013-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Technische Informatik II (ITET - Prüfungsblock 2),4.37,{},91,20,0.72,111,https://bestande.ch/eth/227-0014-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Signal- und Systemtheorie I (ITET - Prüfungsblock 1),4.17,{},62.50%,37.50%,0.72,16,https://bestande.ch/eth/227-0045-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Signal- und Systemtheorie II (ITET - Block 2),4.52,{},82%,18%,0.85,111,https://bestande.ch/eth/227-0046-10L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Elektromagnetische Felder und Wellen (ITET - Prüfungsblock 3),4.34,{},84.50%,15.50%,0.85,131,https://bestande.ch/eth/227-0052-10L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Halbleiter Bauelemente (ITET - Prüfungsblock 3),4.15,{},84.50%,15.50%,0.72,131,https://bestande.ch/eth/227-0056-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Elektrotechnik I (MAVT - Prüfungsblock 2),4.44,{},81.80%,18.20%,0.59,352,https://bestande.ch/eth/227-0075-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Halbleiter-Schaltungstechnik (ITET - Prüfungsblock 2),4.07,{},82%,18%,0.73,111,https://bestande.ch/eth/227-0077-10L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Informatik (MAVT - Basisprüfung),4.1,{},57.90%,42.10%,0.95,506,https://bestande.ch/eth/252-0832-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,"Informatik I, Informatik II",4.32,{},67.80%,32.20%,1.08,220,"https://bestande.ch/eth/252-0835-00L,https://bestande.ch/eth/252-0836-00L",Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Diskrete Mathematik (ITET - Prüfungsblock 2),4.31,{},82%,18%,0.82,111,https://bestande.ch/eth/401-0053-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Lineare Algebra (ITET – Basisprüfung Block ),4.35,{},67.80%,32.20%,1,220,https://bestande.ch/eth/401-0171-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,"Lineare Algebra I, Lineare Algebra II",3.84,{},57.90%,42.10%,1.29,506,"https://bestande.ch/eth/401-0171-00L,https://bestande.ch/eth/401-0172-00L",Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,"Analysis I, Analysis II",4.41,{},67.80%,32.20%,1.17,220,"https://bestande.ch/eth/401-0231-10L, https://bestande.ch/eth/401-0232-10L",Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,"Analysis I, Analysis II",3.74,{},57.90%,42.10%,1.39,506,"https://bestande.ch/eth/401-0261-G0L,https://bestande.ch/eth/401-0262-G0L",Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Komplexe Analysis (ITET – Basisprüfung Block),3.77,{},149,71,1.44,220,https://bestande.ch/eth/401-0302-10L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Analysis III (ITET - Prüfungsblock 1),3.97,{},62.50%,37.50%,0.95,16,https://bestande.ch/eth/401-0353-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Analysis III (MAVT - Prüfungsblock 1),3.97,{},10,6,0.95,16,https://bestande.ch/eth/401-0363-10L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Wahrscheinlichkeitstheorie und Statistik (W&S) (ITET - Block 3),4.44,{},84.50%,15.50%,0.76,131,https://bestande.ch/eth/401-0604-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Numerische Methoden (ITET - Prüfungsblock 3),5.02,{},111,20,0.91,131,https://bestande.ch/eth/401-0654-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,"Physik I, Physik II",4.49,{},81.80%,18.20%,0.73,352,"https://bestande.ch/eth/402-0033-10L, https://bestande.ch/eth/402-0034-10L",Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Physik I (ITET – Basisprüfung Block),4,{},67.80%,32.20%,1.08,220,https://bestande.ch/eth/402-0052-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Physik II (ITET - Prüfungsblock 1),4.28,{},62.50%,37.50%,0.78,111,https://bestande.ch/eth/402-0053-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS15/blitz01_issuu.pdf,Chemie (MAVT - Basisprüfung),4.15,{},57.90%,42.10%,0.93,506,https://bestande.ch/eth/529-0010-00L,Blitz 01/2015,20152
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Thermodynamik I (MAVT - Prüfungsblock 1),4.35,{},94.40%,5.60%,0.82,18,https://bestande.ch/eth/151-0051-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Thermodynamik II (MAVT - Prüfungsblock 2),4.28,{},75.30%,24.70%,0.71,352,https://bestande.ch/eth/151-0052-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Fluiddynamik I (MAVT - Prüfungsblock 2),4.43,{},75.30%,24.70%,0.61,352,https://bestande.ch/eth/151-0102-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Fluiddynamik II (MAVT - Prüfungsblock 3),4.36,{},70%,30%,0.71,20,https://bestande.ch/eth/151-0103-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Technische Mechanik (ITET – Basisprüfung ),4.05,{},152,98,1.25,250,https://bestande.ch/eth/151-0223-10L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Thermodynamics III (MAVT - Prüfungsblock 3 - typo! says Thermodynamics II but is Thermodynamics III),4.64,{},70%,30%,0.68,20,https://bestande.ch/eth/151-0261-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Maschinenelemente (MAVT - Basisprüfung),4.2,{},53.90%,46.10%,0.71,536,https://bestande.ch/eth/151-0301-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Dimensionieren I (MAVT - Prüfungsblock 1),3.88,{},94.40%,5.60%,0.87,18,https://bestande.ch/eth/151-0303-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Kinetik und Statik (MAVT - Basisprüfung),4.13,{},53.90%,46.10%,1.11,536,https://bestande.ch/eth/151-0501-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Dynamics (MAVT - Prüfungsblock 1),5.06,{},17,1,0.68,18,https://bestande.ch/eth/151-0503-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,"Werkstoffe und Fertigung I, Werkstoffe und Fertigung II",4.11,{},53.90%,46.10%,0.8,536,"https://bestande.ch/eth/151-0711-00L, https://bestande.ch/eth/151-0712-00L",Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,"Netzwerke und Schaltungen I, Netzwerke und Schaltungen II",3.89,{},60.78%,39.22%,1.22,250,"https://bestande.ch/eth/227-0001-00L,https://bestande.ch/eth/227-0002-00L",Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Digitaltechnik (ITET – Basisprüfung ),4.32,{},60.78%,39.22%,1.11,250,https://bestande.ch/eth/227-0003-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Technische Informatik I (ITET - Prüfungsblock 1),3.83,{},40%,60%,0.59,10,https://bestande.ch/eth/227-0013-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Technische Informatik II (ITET - Prüfungsblock 2),4.14,{},101,25,0.89,126,https://bestande.ch/eth/227-0014-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Signal- und Systemtheorie I (ITET - Prüfungsblock 1),3.33,{},40%,60%,1.01,10,https://bestande.ch/eth/227-0045-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Signal- und Systemtheorie II (ITET - Prüfungsblock 2),4.54,Pass rate percentage is available for Prüfungsblock 2. Pass rate is not available on individual course.,80.16%,19.84%,0.82,126,https://bestande.ch/eth/227-0046-10L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Elektromagnetische Felder und Wellen (ITET - Prüfungsblock 3),4.43,{},83.80%,16.20%,0.84,142,https://bestande.ch/eth/227-0052-10L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Halbleiter Bauelemente (ITET - Prüfungsblock 3),4.26,{},83.80%,16.20%,0.66,142,https://bestande.ch/eth/227-0056-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Elektrotechnik I (MAVT - Prüfungsblock 2),4.53,{},75.30%,24.70%,0.63,352,https://bestande.ch/eth/227-0075-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Halbleiter-Schaltungstechnik (ITET - Prüfungsblock 2),4.58,{},80.16%,19.84%,0.82,126,https://bestande.ch/eth/227-0077-10L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Halbleiter-Schaltungstechnik (ITET - Prüfungsblock 2),4.58,{},126,0,0,126,https://bestande.ch/eth/227-0077-10L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Informatik (MAVT - Basisprüfung),3.92,{},53.90%,46.10%,1.03,536,https://bestande.ch/eth/252-0832-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,"Informatik I, Informatik II",4.27,{},60.78%,39.22%,1.03,250,"https://bestande.ch/eth/252-0835-00L,https://bestande.ch/eth/252-0836-00L",Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Diskrete Mathematik (ITET - Prüfungsblock 2),4.23,{},80.16%,19.84%,0.85,126,https://bestande.ch/eth/401-0053-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Lineare Algebra (ITET – Basisprüfung ),4.12,I did not see anything that looked like a URL on these pages.,152,98,1.24,250,https://bestande.ch/eth/401-0171-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,"Lineare Algebra I, Lineare Algebra II",3.67,{},289,247,1.2,536,"https://bestande.ch/eth/401-0171-00L,https://bestande.ch/eth/401-0172-00L",Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,"Analysis I, Analysis II",4.13,{},60.78%,39.22%,1.27,250,"https://bestande.ch/eth/401-0231-10L, https://bestande.ch/eth/401-0232-10L",Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,"Analysis I, Analysis II",3.37,{},53.90%,46.10%,1.35,536,"https://bestande.ch/eth/401-0261-G0L,https://bestande.ch/eth/401-0262-G0L",Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Komplexe Analysis (ITET – Basisprüfung),3.53,{},60.78%,39.22%,1.46,250,https://bestande.ch/eth/401-0302-10L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Analysis III (ITET - Prüfungsblock 1),4.18,{},40%,60%,0.61,10,https://bestande.ch/eth/401-0353-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Analysis III (MAVT - Prüfungsblock 1),4.49,{},13,7,{},20,https://bestande.ch/eth/401-0363-10L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Wahrscheinlichkeitstheorie und Statistik (ITET - Prüfungsblock 3),4.35,{},83.80%,16.20%,0.69,142,https://bestande.ch/eth/401-0604-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Numerische Methoden (ITET - Prüfungsblock 3),4.61,{},83.80%,16.20%,0.76,142,https://bestande.ch/eth/401-0654-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,"Physik I, Physik II",4.23,{},75.30%,24.70%,0.71,352,"https://bestande.ch/eth/402-0033-10L, https://bestande.ch/eth/402-0034-10L",Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Physik I (ITET – Basisprüfung),4.24,{},60.78%,39.22%,0.87,250,https://bestande.ch/eth/402-0052-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Physik II (ITET - Prüfungsblock 1),4.13,{},40%,60%,0.99,10,https://bestande.ch/eth/402-0053-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS16/blitz_01_issu.pdf,Chemistry (MAVT - Basisprüfung),4.35,URL: Department not available,53.90%,46.10%,1.05,536,https://bestande.ch/eth/529-0010-00L,Blitz 01/2016,20162
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Thermodynamik I (MAVT - Block 1),4.67,Only graph data available,91,9,,100,https://bestande.ch/eth/151-0051-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Thermodynamik II (MAVT - Block 2),4.43,Only graph data available,81,19,,100,https://bestande.ch/eth/151-0052-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Fluiddynamik I (MAVT - Block 2),4.43,Only graph available,81,19,,100,https://bestande.ch/eth/151-0102-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Fluiddynamik II (MAVT - Block 3),4.26,Only graph available,80,20,,100,https://bestande.ch/eth/151-0103-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Technische Mechanik (ITET – Basisprüfung Block A),3.38,Only graph data available,31,69,,100,https://bestande.ch/eth/151-0223-10L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Thermodynamics III (MAVT - Block 3),4.26,only a graph available,80,20,,100,https://bestande.ch/eth/151-0261-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Maschinenelemente (MAVT - Basisprüfung),4.12,Only graph available,60,40,,100,https://bestande.ch/eth/151-0301-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Dimensionieren I (MAVT - Block 1),4.67,only graph available,91,9,,100,https://bestande.ch/eth/151-0303-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Dynamics (MAVT - Block 1),4.67,"Only graph available, so few data available",91,9,,100,https://bestande.ch/eth/151-0503-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Control Systems I  (MAVT - Block 1),4.67,Only graph available,90.90%,9.10%,,100,https://bestande.ch/eth/151-0591-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,"Werkstoffe und Fertigung I, Werkstoffe und Fertigung II",4.12,{},60.30%,39.70%,,100,"https://bestande.ch/eth/151-0711-00L, https://bestande.ch/eth/151-0712-00L",Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Netzwerke und Schaltungen I (ITET – Basisprüfung Block A),3.89,Only graph available,53.85%,46.15%,,100,https://bestande.ch/eth/227-0001-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,"Netzwerke und Schaltungen I, Netzwerke und Schaltungen II",3.38,Only graph available,31.34%,68.66%,,100,"https://bestande.ch/eth/227-0001-00L,https://bestande.ch/eth/227-0002-00L",Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Digitaltechnik (ITET – Basisprüfung Block A),3.38,"Only a graph available, so no more data available.",31.34%,68.66%,,100,https://bestande.ch/eth/227-0003-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Technische Informatik I (ITET - Block 1),4.14,Only graph available,77.78%,22.22%,,100,https://bestande.ch/eth/227-0013-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Technische Informatik II (ITET - Block 2),4.3,{},75.56%,24.44%,,100,https://bestande.ch/eth/227-0014-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Signal- und Systemtheorie I (ITET - Block 1),4.14,Only graph available,77.78%,22.22%,,100,https://bestande.ch/eth/227-0045-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Signal- und Systemtheorie II (ITET - Block 2),4.3,only graph available,75.56%,24.44%,,100,https://bestande.ch/eth/227-0046-10L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Elektromagnetische Felder und Wellen (ITET - Block 3),4.67,Only graph available,85.52%,14.48%,,100,https://bestande.ch/eth/227-0052-10L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Halbleiter Bauelemente (ITET - Block 3),4.67,{},85.52%,14.48%,,100,https://bestande.ch/eth/227-0056-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Elektrotechnik I (MAVT - Block 2),4.43,{},80.70%,19.30%,,100,https://bestande.ch/eth/227-0075-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Halbleiter-Schaltungstechnik (ITET - Block 2),4.3,Only a graph available,75.56%,24.44%,,10,https://bestande.ch/eth/227-0077-10L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Informatik (MAVT - Basisprüfung),4.12,Only graph available,60.30%,39.70%,,100,https://bestande.ch/eth/252-0832-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,"Informatik I, Informatik II",4.28,Only graph available,69.78%,30.22%,,100,"https://bestande.ch/eth/252-0835-00L,https://bestande.ch/eth/252-0836-00L",Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Diskrete Mathematik (ITET - Block 2),4.3,Only graph available,75.56%,24.44%,,100,https://bestande.ch/eth/401-0053-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Lineare Algebra (ITET – Basisprüfung Block A),3.38,Only graph available,31.34%,68.66%,,100,https://bestande.ch/eth/401-0151-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,"Lineare Algebra I, Lineare Algebra II",4.12,Only a graph available,60.30%,39.70%,,100,"https://bestande.ch/eth/401-0171-00L,https://bestande.ch/eth/401-0172-00L",Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,"Analysis I, Analysis II",4.28,{},69.78%,30.22%,,100,"https://bestande.ch/eth/401-0231-10L, https://bestande.ch/eth/401-0232-10L",Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,"Analysis I, Analysis II",4.28,only graph data available,69.78%,30.22%,,100,"https://bestande.ch/eth/401-0261-G0L,https://bestande.ch/eth/401-0262-G0L",Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Komplexe Analysis (ITET – Basisprüfung Block B),4.28,Only graph available,69.78%,30.22%,,100,https://bestande.ch/eth/401-0302-10L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Analysis III (ITET - Block 1),4.14,Only graph available,77.78%,22.22%,,100,https://bestande.ch/eth/401-0353-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Analysis III (MAVT - Block 1),4.67,only graph available,90.90%,9.10%,,100,https://bestande.ch/eth/401-0363-10L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Wahrscheinlichkeitstheorie und Statistik (ITET - Block 3),4.67,only graph available,85.52%,14.48%,,100,https://bestande.ch/eth/401-0604-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Numerische Methoden (ITET - Block 3),4.67,Only graph data,85.52%,14.48%,,100,https://bestande.ch/eth/401-0654-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,"Physik I, Physik II",4.43,Only graph available,80.70%,19.30%,,100,"https://bestande.ch/eth/402-0033-10L, https://bestande.ch/eth/402-0034-10L",Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Physik I (ITET – Basisprüfung Block B),3.38,{},31.34%,68.66%,,100,https://bestande.ch/eth/402-0052-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Physik II (ITET - Block 1),4.14,Only graph available,77.78%,22.22%,,100,https://bestande.ch/eth/402-0053-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/HS17/blitz01_issu.pdf,Chemie (MAVT - Basisprüfung),4.12,{},60.30%,39.70%,,100,https://bestande.ch/eth/529-0010-00L,Blitz 01/2017,20172
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Thermodynamik I (MAVT - Block 1),4.26,I COULD NOT FIND THE URL.,112,52,0.69,164,https://bestande.ch/eth/151-0051-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Thermodynamik II (MAVT - Block 2),3.78,{},13,5,0.76,18,https://bestande.ch/eth/151-0052-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Fluiddynamik I (MAVT - Block 2),4.82,{},72.20%,27.80%,0.73,18,https://bestande.ch/eth/151-0102-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Fluiddynamik II (MAVT - Block 3),4.68,{},95.20%,4.80%,0.67,289,https://bestande.ch/eth/151-0103-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Thermodynamics III (MAVT - Block 3),4.88,{},275,14,0.61,289,https://bestande.ch/eth/151-0261-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Maschinenelemente (MAVT - Basisprüfung),4.03,{},48.30%,51.70%,0.54,60,https://bestande.ch/eth/151-0301-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Dimensionieren I (MAVT - Block 1),3.83,{},75.30%,24.70%,0.81,369,https://bestande.ch/eth/151-0303-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Dynamics (MAVT - Block 1),4.73,{},75.30%,24.70%,0.86,369,https://bestande.ch/eth/151-0503-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,"Werkstoffe und Fertigung I, Werkstoffe und Fertigung II",4.06,exact matching course URL not available (Werkstoffe und Fertigung I/II),48.30%,51.70%,0.83,60,"https://bestande.ch/eth/151-0711-00L, https://bestande.ch/eth/151-0712-00L",Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Netzwerke und Schaltungen I (ITET - Basisprüfung Block A),2.54,I did not see anything that looked like a URL on these pages.,4,9,1.04,13,https://bestande.ch/eth/227-0001-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Digitaltechnik (ITET - Basisprüfung Block A),3.48,{},30.80%,69.20%,1.15,13,https://bestande.ch/eth/227-0003-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Technische Informatik I (ITET - Block 1),4.46,{},68.30%,31.70%,0.83,164,https://bestande.ch/eth/227-0013-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Signal- und Systemtheorie (ITET - Block 1),3.97,{},68.30%,31.70%,0.75,164,https://bestande.ch/eth/227-0045-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Signal- und Systemtheorie II (ITET - Block 2),4.18,{},76.90%,23.10%,0.8,13,https://bestande.ch/eth/227-0046-10L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Elektromagnetische Felder und Wellen (EM) (ITET - Block 3),4.04,{},7,0,0.59,7,https://bestande.ch/eth/227-0052-10L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Halbleiterbauelemente (ITET - Block 3),4.89,{},7,0,0.63,7,https://bestande.ch/eth/227-0056-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Elektrotechnik I (MAVT - Block 2),4.56,{},72.20%,27.80%,0.52,18,https://bestande.ch/eth/227-0075-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Halbleiter-Schaltungstechnik (ITET - Block 2),4.3,{},76.90%,23.10%,1.02,13,https://bestande.ch/eth/227-0077-10L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Informatik (MAVT - Basisprüfung),4.2,{},48.30%,51.70%,0.95,60,https://bestande.ch/eth/252-0832-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Diskrete Mathematik (ITET - Block 2),3.88,{},76.90%,23.10%,0.92,13,https://bestande.ch/eth/401-0053-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Lineare Algebra (ITET - Basisprüfung Block A),3.06,{},30.80%,69.20%,1.45,13,https://bestande.ch/eth/401-0171-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,"Lineare Algebra I, Lineare Algebra II",3.46,{},48.30%,51.70%,1.11,60,"https://bestande.ch/eth/401-0171-00L,https://bestande.ch/eth/401-0172-00L",Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,"Analysis I, Analysis II",3.62,{},30.80%,69.20%,1.17,13,"https://bestande.ch/eth/401-0261-G0L,https://bestande.ch/eth/401-0262-G0L",Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Analysis III (ITET - Block 1),4.2,{},75.30%,24.70%,0.94,369,https://bestande.ch/eth/401-0353-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Analysis III (MAVT - Block 1),4.22,{},68.30%,31.70%,0.98,164,https://bestande.ch/eth/401-0363-10L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Wahrscheinlichkeitstheorie und Statistik (W&S) (ITET - Block 3),4.71,{},100%,0%,0.34,7,https://bestande.ch/eth/401-0604-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Numerische Methoden (ITET - Block 3),4.04,{},100%,0%,0.59,7,https://bestande.ch/eth/401-0654-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,"Physik I, Physik II",4.06,{},72.20%,27.80%,0.65,18,"https://bestande.ch/eth/402-0033-10L, https://bestande.ch/eth/402-0034-10L",Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Physik II (ITET - Block 1),4.29,{},68.30%,31.70%,0.81,164,https://bestande.ch/eth/402-0053-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS16/blitz07_issuu.pdf,Chemie (MAVT - Basisprüfung),3.96,{},48.30%,51.70%,1,60,https://bestande.ch/eth/529-0010-00L,Blitz 07/2016,20161
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Thermodynamik I (MAVT - Block 1),4.3,{},327,30,0.83,357,https://bestande.ch/eth/151-0051-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Thermodynamik II (MAVT - Block 2),4.25,No URL for the course,73.10%,26.90%,0.64,26,https://bestande.ch/eth/151-0052-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Fluiddynamik I (MAVT - Block 2),4.25,{},20,7,0.51,27,https://bestande.ch/eth/151-0102-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Fluiddynamik II (MAVT - Block 3),4.52,{},269,25,0.71,294,https://bestande.ch/eth/151-0103-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Technische Mechanik (ITET - Basisprüfung Block A),4.55,{},70.54%,29.46%,1.1,231,https://bestande.ch/eth/151-0223-10L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Technische Mechanik (ITET - Basisprüfung Block A),4.38,None listed,224,7,0.97,231,https://bestande.ch/eth/151-0223-10L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Thermodynamics III (MAVT - Block 3),4.74,{},269,25,0.62,294,https://bestande.ch/eth/151-0261-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Maschinenelemente (MAVT - Basisprüfung),4.55,{},46,28,0.66,74,https://bestande.ch/eth/151-0301-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Dimensionieren I (MAVT - Block 1),4.56,{},327,30,0.84,357,https://bestande.ch/eth/151-0303-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Kinematik und Statik (MAVT - Basisprüfung),4.42,{},46,28,0.89,74,https://bestande.ch/eth/151-0501-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Dynamics (MAVT - Block 1),4.86,{},327,30,0.67,357,https://bestande.ch/eth/151-0503-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Control Systems I (MAVT - Block 1),4.58,{},327,30,0.96,357,https://bestande.ch/eth/151-0591-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,"Werkstoffe und Fertigung I, Werkstoffe und Fertigung II",4.07,{},46,28,0.64,74,"https://bestande.ch/eth/151-0711-00L, https://bestande.ch/eth/151-0712-00L",Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Netzwerke und Schaltungen I (ITET - Basisprüfung Block A),4.06,{},141,90,1.13,231,https://bestande.ch/eth/227-0001-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Digitaltechnik (ITET - Basisprüfung Block A),4.49,{},171,60,0.97,231,https://bestande.ch/eth/227-0003-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Technische Informatik I (ITET - Block 1),4.3,{},127,40,0.81,167,https://bestande.ch/eth/227-0013-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Signal- und Systemtheorie (ITET - Block 1),4.3,{},129,38,0.73,167,https://bestande.ch/eth/227-0045-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Signal- und Systemtheorie II (ITET - Block 2),4.33,{},15,1,0.62,16,https://bestande.ch/eth/227-0046-10L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Elektromagnetische Felder und Wellen (EM) (ITET - Block 3),4.7,{},100%,0%,0.78,5,https://bestande.ch/eth/227-0052-10L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Halbleiterbauelemente (ITET - Block 3),5.7,{},100%,0%,0.21,5,https://bestande.ch/eth/227-0056-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Elektrotechnik I (MAVT - Block 2),4.47,{},20,7,0.64,27,https://bestande.ch/eth/227-0075-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Halbleiter-Schaltungstechnik (ITET - Block 2),4.29,{},15,1,0.38,16,https://bestande.ch/eth/227-0077-10L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Informatik (MAVT - Basisprüfung),3.82,{},46,28,0.65,74,https://bestande.ch/eth/252-0832-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Diskrete Mathematik (ITET - Block 2),4.2,{},15,1,0.41,16,https://bestande.ch/eth/401-0053-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Lineare Algebra (ITET - Basisprüfung Block A),4,I did not see anything that looked like a URL on these pages.,130,101,1.26,231,https://bestande.ch/eth/401-0171-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,"Lineare Algebra I, Lineare Algebra II",4.32,{},46,28,1.1,74,"https://bestande.ch/eth/401-0171-00L,https://bestande.ch/eth/401-0172-00L",Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,"Analysis I, Analysis II",3.6,{},46,28,0.86,74,"https://bestande.ch/eth/401-0261-G0L,https://bestande.ch/eth/401-0262-G0L",Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Analysis III (ITET - Block 1),4.62,{},149,18,0.73,167,https://bestande.ch/eth/401-0353-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Analysis III (MAVT - Block 1),4.62,{},149,18,0.73,167,https://bestande.ch/eth/401-0363-10L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Wahrscheinlichkeitstheorie und Statistik (W&S) (ITET - Block 3),5,{},5,0,1.16,5,https://bestande.ch/eth/401-0604-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,"Physik I, Physik II",3.88,{},20,7,0.74,27,"https://bestande.ch/eth/402-0033-10L, https://bestande.ch/eth/402-0034-10L",Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Physik II (ITET - Block 1),4.28,{},113,54,0.85,167,https://bestande.ch/eth/402-0053-00L,Blitz 07/2017,20171
+https://blitz.ethz.ch/pdf/FS17/blitz07_issu.pdf,Chemie (MAVT - Basisprüfung),3.86,{},46,28,0.67,74,https://bestande.ch/eth/529-0010-00L,Blitz 07/2017,20171
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-FS15-compressed.pdf,Systems Engineering,3.06,{},3,2,1.18,5,https://bestande.ch/eth/101-0031-01L,NAIV FS15,20151
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-FS15-compressed.pdf,"Stahlbau I, Stahlbau II",4.65,{},60.70%,39.30%,0.62,107,"https://bestande.ch/eth/101-0134-00L,https://bestande.ch/eth/101-0135-01L",NAIV FS15,20151
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-FS15-compressed.pdf,Hydraulik,4.56,{},78.6%,21.4%,0.78,129,https://bestande.ch/eth/101-0203-01L,NAIV FS15,20151
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-FS15-compressed.pdf,Grundbau,4.44,{},86,21,0.62,107,https://bestande.ch/eth/101-0315-00L,NAIV FS15,20151
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-FS15-compressed.pdf,Verkehr II,4.42,URL - not available,87.90%,12.10%,0.55,107,https://bestande.ch/eth/101-0415-01L,NAIV FS15,20151
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-FS15-compressed.pdf,Hydrolody,3.77,I couldn't find Hydrolody so I did hydrologie,16,17,0.79,33,https://bestande.ch/eth/102-0293-00L,NAIV FS15,20151
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-FS15-compressed.pdf,Physik,3.94,{},70.40%,29.60%,0.92,129,https://bestande.ch/eth/402-0023-01L,NAIV FS15,20151
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-FS16-compressed.pdf,"Stahlbau I, Stahlbau II",3.92,{},4,5,0.55,9,"https://bestande.ch/eth/101-0134-00L,https://bestande.ch/eth/101-0135-01L",NAIV FS16,20161
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-FS16-compressed.pdf,Hydraulik,4.09,{},71.30%,28.70%,0.57,124,https://bestande.ch/eth/101-0203-01L,NAIV FS16,20161
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-FS16-compressed.pdf,Grundbau,4.79,I did not see anything that looked like a URL on these pages.,105,8,0.58,113,https://bestande.ch/eth/101-0315-00L,NAIV FS16,20161
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-FS16-compressed.pdf,Verkehr II,4.18,No URL available,60%,40%,0.83,113,https://bestande.ch/eth/101-0415-01L,NAIV FS16,20161
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-FS16-compressed.pdf,Analysis III,4.98,{},89.30%,10.70%,0.83,124,https://bestande.ch/eth/401-0243-00L,NAIV FS16,20161
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-FS16-compressed.pdf,Physik,4.94,{},116,8,0.76,124,https://bestande.ch/eth/402-0023-01L,NAIV FS16,20161
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2017/06/NAIV-FS17_small.pdf,Systems Engineering,5.06,{},93.60%,6.40%,0.48,93,https://bestande.ch/eth/101-0031-01L,NAIV FS17,20171
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2017/06/NAIV-FS17_small.pdf,"Stahlbau I, Stahlbau II",3.99,cant find link,77,16,0.52,93,"https://bestande.ch/eth/101-0134-00L,https://bestande.ch/eth/101-0135-01L",NAIV FS17,20171
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2017/06/NAIV-FS17_small.pdf,Hydraulik,4.44,{},102,30,0.63,132,https://bestande.ch/eth/101-0203-01L,NAIV FS17,20171
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2017/06/NAIV-FS17_small.pdf,Grundbau,4.42,{},73.90%,26.10%,0.74,93,https://bestande.ch/eth/101-0315-00L,NAIV FS17,20171
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2017/06/NAIV-FS17_small.pdf,Verkehr II,4.63,Could not find link to courses,93.90%,6.1%,0.56,132,https://bestande.ch/eth/101-0415-01L,NAIV FS17,20171
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2017/06/NAIV-FS17_small.pdf,Hydrolody,4.45,{},69.20%,30.80%,0.75,93,https://bestande.ch/eth/102-0293-00L,NAIV FS17,20171
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2017/06/NAIV-FS17_small.pdf,Analysis III,5.01,{},97.90%,2.10%,0.5,132,https://bestande.ch/eth/401-0243-00L,NAIV FS17,20171
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2017/06/NAIV-FS17_small.pdf,Physik,4.65,{},79.90%,20.10%,0.82,132,https://bestande.ch/eth/402-0023-01L,NAIV FS17,20171
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS181.pdf,Systems Engineering,4.79,{},91.40%,8.60%,0.64,127,https://bestande.ch/eth/101-0031-01L,NAIV FS18,20181
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS181.pdf,"Stahlbau I, Stahlbau II",4.1,{},71%,29%,0.53,127,"https://bestande.ch/eth/101-0134-00L,https://bestande.ch/eth/101-0135-01L",NAIV FS18,20181
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS181.pdf,Hydraulik,4.48,{},77.80%,22.20%,0.72,118,https://bestande.ch/eth/101-0203-01L,NAIV FS18,20181
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS181.pdf,Grundbau,4.69,{},86%,14%,0.65,127,https://bestande.ch/eth/101-0315-00L,NAIV FS18,20181
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS181.pdf,Verkehr II,4.5,{},78.50%,21.50%,0.7,127,https://bestande.ch/eth/101-0415-01L,NAIV FS18,20181
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS181.pdf,Hydrolody,4.47,{},86.50%,13.50%,0.59,127,https://bestande.ch/eth/102-0293-00L,NAIV FS18,20181
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS181.pdf,Analysis III,5.16,{},92.20%,7.80%,0.77,118,https://bestande.ch/eth/401-0243-00L,NAIV FS18,20181
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS181.pdf,Physik,4.34,{},70.50%,29.50%,0.85,118,https://bestande.ch/eth/402-0023-01L,NAIV FS18,20181
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Systems Engineering,3.79,{},94,85,1.15,179,https://bestande.ch/eth/101-0031-01L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,"Betriebswirtschaftslehre",4.56,{},156,23,0.86,179,"https://bestande.ch/eth/101-0031-04L",NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,"Betriebswirtschaftslehre",4.56,{},156,23,0.86,179,"https://bestande.ch/eth/101-0031-02L",NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,"Baustatik I, Baustatik II",3.53,{},30.30%,69.70%,0.87,109,"https://bestande.ch/eth/101-0113-00L,https://bestande.ch/eth/101-0114-00L",NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,"Stahlbeton I, Stahlbeton II",4.06,{},72,55,0.91,127,"https://bestande.ch/eth/101-0125-00L, https://bestande.ch/eth/101-0126-01L",NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,"Stahlbau I, Stahlbau II",4.06,{},56.60%,43.40%,0.91,127,"https://bestande.ch/eth/101-0134-00L,https://bestande.ch/eth/101-0135-01L",NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Hydraulik,4.66,{},76.50%,23.50%,0.63,9,https://bestande.ch/eth/101-0203-01L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Wasserbau,4.39,{},106,21,53,127,https://bestande.ch/eth/101-0206-00L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Bodenmechanik,4.72,{},93.60%,6.40%,0.57,109,https://bestande.ch/eth/101-0314-00L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Grundbau,4.5,{},83.30%,16.70%,0.42,7,https://bestande.ch/eth/101-0315-00L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,UTB (Untertagbau),4.47,{},81.30%,18.70%,0.67,127,https://bestande.ch/eth/101-0317-00L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Verkehr I,3.7,{},61,48,0.65,109,https://bestande.ch/eth/101-0414-00L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Verkehr II,3.75,URL not available,72.20%,27.80%,0.77,7,https://bestande.ch/eth/101-0415-01L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Verkehr III,4.73,{},88.10%,11.90%,0.7,127,https://bestande.ch/eth/101-0416-00L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Projektmanagement,4.83,{},94.4%,5.6%,0.45,7,https://bestande.ch/eth/101-0515-00L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Bauverfahren,4.5,{},93.50%,6.50%,0.4,127,https://bestande.ch/eth/101-0556-01L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Werkstoffe I/II,4.1,,68,41,0.78,109,https://bestande.ch/eth/101-0604-02L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Hydrologie,4.28,{},68.80%,31.20%,1.35,9,https://bestande.ch/eth/102-0293-00L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,"Mechanik I, Mechanik II",4.01,{},106,73,1.01,179,"https://bestande.ch/eth/151-0501-00L, https://bestande.ch/eth/151-0502-00L",NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,"Informatik I, Informatik II",4.53,{},75.70%,24.30%,0.95,179,"https://bestande.ch/eth/252-0845-00L,https://bestande.ch/eth/252-0846-00L",NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Lineare Algebra & Numerik,4.08,URL not found,66.80%,33.20%,1.02,179,https://bestande.ch/eth/401-0141-00L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,"Analysis I, Analysis II",3.88,{},52%,48%,1.23,179,"https://bestande.ch/eth/401-0241-00L,https://bestande.ch/eth/401-0242-00L",NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Statistik,4.22,URL: Department not found,64.70%,35.30%,0.96,179,https://bestande.ch/eth/401-0612-00L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Physik,3.94,{},4,5,0.92,9,https://bestande.ch/eth/402-0023-01L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Chemie,4.44,{},87.50%,12.50%,1.18,9,https://bestande.ch/eth/529-2001-02L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Geologie & Petrographie,4.21,{},69.40%,30.60%,0.79,179,https://bestande.ch/eth/651-0032-00L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Öffentliches Baurecht,4.49,{},93.90%,6.10%,0.46,109,https://bestande.ch/eth/851-0702-01L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Recht für Bauwiss. & A.,4.76,{},91.2%,8.8%,0.71,109,https://bestande.ch/eth/851-0703-03L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Introduction au Droit civil,4.98,{},93.30%,6.70%,0.62,109,https://bestande.ch/eth/851-0709-00L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS14-compressed.pdf,Introduction au Droit public,5.7,{},102,7,0.27,109,https://bestande.ch/eth/851-0712-00L,NAIV HS14,20142
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Betriebswirtschaftslehre,4.49,{},83.90%,16.10%,0.84,193,"https://bestande.ch/eth/101-0031-04L",NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Betriebswirtschaftslehre,4.49,{},83.90%,16.10%,0.84,193,"https://bestande.ch/eth/101-0031-02L",NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,"Baustatik I, Baustatik II",3.95,{},54.40%,45.60%,0.76,114,"https://bestande.ch/eth/101-0113-00L,https://bestande.ch/eth/101-0114-00L",NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,"Stahlbeton I, Stahlbeton II",4,no matching Stahlbeton I / II URL. Only Stahlbeton I available,49.50%,50.50%,0.74,101,"https://bestande.ch/eth/101-0125-00L, https://bestande.ch/eth/101-0126-01L",NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,"Stahlbeton I, Stahlbeton II",4.15,{},127,66,0.83,193,"https://bestande.ch/eth/101-0125-00L, https://bestande.ch/eth/101-0126-01L",NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,"Stahlbau I, Stahlbau II",4.16,{},75%,25%,0.89,8,"https://bestande.ch/eth/101-0134-00L,https://bestande.ch/eth/101-0135-01L",NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Hydraulik,4.34,URL: Hydraulik I is available. Only Hydraulik not available,87.20%,12.80%,0.55,33,https://bestande.ch/eth/101-0203-01L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Wasserbau,4.57,{},88%,12%,0.47,101,https://bestande.ch/eth/101-0206-00L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Bodenmechanik,4.56,{},89.70%,10.30%,0.52,114,https://bestande.ch/eth/101-0314-00L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Grundbau,4.53,{},88.90%,11.10%,0.55,8,https://bestande.ch/eth/101-0315-00L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,UTB (Untertagbau),4.42,URL: Untertagbau I available,82.30%,17.70%,0.64,101,https://bestande.ch/eth/101-0317-00L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Verkehr I,4.54,{},79.50%,20.50%,0.56,114,https://bestande.ch/eth/101-0414-00L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Verkehr II,5.16,The article is not in English,8,1,0.73,9,https://bestande.ch/eth/101-0415-01L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Verkehr III,4.3,No URL found,74.80%,25.20%,0.6,101,https://bestande.ch/eth/101-0416-00L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Projektmanagement,4.97,No URL for the course,97.20%,2.80%,0.57,8,https://bestande.ch/eth/101-0515-00L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Bauverfahren,5.12,{},99%,1%,0.39,101,https://bestande.ch/eth/101-0556-01L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Werkstoffe I/II,4.38,,80,34,0.89,114,https://bestande.ch/eth/101-0604-02L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Hydrologie,3.77,{},47.40%,52.60%,0.79,33,https://bestande.ch/eth/102-0293-00L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,"Mechanik I, Mechanik II",3.79,NO URL found,53.90%,46.10%,1.1,193,"https://bestande.ch/eth/151-0501-00L, https://bestande.ch/eth/151-0502-00L",NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,"Informatik I, Informatik II",4.29,{},70.80%,29.20%,0.87,193,"https://bestande.ch/eth/252-0845-00L,https://bestande.ch/eth/252-0846-00L",NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Lineare Algebra & Numerik,3.77,URL not found,63.80%,36.20%,1.17,193,https://bestande.ch/eth/401-0141-00L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,"Analysis I, Analysis II",3.94,{},59%,41%,1.2,193,"https://bestande.ch/eth/401-0241-00L,https://bestande.ch/eth/401-0242-00L",NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Statistik,4.27,URL: department does not match,69%,31%,0.97,193,https://bestande.ch/eth/401-0612-00L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Physik,3.94,{},52.80%,47.20%,0.81,33,https://bestande.ch/eth/402-0023-01L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Chemie,3.84,{},51.80%,48.20%,1.09,193,https://bestande.ch/eth/529-2001-02L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Geologie & Petrographie,4.43,{},79.80%,20.20%,0.88,193,https://bestande.ch/eth/651-0032-00L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Öffentliches Baurecht,4.43,{},93.80%,6.20%,0.37,193,https://bestande.ch/eth/851-0702-01L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Recht für Bauwiss. & A.,5.49,Mo URL available,97.60%,2.40%,0.62,193,https://bestande.ch/eth/851-0703-03L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Introduction au Droit civil,4.36,{},88.60%,11.40%,0.97,193,https://bestande.ch/eth/851-0709-00L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/03/NAIV-HS15-compressed.pdf,Introduction au Droit public,5.44,{},92.90%,7.10%,0.51,114,https://bestande.ch/eth/851-0712-00L,NAIV HS15,20152
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,Betriebswirtschaftslehre,4.65,{},94%,6%,0.6,184,"https://bestande.ch/eth/101-0031-02L",NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,Betriebswirtschaftslehre,4.65,{},94%,6%,0.6,184,"https://bestande.ch/eth/101-0031-04L",NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,"Baustatik I, Baustatik II",4.12,{},58.50%,41.50%,0.85,123,"https://bestande.ch/eth/101-0113-00L,https://bestande.ch/eth/101-0114-00L",NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,"Stahlbeton I, Stahlbeton II",4.29,{},70.20%,29.80%,0.8,114,"https://bestande.ch/eth/101-0125-00L, https://bestande.ch/eth/101-0126-01L",NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,"Stahlbau I, Stahlbau II",4.29,{},70.20%,29.80%,0.8,114,"https://bestande.ch/eth/101-0134-00L,https://bestande.ch/eth/101-0135-01L",NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,Wasserbau,4.57,{},83.90%,16.10%,0.58,114,https://bestande.ch/eth/101-0206-00L,NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,Bodenmechanik,4.73,{},119,4,0.47,123,https://bestande.ch/eth/101-0314-00L,NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,UTB (Untertagbau),4.52,{},89,25,0.74,114,https://bestande.ch/eth/101-0317-00L,NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,Verkehr I,3.77,{},55.30%,44.70%,0.66,123,https://bestande.ch/eth/101-0414-00L,NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,Verkehr II,4.52,"I couldn't find Verkehr II, only Verkehr III",82,32,0.87,114,https://bestande.ch/eth/101-0415-01L,NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,Verkehr III,4.52,URL not available,72%,28%,0.87,114,https://bestande.ch/eth/101-0416-00L,NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,Bauverfahren,4.7,{},114,0,0.38,114,https://bestande.ch/eth/101-0556-01L,NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,Bauverfahren,4.79,No URL for the course,100%,0%,0.38,114,https://bestande.ch/eth/101-0556-01L,NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,Werkstoffe I/II,4.26,,79,44,0.91,123,https://bestande.ch/eth/101-0604-02L,NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,"Mechanik I, Mechanik II",3.93,Please check the URL details. I am not sure. I did not found exact match.,59.60%,40.40%,0.99,184,"https://bestande.ch/eth/151-0501-00L, https://bestande.ch/eth/151-0502-00L",NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,"Informatik I, Informatik II",3.87,{},90,94,1.15,184,"https://bestande.ch/eth/252-0845-00L,https://bestande.ch/eth/252-0846-00L",NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,Lineare Algebra & Numerik,3.96,URL is not found,58.30%,41.70%,0.91,184,https://bestande.ch/eth/401-0141-00L,NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,"Analysis I, Analysis II",3.87,{},49.10%,50.90%,1.15,184,"https://bestande.ch/eth/401-0241-00L,https://bestande.ch/eth/401-0242-00L",NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,Statistik,4.46,URL of the course not available,138,46,0.88,184,https://bestande.ch/eth/401-0612-00L,NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,Chemie,4.08,{},54.90%,45.10%,0.94,184,https://bestande.ch/eth/529-2001-02L,NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,Geologie & Petrographie,4.51,{},76.70%,23.30%,0.82,184,https://bestande.ch/eth/651-0032-00L,NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2016/10/NAIV-HS16-hp_comp.pdf,Öffentliches Baurecht,4.38,{},161,23,0.43,184,https://bestande.ch/eth/851-0702-01L,NAIV HS16,20162
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS17_Komplett_geschu%CC%88tzt.pdf,Betriebswirtschaftslehre,4.6,{},84.20%,15.80%,0.85,158,"https://bestande.ch/eth/101-0031-04L",NAIV HS17,20172
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS17_Komplett_geschu%CC%88tzt.pdf,Betriebswirtschaftslehre,4.6,{},84.20%,15.80%,0.85,158,"https://bestande.ch/eth/101-0031-02L",NAIV HS17,20172
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS17_Komplett_geschu%CC%88tzt.pdf,"Baustatik I, Baustatik II",4.27,{},67.80%,32.20%,0.83,145,"https://bestande.ch/eth/101-0113-00L,https://bestande.ch/eth/101-0114-00L",NAIV HS17,20172
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS17_Komplett_geschu%CC%88tzt.pdf,"Stahlbeton I, Stahlbeton II",4.23,{},58,30,0.68,88,"https://bestande.ch/eth/101-0125-00L, https://bestande.ch/eth/101-0126-01L",NAIV HS17,20172
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS17_Komplett_geschu%CC%88tzt.pdf,Wasserbau,4.54,{},88.40%,11.60%,0.52,88,https://bestande.ch/eth/101-0206-00L,NAIV HS17,20172
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS17_Komplett_geschu%CC%88tzt.pdf,Bodenmechanik,4.82,{},95%,5%,0.55,145,https://bestande.ch/eth/101-0314-00L,NAIV HS17,20172
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS17_Komplett_geschu%CC%88tzt.pdf,UTB (Untertagbau),4.28,{},70,18,0.48,88,https://bestande.ch/eth/101-0317-00L,NAIV HS17,20172
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS17_Komplett_geschu%CC%88tzt.pdf,Verkehr I,4.41,{},73.30%,26.70%,0.7,145,https://bestande.ch/eth/101-0414-00L,NAIV HS17,20172
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS17_Komplett_geschu%CC%88tzt.pdf,Verkehr III,4.18,{},68.60%,31.40%,0.65,88,https://bestande.ch/eth/101-0416-00L,NAIV HS17,20172
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS17_Komplett_geschu%CC%88tzt.pdf,Bauverfahren,4.81,{},96.30%,3.70%,0.4,88,https://bestande.ch/eth/101-0556-01L,NAIV HS17,20172
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS17_Komplett_geschu%CC%88tzt.pdf,Werkstoffe I/II,4.45,,114,31,0.75,145,https://bestande.ch/eth/101-0604-02L,NAIV HS17,20172
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS17_Komplett_geschu%CC%88tzt.pdf,"Mechanik I, Mechanik II",3.97,{},109,49,0.97,158,"https://bestande.ch/eth/151-0501-00L, https://bestande.ch/eth/151-0502-00L",NAIV HS17,20172
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS17_Komplett_geschu%CC%88tzt.pdf,"Informatik I, Informatik II",4.23,I did not see anything that looked like a URL on these pages.,109,49,0.9,158,"https://bestande.ch/eth/252-0845-00L,https://bestande.ch/eth/252-0846-00L",NAIV HS17,20172
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS17_Komplett_geschu%CC%88tzt.pdf,Lineare Algebra & Numerik,4.25,{},77.70%,22.30%,1.01,158,https://bestande.ch/eth/401-0141-00L,NAIV HS17,20172
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS17_Komplett_geschu%CC%88tzt.pdf,"Analysis I, Analysis II",4.18,{},99,59,1.17,158,"https://bestande.ch/eth/401-0241-00L,https://bestande.ch/eth/401-0242-00L",NAIV HS17,20172
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS17_Komplett_geschu%CC%88tzt.pdf,Statistik,4.37,URL not matching with exact department.,76.30%,23.70%,0.82,158,https://bestande.ch/eth/401-0612-00L,NAIV HS17,20172
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS17_Komplett_geschu%CC%88tzt.pdf,Chemie,4.12,{},62.30%,37.70%,1.16,158,https://bestande.ch/eth/529-2001-02L,NAIV HS17,20172
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS17_Komplett_geschu%CC%88tzt.pdf,Geologie & Petrographie,4.38,{},80.80%,19.20%,0.7,158,https://bestande.ch/eth/651-0032-00L,NAIV HS17,20172
+http://www.aiv.ethz.ch/wp/wp-content/uploads/2009/09/NAIV-FS17_Komplett_geschu%CC%88tzt.pdf,Öffentliches Baurecht,4.47,{},94.70%,5.30%,0.47,158,https://bestande.ch/eth/851-0702-01L,NAIV HS17,20172

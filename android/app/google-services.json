@@ -1,0 +1,40 @@
+{
+	"project_info": {
+		"project_number": "832412145438",
+		"firebase_url": "https://bestande-2781f.firebaseio.com",
+		"project_id": "bestande-2781f",
+		"storage_bucket": "bestande-2781f.appspot.com"
+	},
+	"client": [
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:832412145438:android:4c65a282cd88c9f5c41b0f",
+				"android_client_info": {
+					"package_name": "bestande.bestande"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "832412145438-kpfcv4f2poa76g3j6g9vdaq50mao2bfu.apps.googleusercontent.com",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "AIzaSyCg7ZA2xv3mN-BuofWyRd0CMnSdURIZ-NM"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "832412145438-kpfcv4f2poa76g3j6g9vdaq50mao2bfu.apps.googleusercontent.com",
+							"client_type": 3
+						}
+					]
+				}
+			}
+		}
+	],
+	"configuration_version": "1"
+}

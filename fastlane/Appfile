@@ -1,0 +1,3 @@
+app_identifier "jonnyburger.bestande"
+json_key_file "android/supplyfile.json"
+package_name "bestande.bestande"

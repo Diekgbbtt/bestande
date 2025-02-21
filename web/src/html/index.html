@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<link rel="manifest" href="../static/manifest.json" />
+		<meta name="theme-color" content="#2ECC71" />
+		<link rel="shortcut icon" href="/static/logo.png" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Two+Tone"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Montserrat:400,700"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Roboto:400,500"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Roboto+Mono:300"
+			rel="stylesheet"
+		/>
+		<link href="/static/main.css" rel="stylesheet" />
+		<title>Bestande</title>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKVNh-hY3u16NrHXFfFLeHRa0undnjSJM&libraries=places"></script>
+
+		<meta property="og:title" content="Bestande" />
+		<meta
+			property="og:description"
+			content="Check out the Bestande App - perfect for course ratings and more!"
+		/>
+		<meta
+			property="og:image"
+			content="https://bestande.ch/static/logo-square.png"
+		/>
+		<meta property="og:url" content="https://bestande.ch" />
+		<meta property="og:type" content="website" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Bestande" />
+		<meta
+			name="twitter:description"
+			content="Check out the Bestande App - perfect for course ratings and more!"
+		/>
+		<meta
+			name="twitter:image"
+			content="https://bestande.ch/static/logo-square.png"
+		/>
+	</head>
+	<body>
+		<div id="app"></div>
+		<script>
+			window.initialState = {{JSON.stringify(state)}}
+		</script>
+		<script src="/static/app.js">
+			if ("serviceWorker" in navigator) {
+				navigator.serviceWorker.register("/service-worker.js");
+			  }
+		</script>
+	</body>
+</html>
