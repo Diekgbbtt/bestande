@@ -303,5 +303,6 @@
 		],
 		"timeout": "1m",
 		"serial": true
-	}
+	},
+	"packageManager": "yarn@3.6.0"
 }
