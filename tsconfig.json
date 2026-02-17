@@ -10,7 +10,7 @@
 		"downlevelIteration": true,
 		"strict": false,
 		"noImplicitAny": false,
-		"strictNullChecks": true,
+		"strictNullChecks": false,
 		"noImplicitThis": true,
 		"outDir": "./dist",
 		"allowSyntheticDefaultImports": true,
