@@ -1,8 +1,8 @@
 {
 	"name": "@jonny/bestande",
 	"engines": {
-		"npm": "9.8.1",
-		"node": "20.6.1"
+		"npm": "11.3.0",
+		"node": "24.0.0"
 	},
 	"version": "5.0.0",
 	"license": "UNLICENSED",
