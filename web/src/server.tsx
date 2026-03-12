@@ -137,6 +137,9 @@ const createApp = () => {
 		response.render('notenstatistiken');
 	});
 
+	// HTTP metrics collection endpoint for Prometheus
+	app.get('/metrics', metricsScraperHandler);
+
 	// Initial state
 	app.use((request, response) => {
 		try {
@@ -150,12 +153,6 @@ const createApp = () => {
 			console.log(err);
 		}
 	});
-
-	// HTTP metrics collection endpoint for Prometheus
-	app.get('/metrics', metricsScraperHandler);
-
-	// app.get('/metrics', (request, response) => { });
-
 
 	return server;
 };
