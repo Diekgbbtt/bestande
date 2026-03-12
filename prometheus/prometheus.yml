@@ -17,8 +17,12 @@ scrape_configs:
 
   - job_name: nodejs_app
     metrics_path: /metrics
+    scheme: https
+    tls_config:
+      insecure_skip_verify: true
     static_configs:
-      - targets: ['https://staging.bestande.ch']
+      - targets: ['staging.bestande.ch']
+
 
   - job_name: node_exporter
     static_configs:
@@ -30,11 +34,14 @@ scrape_configs:
 
   - job_name: blackbox_ssl
     metrics_path: /probe
+    scheme: https
+    tls_config:
+      insecure_skip_verify: true
     params:
       module: [https_cert]
     static_configs:
       - targets:
-        - https://staging.bestande.ch
+        - staging.bestande.ch
     relabel_configs:
       - source_labels: [__address__]
         target_label: __param_target
