@@ -1,6 +1,5 @@
 import aws from 'aws-sdk';
 import express from 'express';
-import session from 'express-session';
 import subdomain from 'express-subdomain';
 import https from 'https';
 import http from 'http';
@@ -8,6 +7,7 @@ import passport from 'passport';
 import path from 'path';
 import s3Router from 'react-s3-uploader/s3router';
 import swig from 'swig';
+import session from 'express-session';
 import webpack from 'webpack';
 import devMiddleware from 'webpack-dev-middleware';
 import hotMiddleware from 'webpack-hot-middleware';
@@ -18,7 +18,8 @@ import cookieParser from 'cookie-parser';
 // import swaggerUi from 'swagger-ui-express';
 // const swaggerFile = require('./swagger-output.json');
 import fs from 'fs';
-import client from 'prom-client';
+import {metricsScraperHandler, metricsMiddleware} from './metrics';
+
 
 
 if (process.env.RAVEN) {
@@ -29,6 +30,7 @@ if (process.env.RAVEN) {
 const createApp = () => {
 	const app = express();
 	app.use(cookieParser());
+	app.use(metricsMiddleware);
 
 	app.use((req, res, next) => {
 		if (req.hostname.startsWith('www.bestande.ch')) {
@@ -148,6 +150,12 @@ const createApp = () => {
 			console.log(err);
 		}
 	});
+
+	// HTTP metrics collection endpoint for Prometheus
+	app.get('/metrics', metricsScraperHandler);
+
+	// app.get('/metrics', (request, response) => { });
+
 
 	return server;
 };
