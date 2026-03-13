@@ -14,3 +14,5 @@ dist
 .yarn
 algolia-modules.json
 *.pem
+prometheus/data/
+db/
