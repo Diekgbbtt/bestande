@@ -25,7 +25,7 @@ const httpRequestLatency = new client.Histogram({
 const metricsMiddleware = (request: import('express').Request, response: import('express').Response, next: import('express').NextFunction) => {
 
     // prevent spurious metrics collection
-    if (request.path === '/metrics') {
+    if (request.path === '/metrics' || request.path === '/health') {
         return next();
     }
     

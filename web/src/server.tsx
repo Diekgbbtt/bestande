@@ -140,6 +140,11 @@ const createApp = () => {
 	// HTTP metrics collection endpoint for Prometheus
 	app.get('/metrics', metricsScraperHandler);
 
+	// health endpoint for availability probing
+	app.get("/health", (req, res) => {
+		res.status(200).end();
+	});
+
 	// Initial state
 	app.use((request, response) => {
 		try {
