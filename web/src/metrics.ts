@@ -5,7 +5,7 @@ const register = new client.Registry();
 
 // collection of default metrics (e.g. CPU and memory usage)
 // not needed for now - we'll be using blackbox exporter
-// client.collectDefaultMetrics({ register });
+client.collectDefaultMetrics({ register });
 
 const httpRequestsCounter = new client.Counter({
     name: "http_request_total",
