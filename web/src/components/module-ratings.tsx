@@ -184,6 +184,11 @@ const ModuleRatings = (props: {module: ApiResponse}) => {
 	);
 
 	const getMyRating = async () => {
+		if (!isStudentStillLoggedIn()) {
+			setMyRating(null);
+			return;
+		}
+
 		try {
 			const myRating: Rating | null = await apiRequest(
 				`/institution/${'uzh'}/module/${uni_identifier}/ratings/mine`,
@@ -198,6 +203,10 @@ const ModuleRatings = (props: {module: ApiResponse}) => {
 	};
 
 	React.useEffect(() => {
+		if (!isStudentStillLoggedIn()) {
+			setMyRating(null);
+			return;
+		}
 		getMyRating();
 	}, [uni_identifier]);
 

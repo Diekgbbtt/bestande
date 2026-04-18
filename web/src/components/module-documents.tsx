@@ -121,7 +121,11 @@ export const ModuleDocuments = (props) => {
 	);
 
 	useEffect(() => {
-		fetchMyDocs(credit.uni_identifier, credit.university);
+		if (isStudentStillLoggedIn()) {
+			fetchMyDocs(credit.uni_identifier, credit.university);
+		} else {
+			setMyDocuments([]);
+		}
 		fetchDocs(credit.uni_identifier, credit.university);
 	}, [fetchDocs, sortOption]);
 
