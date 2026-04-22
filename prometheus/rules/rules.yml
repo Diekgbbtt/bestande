@@ -1,0 +1,227 @@
+groups:
+  - name: slo_alerts
+    rules:
+      # --- AVAILABILITY: CRITICAL ENDPOINTS ---
+      - alert: CriticalAvailabilityCritical
+        expr: |
+          (
+            sum(rate(http_request_total{status_code=~"5.."}[5m]))
+            /
+            sum(rate(http_request_total[5m]))
+          ) > 0.072
+          AND
+          (
+            sum(rate(http_request_total{status_code=~"5.."}[1h]))
+            /
+            sum(rate(http_request_total[1h]))
+          ) > 0.072
+        labels:
+          severity: critical
+
+      - alert: CriticalAvailabilityWarning
+        expr: |
+          (
+            sum(rate(http_request_total{status_code=~"5.."}[2h]))
+            /
+            sum(rate(http_request_total[2h]))
+          ) > 0.015
+          AND
+          (
+            sum(rate(http_request_total{status_code=~"5.."}[1d]))
+            /
+            sum(rate(http_request_total[1d]))
+          ) > 0.015
+        labels:
+          severity: warning
+
+      # --- HTTP LATENCY: STANDARD LOAD ---
+      - alert: LatencyCritical0.1Bucket
+        expr: |
+          (
+            (
+              sum(rate(http_requests_latency_count[5m]))
+              -
+              sum(rate(http_requests_latency_bucket{le="0.1"}[5m]))
+            )
+            /
+            sum(rate(http_requests_latency_count[5m]))
+          ) > 0.2
+          AND
+          (
+            (
+              sum(rate(http_requests_latency_count[1h]))
+              -
+              sum(rate(http_requests_latency_bucket{le="0.1"}[1h]))
+            )
+            /
+            sum(rate(http_requests_latency_count[1h]))
+          ) > 0.02
+          AND
+          sum(rate(http_requests_latency_count[5m])) > 5
+        labels:
+          severity: critical
+
+      - alert: LatencyWarning0.1Bucket
+        expr: |
+          (
+            (
+              sum(rate(http_requests_latency_count[2h]))
+              -
+              sum(rate(http_requests_latency_bucket{le="0.1"}[2h]))
+            )
+            /
+            sum(rate(http_requests_latency_count[2h]))
+          ) > 0.01
+          AND
+          (
+            (
+              sum(rate(http_requests_latency_count[1d]))
+              -
+              sum(rate(http_requests_latency_bucket{le="0.1"}[1d]))
+            )
+            /
+            sum(rate(http_requests_latency_count[1d]))
+          ) > 0.01
+          AND
+          sum(rate(http_requests_latency_count[5m])) > 5
+        labels:
+          severity: warning
+
+      - alert: LatencyCritical0.2Bucket
+        expr: |
+          (
+            (
+              sum(rate(http_requests_latency_count[5m]))
+              -
+              sum(rate(http_requests_latency_bucket{le="0.2"}[5m]))
+            )
+            /
+            sum(rate(http_requests_latency_count[5m]))
+          ) > 0.05
+          AND
+          (
+            (
+              sum(rate(http_requests_latency_count[1h]))
+              -
+              sum(rate(http_requests_latency_bucket{le="0.2"}[1h]))
+            )
+            /
+            sum(rate(http_requests_latency_count[1h]))
+          ) > 0.05
+          AND
+          sum(rate(http_requests_latency_count[5m])) > 5
+        labels:
+          severity: critical
+
+      - alert: LatencyWarning0.2Bucket   # <-- FIXED INDENTATION
+        expr: |
+          (
+            (
+              sum(rate(http_requests_latency_count[1d]))
+              -
+              sum(rate(http_requests_latency_bucket{le="0.2"}[1d]))
+            )
+            /
+            sum(rate(http_requests_latency_count[1d]))
+          ) > 0.05
+          AND
+          (
+            (
+              sum(rate(http_requests_latency_count[2h]))
+              -
+              sum(rate(http_requests_latency_bucket{le="0.2"}[2h]))
+            )
+            /
+            sum(rate(http_requests_latency_count[2h]))
+          ) > 0.01
+        labels:
+          severity: warning
+
+      # --- HTTP ERRORS: ALL ENDPOINTS ---
+      - alert: ErrorsCritical
+        expr: |
+          (
+            sum(rate(http_requests_latency_count{status_code=~"5.."}[5m]))
+            /
+            sum(rate(http_requests_latency_count[5m]))
+          ) > 0.1
+          AND
+          (
+            sum(rate(http_requests_latency_count{status_code=~"5.."}[1h]))
+            /
+            sum(rate(http_requests_latency_count[1h]))
+          ) > 0.1
+        labels:
+          severity: critical
+
+      - alert: ErrorsWarning
+        expr: |
+          (
+            sum(rate(http_requests_latency_count{status_code=~"5.."}[6h]))
+            /
+            sum(rate(http_requests_latency_count[6h]))
+          ) > 0.02
+          AND
+          (
+            sum(rate(http_requests_latency_count{status_code=~"5.."}[3d]))
+            /
+            sum(rate(http_requests_latency_count[3d]))
+          ) > 0.02
+        labels:
+          severity: warning
+
+      # --- Edge cases ---
+      - alert: HighErrorRateShortTerm
+        expr: |
+          sum(rate(http_request_total{status_code=~"5.."}[1m]))
+          /
+          sum(rate(http_request_total[1m])) > 0.2
+        labels:
+          severity: critical
+        annotations:
+          summary: "Massive error spike detected"
+          description: "Over 20% of requests in the last 1 minute are failing."
+
+      - alert: ErrorBudgetHalfConsumedMidMonth
+        expr: |
+          sum(rate(http_request_total{status_code=~"5.."}[15d]))
+          /
+          sum(rate(http_request_total[15d])) > 0.005
+        labels:
+          severity: warning
+        annotations:
+          summary: "Error budget depleting too fast"
+          description: "50% of the monthly error budget has been consumed in only 15 days."
+
+      - alert: SustainedErrorBudgetBurn
+        expr: |
+          sum(rate(http_request_total{status_code=~"5.."}[6h]))
+          /
+          sum(rate(http_request_total[6h])) > 0.01
+        labels:
+          severity: warning
+        annotations:
+          summary: "6h Error rate exceeds total budget"
+          description: "The error rate over the last 6 hours is higher than the allowed 1% threshold."
+
+  - name: ssl_alerts
+    rules:
+      - alert: SSLCertExpiringSoon
+        expr: (probe_ssl_earliest_cert_expiry - time()) / 86400 < 30
+        for: 10m
+        labels:
+          severity: warning
+          slo: ssl_certificate
+        annotations:
+          summary: "SSL certificate expiring soon"
+          description: "SSL certificate for {{ $labels.instance }} will expire in less than 30 days."
+
+      - alert: SSLCertExpiringCritical
+        expr: (probe_ssl_earliest_cert_expiry - time()) / 86400 < 15
+        for: 10m
+        labels:
+          severity: critical
+          slo: ssl_certificate
+        annotations:
+          summary: "SSL certificate expiring very soon"
+          description: "SSL certificate for {{ $labels.instance }} will expire in less than 15 days."

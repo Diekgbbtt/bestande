@@ -18,7 +18,7 @@ const httpRequestLatency = new client.Histogram({
     name: "http_requests_latency",
     help: "Time in s taken to process a request end-to-end from the application, indexable for route and status_code",
     labelNames: ["route", "status_code"],
-    buckets: [0.0001, 0.0025, 0.005, 0.0075, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 1],
+    buckets: [0.0001, 0.0025, 0.005, 0.0075, 0.01, 0.025, 0.05, 0.075, 0.1, 0.2, 0.25, 0.5, 1],
     registers: [register],
 })
 
