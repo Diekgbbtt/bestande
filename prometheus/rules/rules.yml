@@ -86,6 +86,24 @@ groups:
           sum(rate(http_requests_latency_count[5m])) > 5
         labels:
           severity: warning
+      - alert: HighNginxLatencyRatioCritical
+        expr: |
+          (
+            (sum(rate(nginx_request_duration_seconds_count[5m])) 
+            - sum(rate(nginx_request_duration_seconds_bucket{le="0.2"}[5m])))
+            / sum(rate(nginx_request_duration_seconds_count[5m]))
+          ) > 0.05
+          and
+          (
+            (sum(rate(nginx_request_duration_seconds_count[1h])) 
+            - sum(rate(nginx_request_duration_seconds_bucket{le="0.2"}[1h])))
+            / sum(rate(nginx_request_duration_seconds_count[1h]))
+          ) > 0.05
+          and
+          sum(rate(nginx_request_duration_seconds_count[5m])) > 100
+        for: 2m
+        labels:
+          severity: critical
 
       - alert: LatencyCritical0.2Bucket
         expr: |
