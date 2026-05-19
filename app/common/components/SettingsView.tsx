@@ -40,7 +40,6 @@ import {LanguageSwitcher} from './LanguageSwitcher';
 import {MensaPricing} from './MensaPricing';
 import {SettingsTitle} from './SettingsTitle';
 import SocialMedia from './SocialMedia';
-import {UpdateCheck} from './UpdateCheck';
 import {YourUsernameRow} from './YourUsernameRow';
 import {ZurichAnimation} from './ZurichAnimation';
 
@@ -233,7 +232,6 @@ const SettingsView = () => {
 					<VSpace />
 					<VSpace />
 					<SettingsTitle>{`Bestande v${DeviceInfo.getVersion()}`}</SettingsTitle>
-					<UpdateCheck />
 					<ExternalLink
 						text={rawStrings.CONTACT[languageRedux]}
 						url="mailto:info@bestande.ch"
