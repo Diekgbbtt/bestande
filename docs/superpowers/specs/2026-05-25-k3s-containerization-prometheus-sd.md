@@ -68,27 +68,24 @@ k3s cluster (namespace: bestande):
 
 ### 2. Application Container
 
-Multi-stage Dockerfile:
+**Target environment: development.** The image runs the app exactly as it runs locally in dev — no build step, no compilation, TypeScript executed directly by `ts-node-dev`.
 
-| Stage | Base | Purpose |
-|---|---|---|
-| `builder` | `node:20.6.1` | Install all deps, run `npm run build` (tsc + copy + webpack) |
-| `runtime` | `node:20.6.1-slim` | Production deps only, compiled `dist/`, no source |
+Single-stage Dockerfile:
 
-Build-time `ARG`s (baked into the webpack frontend bundle by `webpack.config.js`, which has working defaults for all of them — only override if the staging/prod values differ from the defaults already in the config):
-- `REACT_APP_ONESIGNAL_APP_ID`
-- `REACT_APP_ONESIGNAL_SAFARI_WEB_ID`
-- `REACT_APP_OIDC_CLIENT_ID`
-- `REACT_APP_OIDC_REDIRECT_URI`
+| Base | `node:24.0.0` (matches `.nvmrc`) |
+|---|---|
+| Package install | `yarn install` using yarn 1.22.19 (corepack disabled to prevent it from intercepting with the `packageManager: yarn@3.6.0` field in `package.json`) |
+| Start command | `npm run dev` → `ts-node-dev --transpile-only web/src/index.ts` |
 
-Runtime env vars (injected via k8s Secret / Deployment env — these are the only ones the Node.js server reads at runtime):
-- `NODE_ENV=production`
-- `PORT=3002`
+Runtime env vars (injected via k8s Secret / Deployment env):
+- `PORT=3002` (to match the Prometheus scrape config; `npm run dev` defaults to 3000 otherwise)
 - `MONGODB_URI` (secret)
 - `JWT_SECRET_KEY` (secret)
 - `ALGOLIA_PRIVATE_KEY` (secret)
 
-Start sequence (matches existing production behaviour): `node sync.js && node index.js` from `dist/web/src/`. `sync.js` runs MongoDB index initialization then exits; `index.js` starts the Express server.
+`NODE_ENV=development` is set by `npm run dev` via `cross-env` directly in the script, so it does not need to be in the Deployment env.
+
+`sync.js` (DB index initialization) is not run in dev mode — `npm run dev` goes straight to the server. MongoDB indexes must be created separately if this is a fresh database.
 
 ### 3. Kubernetes Manifests (`k8s/`)
 

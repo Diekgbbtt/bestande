@@ -6,7 +6,7 @@
 
 **Architecture:** k3s control plane on VM1, worker on VM2. App runs as a 2-replica Deployment (one pod per node via hard anti-affinity). Nginx and the full monitoring stack remain bare-metal. Prometheus gains k3s API access via a dedicated ServiceAccount kubeconfig to discover app pods dynamically.
 
-**Tech Stack:** k3s, Docker (for image build), containerd (`k3s ctr`), kubectl, Kubernetes YAML manifests, Prometheus `kubernetes_sd_configs`, envsubst.
+**Tech Stack:** k3s, Docker (for image build), containerd (`k3s ctr`), kubectl, Kubernetes YAML manifests, Prometheus `kubernetes_sd_configs`, envsubst, ts-node-dev (dev server, no compilation step).
 
 **Prerequisites:**
 - SSH access to VM1 (nginx-instance1) and VM2 (172.23.205.204) with sudo
@@ -235,63 +235,35 @@ This is independent and should be done first — the key is already exposed in g
 - Create/overwrite: `Dockerfile`
 - Modify: `.dockerignore`
 
-- [ ] **Step 1: Write the new Dockerfile**
+- [ ] **Step 1: Write the dev Dockerfile**
 
-  The build pipeline is: `tsc --build` → `copy.js` (static assets) → `webpack` (frontend bundle).
-  The runtime start sequence (from `npm run start`) is: `node sync.js && node index.js` from `dist/web/src/`.
-  The server listens on `PORT` env var (3002 in production per Prometheus scrape config).
+  This image mirrors the local dev workflow exactly: yarn 1.22.19 installs dependencies, `npm run dev` runs TypeScript directly via `ts-node-dev --transpile-only` — no compilation, no build step.
 
-  `REACT_APP_*` variables are webpack build-time only — `webpack.config.js` bakes them into the frontend JS bundle and has working defaults for all of them. They are not read by the Node.js server at runtime and do not belong in k8s Secrets. Pass them as Docker `--build-arg` only if you need to override the defaults in `web/webpack.config.js`.
+  `package.json` declares `packageManager: yarn@3.6.0` which causes corepack (active in Node 18+) to intercept `yarn` calls and enforce Yarn Berry. Corepack must be disabled before installing yarn 1.22.19, otherwise the install will use the wrong yarn version.
 
   ```dockerfile
-  # Stage 1: install all dependencies (layer-cached separately from source)
-  FROM node:20.6.1 AS deps
-  WORKDIR /usr/src/app
-  COPY package.json yarn.lock .yarnrc.yml ./
-  COPY .yarn/releases ./.yarn/releases
-  RUN yarn install --immutable
+  FROM node:24.0.0
 
-  # Stage 2: build TypeScript + webpack bundle
-  FROM node:20.6.1 AS builder
   WORKDIR /usr/src/app
-  COPY --from=deps /usr/src/app/node_modules ./node_modules
+
+  # Disable corepack so it does not intercept yarn with the packageManager field,
+  # then pin yarn to 1.22.19 to match the local dev setup.
+  RUN corepack disable && npm install -g yarn@1.22.19
+
+  # Install dependencies before copying source for better layer caching.
+  COPY package.json yarn.lock ./
+  RUN yarn install
+
   COPY . .
-  # REACT_APP_* vars are baked into the webpack bundle at build time.
-  # webpack.config.js has defaults for all of them; only pass --build-arg if overriding.
-  ARG REACT_APP_ONESIGNAL_APP_ID
-  ARG REACT_APP_ONESIGNAL_SAFARI_WEB_ID
-  ARG REACT_APP_OIDC_CLIENT_ID
-  ARG REACT_APP_OIDC_REDIRECT_URI
-  ENV REACT_APP_ONESIGNAL_APP_ID=$REACT_APP_ONESIGNAL_APP_ID \
-      REACT_APP_ONESIGNAL_SAFARI_WEB_ID=$REACT_APP_ONESIGNAL_SAFARI_WEB_ID \
-      REACT_APP_OIDC_CLIENT_ID=$REACT_APP_OIDC_CLIENT_ID \
-      REACT_APP_OIDC_REDIRECT_URI=$REACT_APP_OIDC_REDIRECT_URI \
-      NODE_OPTIONS=--openssl-legacy-provider
-  RUN npm run build
 
-  # Stage 3: production runtime — slim image, production deps only
-  FROM node:20.6.1-slim AS runtime
-  WORKDIR /usr/src/app
-  # Re-install only production dependencies in the slim image
-  COPY --from=deps /usr/src/app/package.json \
-                   /usr/src/app/yarn.lock \
-                   /usr/src/app/.yarnrc.yml ./
-  COPY --from=deps /usr/src/app/.yarn/releases ./.yarn/releases
-  RUN yarn install --immutable --production 2>/dev/null \
-      || yarn install --immutable
-  # Copy the compiled application
-  COPY --from=builder /usr/src/app/dist ./dist
-  # Set working directory to where the compiled server lives
-  WORKDIR /usr/src/app/dist/web/src
-  ENV NODE_ENV=production \
-      PORT=3002
+  # PORT must be set to 3002 to match the Prometheus NodePort scrape config.
+  # NODE_ENV=development is set by npm run dev via cross-env — no need to set it here.
+  ENV PORT=3002
+
   EXPOSE 3002
-  HEALTHCHECK --interval=30s --timeout=5s --start-period=60s --retries=3 \
-    CMD node -e "require('http').get('http://localhost:3002/health', r => process.exit(r.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))"
-  CMD ["sh", "-c", "node sync.js && node index.js"]
-  ```
 
-  > **Note on `yarn install --production`:** Yarn Berry may not support `--production` directly. If the `RUN yarn install` step fails in the runtime stage, fall back to copying `node_modules` from the `deps` stage instead: replace the yarn install lines with `COPY --from=deps /usr/src/app/node_modules ./node_modules` and move this COPY before `COPY --from=builder /usr/src/app/dist ./dist`.
+  CMD ["npm", "run", "dev"]
+  ```
 
 - [ ] **Step 2: Write the updated .dockerignore**
 
@@ -309,34 +281,47 @@ This is independent and should be done first — the key is already exposed in g
   *.tar.gz
   ```
 
-- [ ] **Step 3: Test the build locally (on the build machine)**
-
-  No `--build-arg` flags needed — `webpack.config.js` has defaults for all `REACT_APP_*` values. Only pass overrides if the defaults in that file are wrong for your target environment.
+- [ ] **Step 3: Build the image**
 
   ```bash
   docker build -t bestande:latest .
   ```
 
-  Expected: build completes with no errors, final image size under 1.5GB.
-  If it fails at the webpack step with an OpenSSL error, the `NODE_OPTIONS=--openssl-legacy-provider` in the builder stage ENV should have prevented it — double-check it is present.
+  Expected: build completes with no errors. The `yarn install` step will take a few minutes on first run. Final image will be large (all devDependencies included) — expected for a dev image.
 
-- [ ] **Step 4: Smoke-test the image locally against a MongoDB**
+  If `yarn install` fails with a corepack/version error, verify the `corepack disable` line ran correctly by checking the build log for the `RUN corepack disable` step output.
 
-  Only run this if you have a local MongoDB with the bestande database. Skip otherwise.
+- [ ] **Step 4: Smoke-test the image**
+
+  Run with the real `MONGODB_URI` from the live environment. The dev server connects to MongoDB on startup and will crash immediately if the URI is wrong.
+
   ```bash
-  docker run --rm -e MONGODB_URI=mongodb://host.docker.internal:27017/bestande \
-    -e SECRET_KEY=test -e JWT_SECRET_KEY=test \
-    -p 3002:3002 bestande:latest
-  # Expected after ~30s: "App started." in logs
+  docker run --rm \
+    -e MONGODB_URI="<your-staging-mongodb-uri>" \
+    -e JWT_SECRET_KEY="<your-jwt-secret>" \
+    -e ALGOLIA_PRIVATE_KEY="<your-algolia-key>" \
+    -p 3002:3002 \
+    bestande:latest
+  ```
+
+  Watch the logs. Expected sequence:
+  1. `ts-node-dev` compilation output (a few seconds)
+  2. MongoDB connection confirmation
+  3. `App started.` or similar — server listening
+
+  Then in another terminal:
+  ```bash
   curl http://localhost:3002/health
   # Expected: HTTP 200
+  curl http://localhost:3002/metrics | head -3
+  # Expected: Prometheus text format (# HELP lines)
   ```
 
 - [ ] **Step 5: Commit**
 
   ```bash
   git add Dockerfile .dockerignore
-  git commit -m "build: multi-stage production Dockerfile, update dockerignore"
+  git commit -m "build: single-stage dev Dockerfile using node 24 and yarn 1.22.19"
   ```
 
 ---
@@ -465,10 +450,9 @@ This is independent and should be done first — the key is already exposed in g
           - containerPort: 3002
             name: http
           env:
-          - name: NODE_ENV
-            value: production
           - name: PORT
             value: "3002"
+          # NODE_ENV=development is set by npm run dev via cross-env — not set here.
           - name: MONGODB_URI
             valueFrom:
               secretKeyRef:
@@ -488,14 +472,15 @@ This is independent and should be done first — the key is already exposed in g
             httpGet:
               path: /health
               port: 3002
-            initialDelaySeconds: 90
+            # ts-node-dev transpiles on first run — allow extra time before probing.
+            initialDelaySeconds: 120
             periodSeconds: 15
             failureThreshold: 3
           readinessProbe:
             httpGet:
               path: /health
               port: 3002
-            initialDelaySeconds: 40
+            initialDelaySeconds: 60
             periodSeconds: 10
             failureThreshold: 3
           resources:
@@ -900,7 +885,7 @@ This is independent and should be done first — the key is already exposed in g
 |---|---|
 | k3s control plane on VM1 | Task 2 |
 | k3s worker on VM2 | Task 3 |
-| Multi-stage Dockerfile | Task 4 |
+| Single-stage dev Dockerfile (node 24, yarn 1.22.19, ts-node-dev) | Task 4 |
 | Image import to k3s containerd | Task 5 |
 | Namespace, Deployment, NodePort Service | Task 6 |
 | Pod anti-affinity (one pod per node) | Task 6 Step 4 |
