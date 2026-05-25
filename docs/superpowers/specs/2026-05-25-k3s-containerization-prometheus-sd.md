@@ -75,17 +75,18 @@ Multi-stage Dockerfile:
 | `builder` | `node:20.6.1` | Install all deps, run `npm run build` (tsc + copy + webpack) |
 | `runtime` | `node:20.6.1-slim` | Production deps only, compiled `dist/`, no source |
 
-Build-time `ARG`s (baked into the webpack frontend bundle):
+Build-time `ARG`s (baked into the webpack frontend bundle by `webpack.config.js`, which has working defaults for all of them — only override if the staging/prod values differ from the defaults already in the config):
 - `REACT_APP_ONESIGNAL_APP_ID`
 - `REACT_APP_ONESIGNAL_SAFARI_WEB_ID`
 - `REACT_APP_OIDC_CLIENT_ID`
 - `REACT_APP_OIDC_REDIRECT_URI`
 
-Runtime env vars (injected via k8s Secret / Deployment env):
+Runtime env vars (injected via k8s Secret / Deployment env — these are the only ones the Node.js server reads at runtime):
 - `NODE_ENV=production`
 - `PORT=3002`
-- `DOMAIN`, `MONGODB_URI`, `SECRET_KEY`, `JWT_SECRET_KEY`
-- `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `ALGOLIA_PRIVATE_KEY`
+- `MONGODB_URI` (secret)
+- `JWT_SECRET_KEY` (secret)
+- `ALGOLIA_PRIVATE_KEY` (secret)
 
 Start sequence (matches existing production behaviour): `node sync.js && node index.js` from `dist/web/src/`. `sync.js` runs MongoDB index initialization then exits; `index.js` starts the Express server.
 
@@ -94,7 +95,7 @@ Start sequence (matches existing production behaviour): `node sync.js && node in
 | File | Purpose |
 |---|---|
 | `namespace.yaml` | `bestande` namespace |
-| `secrets.yaml` | k8s Secret for all runtime secrets (gitignored) |
+| `secrets.yaml` | k8s Secret for `MONGODB_URI`, `JWT_SECRET_KEY`, `ALGOLIA_PRIVATE_KEY` (gitignored) |
 | `deployment.yaml` | 2-replica Deployment with pod anti-affinity (one pod per node), Prometheus scrape annotations, liveness/readiness probes on `/health:3002` |
 | `service.yaml` | NodePort Service, port 30002, `externalTrafficPolicy: Local` |
 | `prometheus-rbac.yaml` | ServiceAccount + ClusterRole (read pods/endpoints) + ClusterRoleBinding for Prometheus |

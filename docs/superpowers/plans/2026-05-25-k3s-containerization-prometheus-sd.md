@@ -241,6 +241,8 @@ This is independent and should be done first — the key is already exposed in g
   The runtime start sequence (from `npm run start`) is: `node sync.js && node index.js` from `dist/web/src/`.
   The server listens on `PORT` env var (3002 in production per Prometheus scrape config).
 
+  `REACT_APP_*` variables are webpack build-time only — `webpack.config.js` bakes them into the frontend JS bundle and has working defaults for all of them. They are not read by the Node.js server at runtime and do not belong in k8s Secrets. Pass them as Docker `--build-arg` only if you need to override the defaults in `web/webpack.config.js`.
+
   ```dockerfile
   # Stage 1: install all dependencies (layer-cached separately from source)
   FROM node:20.6.1 AS deps
@@ -254,6 +256,8 @@ This is independent and should be done first — the key is already exposed in g
   WORKDIR /usr/src/app
   COPY --from=deps /usr/src/app/node_modules ./node_modules
   COPY . .
+  # REACT_APP_* vars are baked into the webpack bundle at build time.
+  # webpack.config.js has defaults for all of them; only pass --build-arg if overriding.
   ARG REACT_APP_ONESIGNAL_APP_ID
   ARG REACT_APP_ONESIGNAL_SAFARI_WEB_ID
   ARG REACT_APP_OIDC_CLIENT_ID
@@ -307,14 +311,10 @@ This is independent and should be done first — the key is already exposed in g
 
 - [ ] **Step 3: Test the build locally (on the build machine)**
 
-  Use staging env var values from the README:
+  No `--build-arg` flags needed — `webpack.config.js` has defaults for all `REACT_APP_*` values. Only pass overrides if the defaults in that file are wrong for your target environment.
+
   ```bash
-  docker build \
-    --build-arg REACT_APP_ONESIGNAL_APP_ID=4d454410-4cd5-41ca-b543-4a93d66a36e1 \
-    --build-arg REACT_APP_ONESIGNAL_SAFARI_WEB_ID=web.onesignal.auto.6b31cc7e-8212-45ce-95eb-ed8c35d3e69c \
-    --build-arg REACT_APP_OIDC_CLIENT_ID=bestande_production \
-    --build-arg REACT_APP_OIDC_REDIRECT_URI=https://staging.bestande.ch/login \
-    -t bestande:latest .
+  docker build -t bestande:latest .
   ```
 
   Expected: build completes with no errors, final image size under 1.5GB.
@@ -401,12 +401,13 @@ This is independent and should be done first — the key is already exposed in g
 
 - [ ] **Step 2: Retrieve current secret values from the running app**
 
-  On VM1 (or VM2), read the live process environment to get the actual secret values:
+  On VM1 (or VM2), read the live process environment to get the three secret values:
   ```bash
-  sudo cat /proc/$(pgrep -f "node index" | head -1)/environ | tr '\0' '\n' | grep -E "MONGODB_URI|SECRET_KEY|JWT_SECRET|AWS_|ALGOLIA"
+  sudo cat /proc/$(pgrep -f "node index" | head -1)/environ | tr '\0' '\n' | \
+    grep -E "MONGODB_URI|JWT_SECRET_KEY|ALGOLIA"
   ```
 
-  You need: `MONGODB_URI`, `SECRET_KEY`, `JWT_SECRET_KEY`, `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `ALGOLIA_PRIVATE_KEY`.
+  You need: `MONGODB_URI`, `JWT_SECRET_KEY`, `ALGOLIA_PRIVATE_KEY`.
 
 - [ ] **Step 3: Create the secrets manifest**
 
@@ -420,10 +421,7 @@ This is independent and should be done first — the key is already exposed in g
   type: Opaque
   stringData:
     mongodb-uri: "<MONGODB_URI>"
-    secret-key: "<SECRET_KEY>"
     jwt-secret-key: "<JWT_SECRET_KEY>"
-    aws-access-key-id: "<AWS_ACCESS_KEY_ID>"
-    aws-secret-access-key: "<AWS_SECRET_ACCESS_KEY>"
     algolia-private-key: "<ALGOLIA_PRIVATE_KEY>"
   ```
 
@@ -471,37 +469,16 @@ This is independent and should be done first — the key is already exposed in g
             value: production
           - name: PORT
             value: "3002"
-          - name: DOMAIN
-            value: "https://staging.bestande.ch"
-          - name: REACT_APP_OIDC_CLIENT_ID
-            value: "bestande_production"
-          - name: REACT_APP_OIDC_REDIRECT_URI
-            value: "https://staging.bestande.ch/login"
           - name: MONGODB_URI
             valueFrom:
               secretKeyRef:
                 name: bestande-secrets
                 key: mongodb-uri
-          - name: SECRET_KEY
-            valueFrom:
-              secretKeyRef:
-                name: bestande-secrets
-                key: secret-key
           - name: JWT_SECRET_KEY
             valueFrom:
               secretKeyRef:
                 name: bestande-secrets
                 key: jwt-secret-key
-          - name: AWS_ACCESS_KEY_ID
-            valueFrom:
-              secretKeyRef:
-                name: bestande-secrets
-                key: aws-access-key-id
-          - name: AWS_SECRET_ACCESS_KEY
-            valueFrom:
-              secretKeyRef:
-                name: bestande-secrets
-                key: aws-secret-access-key
           - name: ALGOLIA_PRIVATE_KEY
             valueFrom:
               secretKeyRef:
