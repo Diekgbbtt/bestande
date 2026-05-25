@@ -1,25 +1,21 @@
-FROM node:20.6.1
+FROM node:24.0.0
 
 WORKDIR /usr/src/app
 
-ARG REACT_APP_ONESIGNAL_APP_ID
-ARG REACT_APP_ONESIGNAL_SAFARI_WEB_ID
-ARG REACT_APP_OIDC_CLIENT_ID
-ARG REACT_APP_OIDC_REDIRECT_URI
+# Disable corepack so it does not intercept yarn with the packageManager field,
+# then pin yarn to 1.22.19 to match the local dev setup.
+RUN corepack disable && npm install -g yarn@1.22.19
 
-ENV REACT_APP_ONESIGNAL_APP_ID=$REACT_APP_ONESIGNAL_APP_ID
-ENV REACT_APP_ONESIGNAL_SAFARI_WEB_ID=$REACT_APP_ONESIGNAL_SAFARI_WEB_ID
-ENV REACT_APP_OIDC_CLIENT_ID=$REACT_APP_OIDC_CLIENT_ID
-ENV REACT_APP_OIDC_REDIRECT_URI=$REACT_APP_OIDC_REDIRECT_URI
-
-ENV NODE_ENV=production
+# Install dependencies before copying source for better layer caching.
+COPY package.json yarn.lock ./
+RUN yarn install
 
 COPY . .
 
-RUN yarn install
+# PORT must be set to 3002 to match the Prometheus NodePort scrape config.
+# NODE_ENV=development is set by npm run dev via cross-env — no need to set it here.
+ENV PORT=3002
 
-RUN npm run build
+EXPOSE 3002
 
-EXPOSE 3000
-
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]
