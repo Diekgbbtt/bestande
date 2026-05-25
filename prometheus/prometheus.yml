@@ -19,10 +19,35 @@ scrape_configs:
   - job_name: nodejs_app
     metrics_path: /metrics
     scheme: http
-      #tls_config:
-      #insecure_skip_verify: true
-    static_configs:
-      - targets: ['localhost:3002','172.23.205.204:3002']
+    kubernetes_sd_configs:
+    - role: pod
+      kubeconfig_file: /etc/prometheus/kubeconfig
+      namespaces:
+        names:
+        - bestande
+    relabel_configs:
+    # Keep only pods annotated for scraping
+    - source_labels: [__meta_kubernetes_pod_annotation_prometheus_io_scrape]
+      action: keep
+      regex: "true"
+    # Override metrics path from annotation if present
+    - source_labels: [__meta_kubernetes_pod_annotation_prometheus_io_path]
+      action: replace
+      target_label: __metrics_path__
+      regex: (.+)
+    # Rewrite address to pod_ip:annotation_port
+    - source_labels: [__address__, __meta_kubernetes_pod_annotation_prometheus_io_port]
+      action: replace
+      regex: ([^:]+)(?::\d+)?;(\d+)
+      replacement: $1:$2
+      target_label: __address__
+    # Add informational labels for dashboards
+    - source_labels: [__meta_kubernetes_pod_name]
+      target_label: pod
+    - source_labels: [__meta_kubernetes_namespace]
+      target_label: namespace
+    - source_labels: [__meta_kubernetes_pod_node_name]
+      target_label: node
 
   - job_name: mongodb
     static_configs:
