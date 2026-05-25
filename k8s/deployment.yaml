@@ -1,0 +1,74 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bestande-web
+  namespace: bestande
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bestande-web
+  template:
+    metadata:
+      labels:
+        app: bestande-web
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "3002"
+        prometheus.io/path: "/metrics"
+    spec:
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchLabels:
+                app: bestande-web
+            topologyKey: kubernetes.io/hostname
+      containers:
+      - name: bestande-web
+        image: docker.io/library/bestande:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 3002
+          name: http
+        env:
+        - name: PORT
+          value: "3002"
+        # NODE_ENV=development is set by npm run dev via cross-env — not set here.
+        - name: MONGODB_URI
+          valueFrom:
+            secretKeyRef:
+              name: bestande-secrets
+              key: mongodb-uri
+        - name: JWT_SECRET_KEY
+          valueFrom:
+            secretKeyRef:
+              name: bestande-secrets
+              key: jwt-secret-key
+        - name: ALGOLIA_PRIVATE_KEY
+          valueFrom:
+            secretKeyRef:
+              name: bestande-secrets
+              key: algolia-private-key
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 3002
+          # ts-node-dev transpiles on first run — allow extra time before probing.
+          initialDelaySeconds: 120
+          periodSeconds: 15
+          failureThreshold: 3
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 3002
+          initialDelaySeconds: 60
+          periodSeconds: 10
+          failureThreshold: 3
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "100m"
+          limits:
+            memory: "1Gi"
+            cpu: "500m"
