@@ -16,3 +16,5 @@ algolia-modules.json
 *.pem
 prometheus/data/
 db/
+k8s/secrets.yaml
+alertmanager/alertmanager.yml
