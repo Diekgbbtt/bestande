@@ -19,11 +19,13 @@ spec:
     spec:
       affinity:
         podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-          - labelSelector:
-              matchLabels:
-                app: bestande-web
-            topologyKey: kubernetes.io/hostname
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchLabels:
+                  app: bestande-web
+              topologyKey: kubernetes.io/hostname
       containers:
       - name: bestande-web
         image: docker.io/library/bestande:latest
