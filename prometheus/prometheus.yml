@@ -49,6 +49,10 @@ scrape_configs:
     - source_labels: [__meta_kubernetes_pod_node_name]
       target_label: node
 
+  - job_name: kube_state_metrics
+    static_configs:
+      - targets: ['localhost:30808']
+
   - job_name: mongodb
     static_configs:
       - targets: ['localhost:9216','172.23.205.204:9216']
