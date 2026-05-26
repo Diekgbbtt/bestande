@@ -77,11 +77,11 @@ Single-stage Dockerfile:
 | Package install | `yarn install` using yarn 1.22.19 (corepack disabled to prevent it from intercepting with the `packageManager: yarn@3.6.0` field in `package.json`) |
 | Start command | `npm run dev` → `ts-node-dev --transpile-only web/src/index.ts` |
 
-Runtime env vars (injected via k8s Secret / Deployment env):
-- `PORT=3002` (to match the Prometheus scrape config; `npm run dev` defaults to 3000 otherwise)
-- `MONGODB_URI` (secret)
-- `JWT_SECRET_KEY` (secret)
-- `ALGOLIA_PRIVATE_KEY` (secret)
+Runtime configuration:
+- `PORT=3002` is set in the Deployment (to match the Prometheus scrape config; `npm run dev` defaults to 3000 otherwise)
+- All other runtime config (including secrets like `MONGODB_URI`, `JWT_SECRET_KEY`, `ALGOLIA_PRIVATE_KEY`, AWS keys, etc.) is loaded from a baked-in `web/.env` file inside the container image.
+
+This approach intentionally avoids Kubernetes Secret management: when building the image, the local `web/.env` is included by `COPY . .` and then loaded at runtime by `dotenv` when `npm run dev` starts.
 
 `NODE_ENV=development` is set by `npm run dev` via `cross-env` directly in the script, so it does not need to be in the Deployment env.
 
@@ -92,8 +92,7 @@ Runtime env vars (injected via k8s Secret / Deployment env):
 | File | Purpose |
 |---|---|
 | `namespace.yaml` | `bestande` namespace |
-| `secrets.yaml` | k8s Secret for `MONGODB_URI`, `JWT_SECRET_KEY`, `ALGOLIA_PRIVATE_KEY` (gitignored) |
-| `deployment.yaml` | 2-replica Deployment with pod anti-affinity (one pod per node), Prometheus scrape annotations, liveness/readiness probes on `/health:3002` |
+| `deployment.yaml` | 2-replica Deployment with pod anti-affinity (one pod per node), Prometheus scrape annotations, liveness/readiness probes on `/health:3002`; sets `PORT=3002` only (secrets are baked into the image via `web/.env`) |
 | `service.yaml` | NodePort Service, port 30002, `externalTrafficPolicy: Local` |
 | `prometheus-rbac.yaml` | ServiceAccount + ClusterRole (read pods/endpoints) + ClusterRoleBinding for Prometheus |
 

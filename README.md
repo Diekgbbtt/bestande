@@ -42,11 +42,6 @@ Open `https://staging.bestande.ch` in your browser.
 - Start website: `npm run dev`
 - Open `http://localhost:3000`
 
-## Use Docker to Containerize:
-- Command to build the docker image inside of the /Bestande directory: `docker build --tag bestande:latest .`
-- Command to run the docker image: `docker run -d -p 3000:3000 -e ´[add a .env variable, need to repeat -e for each .env variable] bestande:latest`
-- Remove the -d flag to not run it in detached mode -> to see the output directly without having to use `docker logs bestande:latest`
-- To stop the docker container use `docker stop bestande:latest`
 
 ## Environment Variables:
 - For the webapp set them in the .env file in the /web directory

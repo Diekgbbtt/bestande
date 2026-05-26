@@ -12,7 +12,7 @@
 - SSH access to VM1 (nginx-instance1) and VM2 (172.23.205.204) with sudo
 - Docker installed on the machine where you build the image (VM1 or local)
 - The actual nginx site config path on VM1 (find with `nginx -T 2>/dev/null | grep "# configuration file"`)
-- All current secret values for the k8s Secret (MONGODB_URI, SECRET_KEY, JWT_SECRET_KEY, AWS keys, ALGOLIA key — retrieve from the running app's environment on VM1/VM2 with `sudo cat /proc/$(pgrep -f "node index")/environ | tr '\0' '\n'`)
+- A populated `web/.env` file must exist in your local working tree BEFORE building the Docker image. It will be included in the image via `COPY . .` and loaded at runtime by `dotenv` when `npm run dev` starts.
 
 ---
 
@@ -22,7 +22,6 @@
 - `Dockerfile` — multi-stage build (replaces the deprecated one)
 - `.dockerignore` — updated to exclude yarn cache and mobile dirs
 - `k8s/namespace.yaml`
-- `k8s/secrets.yaml` — gitignored, contains runtime secrets
 - `k8s/deployment.yaml`
 - `k8s/service.yaml`
 - `k8s/prometheus-rbac.yaml`
@@ -287,6 +286,8 @@ This is independent and should be done first — the key is already exposed in g
   docker build -t bestande:latest .
   ```
 
+  Important: ensure `web/.env` exists before running this build, otherwise the running container will not have the required runtime config.
+
   Expected: build completes with no errors. The `yarn install` step will take a few minutes on first run. Final image will be large (all devDependencies included) — expected for a dev image.
 
   If `yarn install` fails with a corepack/version error, verify the `corepack disable` line ran correctly by checking the build log for the `RUN corepack disable` step output.
@@ -370,7 +371,6 @@ This is independent and should be done first — the key is already exposed in g
 
 **Files:**
 - Create: `k8s/namespace.yaml`
-- Create: `k8s/secrets.yaml` (gitignored)
 - Create: `k8s/deployment.yaml`
 - Create: `k8s/service.yaml`
 
@@ -384,35 +384,7 @@ This is independent and should be done first — the key is already exposed in g
     name: bestande
   ```
 
-- [ ] **Step 2: Retrieve current secret values from the running app**
-
-  On VM1 (or VM2), read the live process environment to get the three secret values:
-  ```bash
-  sudo cat /proc/$(pgrep -f "node index" | head -1)/environ | tr '\0' '\n' | \
-    grep -E "MONGODB_URI|JWT_SECRET_KEY|ALGOLIA"
-  ```
-
-  You need: `MONGODB_URI`, `JWT_SECRET_KEY`, `ALGOLIA_PRIVATE_KEY`.
-
-- [ ] **Step 3: Create the secrets manifest**
-
-  `k8s/secrets.yaml` — substitute real values for all `<...>` placeholders:
-  ```yaml
-  apiVersion: v1
-  kind: Secret
-  metadata:
-    name: bestande-secrets
-    namespace: bestande
-  type: Opaque
-  stringData:
-    mongodb-uri: "<MONGODB_URI>"
-    jwt-secret-key: "<JWT_SECRET_KEY>"
-    algolia-private-key: "<ALGOLIA_PRIVATE_KEY>"
-  ```
-
-  Verify `.gitignore` contains `k8s/secrets.yaml` (added in Task 1 Step 3) before saving this file.
-
-- [ ] **Step 4: Create the Deployment manifest**
+- [ ] **Step 2: Create the Deployment manifest**
 
   `k8s/deployment.yaml`:
   ```yaml
@@ -452,22 +424,10 @@ This is independent and should be done first — the key is already exposed in g
           env:
           - name: PORT
             value: "3002"
+          # NOTE: This deployment intentionally does NOT inject secrets via k8s.
+          # The container is expected to have a baked-in `web/.env` file (via `COPY . .`)
+          # which is loaded at runtime by `dotenv` when `npm run dev` starts.
           # NODE_ENV=development is set by npm run dev via cross-env — not set here.
-          - name: MONGODB_URI
-            valueFrom:
-              secretKeyRef:
-                name: bestande-secrets
-                key: mongodb-uri
-          - name: JWT_SECRET_KEY
-            valueFrom:
-              secretKeyRef:
-                name: bestande-secrets
-                key: jwt-secret-key
-          - name: ALGOLIA_PRIVATE_KEY
-            valueFrom:
-              secretKeyRef:
-                name: bestande-secrets
-                key: algolia-private-key
           livenessProbe:
             httpGet:
               path: /health
@@ -492,7 +452,7 @@ This is independent and should be done first — the key is already exposed in g
               cpu: "500m"
   ```
 
-- [ ] **Step 5: Create the NodePort Service manifest**
+- [ ] **Step 3: Create the NodePort Service manifest**
 
   `k8s/service.yaml`:
   ```yaml
@@ -513,7 +473,7 @@ This is independent and should be done first — the key is already exposed in g
       nodePort: 30002
   ```
 
-- [ ] **Step 6: Commit (secrets.yaml excluded)**
+- [ ] **Step 4: Commit**
 
   ```bash
   git add k8s/namespace.yaml k8s/deployment.yaml k8s/service.yaml
@@ -526,14 +486,11 @@ This is independent and should be done first — the key is already exposed in g
 
 **Files:** none new — applies manifests from Task 6 to the cluster on VM1.
 
-- [ ] **Step 1: Apply the namespace and secrets**
+- [ ] **Step 1: Apply the namespace**
 
   On VM1:
   ```bash
   sudo kubectl apply -f k8s/namespace.yaml
-  sudo kubectl apply -f k8s/secrets.yaml
-  sudo kubectl get secret bestande-secrets -n bestande
-  # Expected: bestande-secrets   Opaque   6   ...
   ```
 
 - [ ] **Step 2: Apply the Deployment and Service**
