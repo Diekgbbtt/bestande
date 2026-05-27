@@ -17,15 +17,13 @@ spec:
         prometheus.io/port: "3002"
         prometheus.io/path: "/metrics"
     spec:
-      affinity:
-        podAntiAffinity:
-          preferredDuringSchedulingIgnoredDuringExecution:
-          - weight: 100
-            podAffinityTerm:
-              labelSelector:
-                matchLabels:
-                  app: bestande-web
-              topologyKey: kubernetes.io/hostname
+      topologySpreadConstraints:
+      - maxSkew: 1
+        topologyKey: kubernetes.io/hostname
+        whenUnsatisfiable: DoNotSchedule
+        labelSelector:
+          matchLabels:
+            app: bestande-web
       containers:
       - name: bestande-web
         image: docker.io/library/bestande:latest
@@ -57,8 +55,7 @@ spec:
           failureThreshold: 3
         resources:
           requests:
-            memory: "256Mi"
-            cpu: "100m"
-          limits:
-            memory: "1Gi"
+            memory: "64Mi"
             cpu: "500m"
+          limits:
+            cpu: "2"
